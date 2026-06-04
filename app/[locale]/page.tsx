@@ -2,8 +2,12 @@ import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
+import Image from 'next/image'
 import VideoCard from '@/components/VideoCard'
 import RevealOnScroll from '@/components/RevealOnScroll'
+
+// Cuando tengas la foto de fondo, ponela en /public/hero-bg.webp
+const HERO_IMAGE = '/hero-bg.webp'
 
 export async function generateMetadata({
   params,
@@ -37,32 +41,48 @@ export default function HomePage() {
   return (
     <>
       {/* ═══════════════════════════════════════
-          1. HERO — Full-bleed, video placeholder
+          1. HERO — Full-bleed con foto de fondo
          ═══════════════════════════════════════ */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background gradient (replace with video when available) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-negro via-negro/95 to-oro/5">
-          <div className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage: `radial-gradient(circle at 20% 50%, #B59A5D22 0%, transparent 50%),
-                                radial-gradient(circle at 80% 20%, #c0392b11 0%, transparent 40%)`,
-            }}
-          />
-          {/* Diagonal decorative lines */}
-          <svg className="absolute inset-0 w-full h-full opacity-5" preserveAspectRatio="none">
-            <line x1="0" y1="100%" x2="50%" y2="0" stroke="#B59A5D" strokeWidth="1" />
-            <line x1="100%" y1="0" x2="60%" y2="100%" stroke="#B59A5D" strokeWidth="1" />
-          </svg>
-        </div>
+        {/* Foto de fondo — subir como /public/hero-bg.webp (1920×1080 mínimo) */}
+        <Image
+          src={HERO_IMAGE}
+          alt="Nacho Rodríguez — músico en vivo Riviera Maya"
+          fill
+          priority
+          quality={85}
+          className="object-cover object-center"
+          onError={() => {}} // cae al gradiente si la imagen no existe aún
+        />
+
+        {/* Overlay oscuro sobre la foto */}
+        <div className="absolute inset-0 bg-gradient-to-b from-negro/60 via-negro/50 to-negro/80" />
+
+        {/* Detalles decorativos */}
+        <div className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `radial-gradient(circle at 15% 50%, #B59A5D 0%, transparent 40%)`,
+          }}
+        />
 
         {/* Hero content */}
         <div className="relative text-center px-4 max-w-4xl mx-auto animate-fade-in">
-          <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-oro mb-6">
+          <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-oro mb-8">
             {t('heroLocation')}
           </p>
-          <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-hueso leading-none mb-4">
-            {t('heroTitle')}
-          </h1>
+
+          {/* Logo completo en cursiva — el nombre en tipografía oficial */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/nacho-rodrguez-nmbre-completo-tipografia-en-cursiva-oficial.webp"
+              alt="Nacho Rodríguez"
+              width={600}
+              height={160}
+              priority
+              className="object-contain max-w-[85vw] sm:max-w-[500px] md:max-w-[600px] drop-shadow-2xl"
+            />
+          </div>
+
           <p className="font-sans text-[11px] tracking-[0.5em] uppercase text-oro mb-8">
             {t('heroSubtitle')}
           </p>
