@@ -3,11 +3,10 @@ import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import Image from 'next/image'
+import { existsSync } from 'fs'
+import { join } from 'path'
 import VideoCard from '@/components/VideoCard'
 import RevealOnScroll from '@/components/RevealOnScroll'
-
-// Cuando tengas la foto de fondo, ponela en /public/hero-bg.webp
-const HERO_IMAGE = '/hero-bg.webp'
 
 export async function generateMetadata({
   params,
@@ -25,10 +24,10 @@ export async function generateMetadata({
   }
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   const t = useTranslations('home')
-  const nav = useTranslations('nav')
   const locale = useLocale()
+  const heroBgExists = existsSync(join(process.cwd(), 'public', 'hero-bg.webp'))
 
   const testimonials = t.raw('testimonials') as Array<{ text: string; author: string; event: string }>
   const videos = [
@@ -45,15 +44,16 @@ export default function HomePage() {
          ═══════════════════════════════════════ */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Foto de fondo — subir como /public/hero-bg.webp (1920×1080 mínimo) */}
-        <Image
-          src={HERO_IMAGE}
-          alt="Nacho Rodríguez — músico en vivo Riviera Maya"
-          fill
-          priority
-          quality={85}
-          className="object-cover object-center"
-          onError={() => {}} // cae al gradiente si la imagen no existe aún
-        />
+        {heroBgExists && (
+          <Image
+            src="/hero-bg.webp"
+            alt="Nacho Rodríguez — músico en vivo Riviera Maya"
+            fill
+            priority
+            quality={85}
+            className="object-cover object-center"
+          />
+        )}
 
         {/* Overlay oscuro sobre la foto */}
         <div className="absolute inset-0 bg-gradient-to-b from-negro/60 via-negro/50 to-negro/80" />
