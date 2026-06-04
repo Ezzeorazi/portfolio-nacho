@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════
           1. HERO — Full-bleed con foto de fondo
          ═══════════════════════════════════════ */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-end justify-center overflow-hidden">
         {/* Foto de fondo — subir como /public/hero-bg.webp (1920×1080 mínimo) */}
         {heroBgExists && (
           <Image
@@ -65,33 +65,29 @@ export default function HomePage() {
           }}
         />
 
-        {/* Hero content */}
-        <div className="relative text-center px-4 max-w-4xl mx-auto animate-fade-in">
-          <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-oro mb-8">
-            {t('heroLocation')}
-          </p>
-
-          {/* Logo completo en cursiva — el nombre en tipografía oficial */}
-          <div className="flex justify-center mb-6">
+        {/* Hero content — anclado abajo para no tapar la cara */}
+        <div className="relative w-full text-center px-4 pb-16 sm:pb-20 animate-fade-in">
+          {/* Logo completo en cursiva */}
+          <div className="flex justify-center mb-4">
             <Image
               src="/nacho-rodrguez-nmbre-completo-tipografia-en-cursiva-oficial.webp"
               alt="Nacho Rodriguez"
               width={600}
               height={160}
               priority
-              className="object-contain w-[85vw] sm:w-[500px] md:w-[580px] drop-shadow-2xl"
+              className="object-contain w-[80vw] sm:w-[420px] md:w-[520px] drop-shadow-2xl"
               style={{ height: 'auto' }}
             />
           </div>
 
-          <p className="font-sans text-[11px] tracking-[0.5em] uppercase text-oro mb-8">
-            {t('heroSubtitle')}
+          <p className="font-sans text-[10px] tracking-[0.5em] uppercase text-oro mb-4">
+            {t('heroSubtitle')} · {t('heroLocation')}
           </p>
-          <div className="w-12 h-px bg-oro mx-auto mb-8" />
-          <p className="font-display text-xl sm:text-2xl text-arena/90 italic mb-10 max-w-xl mx-auto">
+          <div className="w-10 h-px bg-oro mx-auto mb-5" />
+          <p className="font-display text-lg sm:text-xl text-arena/90 italic mb-8 max-w-lg mx-auto">
             &ldquo;{t('heroTagline')}&rdquo;
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href={`/${locale}/contact`} className="btn-gold">
               {t('heroCta')}
             </Link>
@@ -102,7 +98,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-pulse-slow">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-pulse-slow opacity-60">
           <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-arena/50">scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-oro/50 to-transparent" />
         </div>
