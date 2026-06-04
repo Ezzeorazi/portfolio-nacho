@@ -13,7 +13,7 @@
     "bookNow": "Book Now"
   },
   "home": {
-    "heroTitle": "Nacho Rodríguez",
+    "heroTitle": "Nacho Rodriguez",
     "heroSubtitle": "Musician",
     "heroTagline": "Live music for unforgettable moments in the Riviera Maya",
     "heroLocation": "Riviera Maya · Mexico",
@@ -65,7 +65,7 @@
     "ctaWhatsapp": "Message on WhatsApp"
   },
   "weddings": {
-    "metaTitle": "Wedding Musician Riviera Maya | Nacho Rodríguez",
+    "metaTitle": "Wedding Musician Riviera Maya | Nacho Rodriguez",
     "metaDesc": "Live music for weddings in Playa del Carmen, Tulum, Cancun and Puerto Morelos. Bilingual ES/EN. Solo or duo. Free quote.",
     "heroTitle": "Weddings",
     "heroSubtitle": "Live music that makes your most important moments unforgettable",
@@ -95,7 +95,7 @@
     "ctaButton": "Request a quote"
   },
   "privateEvents": {
-    "metaTitle": "Musician for Private Events in Riviera Maya | Nacho Rodríguez",
+    "metaTitle": "Musician for Private Events in Riviera Maya | Nacho Rodriguez",
     "metaDesc": "Live music for private events, villa dinners, exclusive parties in Tulum, Playa del Carmen and Cancun.",
     "heroTitle": "Private Events",
     "heroSubtitle": "The perfect music for your most exclusive celebrations",
@@ -111,7 +111,7 @@
     "ctaButton": "Contact me"
   },
   "venues": {
-    "metaTitle": "Live Music for Hotels and Restaurants | Riviera Maya | Nacho Rodríguez",
+    "metaTitle": "Live Music for Hotels and Restaurants | Riviera Maya | Nacho Rodriguez",
     "metaDesc": "Live music shows for boutique hotels, restaurants and planners in the Riviera Maya. Professional, bilingual, punctual.",
     "heroTitle": "Hotels, Restaurants & Villas",
     "heroSubtitle": "Elevate your guests' experience with quality live music",
@@ -134,7 +134,7 @@
     "ctaButton": "Request information"
   },
   "repertoire": {
-    "metaTitle": "Repertoire | Nacho Rodríguez Musician",
+    "metaTitle": "Repertoire | Nacho Rodriguez Musician",
     "metaDesc": "Over 200 songs in rock, blues, jazz, country, cumbia and original compositions. Bilingual Spanish/English.",
     "heroTitle": "Repertoire",
     "heroSubtitle": "Over 200 songs in Spanish and English",
@@ -161,14 +161,14 @@
       },
       {
         "name": "Original Songs",
-        "songs": ["Original compositions by Nacho Rodríguez", "Available on Spotify and digital platforms"]
+        "songs": ["Original compositions by Nacho Rodriguez", "Available on Spotify and digital platforms"]
       }
     ],
     "requestNote": "Don't see your favorite song? Contact me in advance and I'll prepare it specially for your event.",
     "ctaButton": "Request a special song"
   },
   "about": {
-    "metaTitle": "About Nacho Rodríguez | Musician in Riviera Maya",
+    "metaTitle": "About Nacho Rodriguez | Musician in Riviera Maya",
     "metaDesc": "Argentine singer-songwriter based in the Riviera Maya since 2014. Rock, blues, jazz and original songs for weddings and events.",
     "heroTitle": "About Nacho",
     "storyTitle": "From Mendoza to the Caribbean",
@@ -191,7 +191,7 @@
     "ctaButton": "Get in touch"
   },
   "contact": {
-    "metaTitle": "Contact & Quote | Nacho Rodríguez Musician",
+    "metaTitle": "Contact & Quote | Nacho Rodriguez Musician",
     "metaDesc": "Quote live music for your wedding or event in the Riviera Maya. Response within 24 hours.",
     "heroTitle": "Let's talk",
     "heroSubtitle": "Tell me about your event and I'll send you a no-obligation quote",
@@ -231,7 +231,7 @@
     "cities": {
       "playa-del-carmen": {
         "name": "Playa del Carmen",
-        "metaTitle": "Live Musician Playa del Carmen | Nacho Rodríguez",
+        "metaTitle": "Live Musician Playa del Carmen | Nacho Rodriguez",
         "metaDesc": "Live music for weddings and events in Playa del Carmen. Solo or duo, bilingual ES/EN.",
         "heroTitle": "Live Music in Playa del Carmen",
         "desc": "Playa del Carmen is the cosmopolitan heart of the Riviera Maya. Its beaches, 5th Avenue, and boutique hotels in the center are the perfect setting for quality live music.",
@@ -240,7 +240,7 @@
       },
       "tulum": {
         "name": "Tulum",
-        "metaTitle": "Live Musician Tulum | Nacho Rodríguez",
+        "metaTitle": "Live Musician Tulum | Nacho Rodriguez",
         "metaDesc": "Live music for weddings and events in Tulum. Ceremony at cenote, villa or beach. Bilingual.",
         "heroTitle": "Live Music in Tulum",
         "desc": "Tulum: bohemian, spiritual and spectacular. The villas in the hotel zone, the sacred cenotes, and the paradisiacal beaches deserve perfect music.",
@@ -249,7 +249,7 @@
       },
       "cancun": {
         "name": "Cancún",
-        "metaTitle": "Live Musician Cancun | Nacho Rodríguez",
+        "metaTitle": "Live Musician Cancun | Nacho Rodriguez",
         "metaDesc": "Live music for weddings and events in Cancun. Hard Rock, Hyatt, Secrets and more. Bilingual ES/EN.",
         "heroTitle": "Live Music in Cancún",
         "desc": "Cancún concentrates the largest all-inclusive hotels in the Caribbean and an active destination wedding scene. I play throughout the hotel zone.",
@@ -258,7 +258,7 @@
       },
       "puerto-morelos": {
         "name": "Puerto Morelos",
-        "metaTitle": "Live Musician Puerto Morelos | Nacho Rodríguez",
+        "metaTitle": "Live Musician Puerto Morelos | Nacho Rodriguez",
         "metaDesc": "Live music for intimate weddings and events in Puerto Morelos. The most tranquil and authentic village in the Riviera Maya.",
         "heroTitle": "Live Music in Puerto Morelos",
         "desc": "Puerto Morelos is the best-kept secret of the Riviera Maya. A fishing village turned boutique destination, perfect for intimate weddings and exclusive events.",
@@ -268,8 +268,8 @@
     }
   },
   "epk": {
-    "metaTitle": "EPK — Electronic Press Kit | Nacho Rodríguez",
-    "metaDesc": "Download the complete Nacho Rodríguez dossier: bio, press photos, repertoire and rates.",
+    "metaTitle": "EPK — Electronic Press Kit | Nacho Rodriguez",
+    "metaDesc": "Download the complete Nacho Rodriguez dossier: bio, press photos, repertoire and rates.",
     "heroTitle": "Electronic Press Kit",
     "heroSubtitle": "Everything you need to book Nacho",
     "downloadButton": "Download EPK (PDF)",
@@ -281,7 +281,7 @@
     ]
   },
   "blog": {
-    "metaTitle": "Blog | Nacho Rodríguez Musician",
+    "metaTitle": "Blog | Nacho Rodriguez Musician",
     "metaDesc": "Wedding tips, venue guides in Tulum and Playa del Carmen, and stories from Nacho's musical journey.",
     "heroTitle": "Blog",
     "heroSubtitle": "Music, weddings, and life in the Riviera Maya",

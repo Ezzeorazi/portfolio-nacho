@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href={`/${locale}`}>
-              <p className="font-display text-2xl text-oro mb-1">Nacho Rodríguez</p>
+              <p className="font-display text-2xl text-oro mb-1">Nacho Rodriguez</p>
               <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-arena mb-4">
                 {locale === 'es' ? 'Músico · Riviera Maya' : 'Musician · Riviera Maya'}
               </p>
@@ -127,7 +127,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-arena/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-sans text-xs text-arena/40">
-            © {year} Nacho Rodríguez. {t('rights')}.
+            © {year} Nacho Rodriguez. {t('rights')}.
           </p>
           <p className="font-sans text-xs text-arena/40">
             {t('developedBy')}{' '}

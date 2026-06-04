@@ -57,8 +57,8 @@ export default function RepertoirePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'MusicPlaylist',
-            name: locale === 'es' ? 'Repertorio de Nacho Rodríguez' : 'Nacho Rodríguez Repertoire',
-            creator: { '@type': 'Person', name: 'Nacho Rodríguez' },
+            name: locale === 'es' ? 'Repertorio de Nacho Rodriguez' : 'Nacho Rodriguez Repertoire',
+            creator: { '@type': 'Person', name: 'Nacho Rodriguez' },
             numTracks: 200,
           }),
         }}

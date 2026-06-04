@@ -270,10 +270,10 @@ export default function BlogPostPage({
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            author: { '@type': 'Person', name: 'Nacho Rodríguez' },
+            author: { '@type': 'Person', name: 'Nacho Rodriguez' },
             publisher: {
               '@type': 'Organization',
-              name: 'Nacho Rodríguez Músico',
+              name: 'Nacho Rodriguez Músico',
               url: 'https://nachorodriguezmusic.com',
             },
           }),

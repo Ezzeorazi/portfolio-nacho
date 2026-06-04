@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Nacho Rodríguez — Músico en Vivo · Riviera Maya'
+export const alt = 'Nacho Rodriguez — Músico en Vivo · Riviera Maya'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -46,7 +46,7 @@ export default function OGImage() {
           </p>
           <div style={{ width: '60px', height: '1px', background: '#B59A5D' }} />
           <h1 style={{ color: '#F4F1EA', fontSize: '72px', fontFamily: 'serif', margin: 0, textAlign: 'center', lineHeight: 1 }}>
-            Nacho Rodríguez
+            Nacho Rodriguez
           </h1>
           <p style={{ color: '#DFD6BC', fontSize: '16px', letterSpacing: '0.5em', textTransform: 'uppercase', fontFamily: 'sans-serif', margin: 0 }}>
             MÚSICO · MUSICIAN

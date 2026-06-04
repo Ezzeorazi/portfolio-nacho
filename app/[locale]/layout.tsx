@@ -22,8 +22,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nacho Rodríguez | Músico en Vivo — Riviera Maya',
-    template: '%s | Nacho Rodríguez Músico',
+    default: 'Nacho Rodriguez | Músico en Vivo — Riviera Maya',
+    template: '%s | Nacho Rodriguez Músico',
   },
   description:
     'Músico en vivo para bodas y eventos en la Riviera Maya. Cantautor bilingüe ES/EN — Playa del Carmen, Tulum, Cancún. Solista o dúo.',
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     'cantante para bodas Riviera Maya',
     'bilingual wedding singer Mexico',
   ],
-  authors: [{ name: 'Nacho Rodríguez' }],
+  authors: [{ name: 'Nacho Rodriguez' }],
   openGraph: {
-    siteName: 'Nacho Rodríguez Músico',
+    siteName: 'Nacho Rodriguez Músico',
     type: 'website',
     locale: 'es_MX',
     alternateLocale: 'en_US',

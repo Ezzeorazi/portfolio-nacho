@@ -8,7 +8,7 @@ import RevealOnScroll from '@/components/RevealOnScroll'
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   return {
-    title: locale === 'es' ? 'Videos | Nacho Rodríguez Músico' : 'Videos | Nacho Rodríguez Musician',
+    title: locale === 'es' ? 'Videos | Nacho Rodriguez Músico' : 'Videos | Nacho Rodriguez Musician',
     description: locale === 'es'
       ? 'Videos de actuaciones en vivo: bodas, eventos privados, hoteles y restaurantes en la Riviera Maya.'
       : 'Live performance videos: weddings, private events, hotels and restaurants in the Riviera Maya.',
@@ -43,7 +43,7 @@ export default function VideosPage() {
           <RevealOnScroll className="mb-6">
             <div className="aspect-video max-h-[600px] overflow-hidden">
               <VideoCard
-                title={locale === 'es' ? 'Reel 2024 — Nacho Rodríguez' : '2024 Reel — Nacho Rodríguez'}
+                title={locale === 'es' ? 'Reel 2024 — Nacho Rodriguez' : '2024 Reel — Nacho Rodriguez'}
                 subtitle={locale === 'es' ? 'Bodas y eventos en la Riviera Maya' : 'Weddings and events in the Riviera Maya'}
                 className="h-full"
               />

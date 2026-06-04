@@ -93,7 +93,7 @@ export default function AboutPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
-            name: 'Nacho Rodríguez',
+            name: 'Nacho Rodriguez',
             birthPlace: { '@type': 'Place', name: 'Mendoza, Argentina' },
             jobTitle: locale === 'es' ? 'Músico, Cantautor' : 'Musician, Singer-Songwriter',
             knowsLanguage: ['es', 'en'],

@@ -100,11 +100,11 @@ export default function ContactPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ContactPage',
-            name: locale === 'es' ? 'Contacto — Nacho Rodríguez' : 'Contact — Nacho Rodríguez',
+            name: locale === 'es' ? 'Contacto — Nacho Rodriguez' : 'Contact — Nacho Rodriguez',
             url: `https://nachorodriguezmusic.com/${locale}/contact`,
             mainEntity: {
               '@type': 'Person',
-              name: 'Nacho Rodríguez',
+              name: 'Nacho Rodriguez',
               telephone: '+525534010899',
               email: 'nachorodriguez.fora@gmail.com',
             },

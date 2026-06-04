@@ -47,7 +47,7 @@ export default function Header() {
         <Link href={`/${locale}`} className="flex items-center gap-3 group">
           <Image
             src="/Logo-nachoRodriguez-blancoHueso.webp"
-            alt="Nacho Rodríguez"
+            alt="Nacho Rodriguez"
             width={44}
             height={44}
             className="object-contain transition-opacity group-hover:opacity-80"
@@ -55,7 +55,7 @@ export default function Header() {
           />
           <div className="flex flex-col leading-none">
             <span className="font-display text-oro text-base md:text-lg tracking-wider group-hover:text-oro-dark transition-colors">
-              Nacho Rodríguez
+              Nacho Rodriguez
             </span>
             <span className="font-sans text-arena text-[9px] tracking-[0.3em] uppercase">
               {locale === 'es' ? 'Músico' : 'Musician'}

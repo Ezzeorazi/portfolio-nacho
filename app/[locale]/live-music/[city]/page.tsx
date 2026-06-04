@@ -126,7 +126,7 @@ export default function CityPage({
             '@context': 'https://schema.org',
             '@type': 'Service',
             name: cityData.heroTitle,
-            provider: { '@type': 'Person', name: 'Nacho Rodríguez' },
+            provider: { '@type': 'Person', name: 'Nacho Rodriguez' },
             areaServed: cityData.name,
             description: cityData.desc,
           }),

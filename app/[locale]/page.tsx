@@ -16,7 +16,7 @@ export async function generateMetadata({
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'home' })
   return {
-    title: 'Nacho Rodríguez | Músico en Vivo — Riviera Maya',
+    title: 'Nacho Rodriguez | Músico en Vivo — Riviera Maya',
     description:
       locale === 'es'
         ? 'Músico en vivo para bodas y eventos en la Riviera Maya. Cantautor bilingüe ES/EN — Playa del Carmen, Tulum, Cancún.'
@@ -47,7 +47,7 @@ export default function HomePage() {
         {heroBgExists && (
           <Image
             src="/hero-bg.webp"
-            alt="Nacho Rodríguez — músico en vivo Riviera Maya"
+            alt="Nacho Rodriguez — músico en vivo Riviera Maya"
             fill
             priority
             quality={85}
@@ -75,11 +75,12 @@ export default function HomePage() {
           <div className="flex justify-center mb-6">
             <Image
               src="/nacho-rodrguez-nmbre-completo-tipografia-en-cursiva-oficial.webp"
-              alt="Nacho Rodríguez"
+              alt="Nacho Rodriguez"
               width={600}
               height={160}
               priority
-              className="object-contain max-w-[85vw] sm:max-w-[500px] md:max-w-[600px] drop-shadow-2xl"
+              className="object-contain w-[85vw] sm:w-[500px] md:w-[580px] drop-shadow-2xl"
+              style={{ height: 'auto' }}
             />
           </div>
 
@@ -324,7 +325,7 @@ export default function HomePage() {
             '@graph': [
               {
                 '@type': 'Person',
-                name: 'Nacho Rodríguez',
+                name: 'Nacho Rodriguez',
                 jobTitle: locale === 'es' ? 'Músico, Cantautor' : 'Musician, Singer-Songwriter',
                 url: 'https://nachorodriguezmusic.com',
                 image: 'https://nachorodriguezmusic.com/og-image.jpg',
@@ -334,13 +335,13 @@ export default function HomePage() {
               },
               {
                 '@type': 'MusicGroup',
-                name: 'Nacho Rodríguez',
+                name: 'Nacho Rodriguez',
                 genre: ['Rock', 'Blues', 'Jazz', 'Country', 'Latin'],
                 url: 'https://nachorodriguezmusic.com',
               },
               {
                 '@type': 'LocalBusiness',
-                name: 'Nacho Rodríguez — Músico en Vivo',
+                name: 'Nacho Rodriguez — Músico en Vivo',
                 description: locale === 'es'
                   ? 'Músico en vivo para bodas y eventos en la Riviera Maya'
                   : 'Live musician for weddings and events in the Riviera Maya',
