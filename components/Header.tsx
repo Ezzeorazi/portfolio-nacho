@@ -44,23 +44,16 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo / Brand */}
-        <Link href={`/${locale}`} className="flex items-center gap-3 group">
+        <Link href={`/${locale}`} className="flex items-center gap-3 mt-5 group">
           <Image
             src="/Logo-nachoRodriguez-blancoHueso.webp"
             alt="Nacho Rodriguez"
-            width={44}
-            height={44}
+            width={100}
+            height={100}
             className="object-contain transition-opacity group-hover:opacity-80"
             priority
           />
-          <div className="flex flex-col leading-none">
-            <span className="font-display text-oro text-base md:text-lg tracking-wider group-hover:text-oro-dark transition-colors">
-              Nacho Rodriguez
-            </span>
-            <span className="font-sans text-arena text-[9px] tracking-[0.3em] uppercase">
-              {locale === 'es' ? 'Músico' : 'Musician'}
-            </span>
-          </div>
+          
         </Link>
 
         {/* Desktop nav */}

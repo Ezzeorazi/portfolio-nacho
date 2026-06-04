@@ -8,9 +8,8 @@ interface PageHeroProps {
 export default function PageHero({ title, subtitle, dark = true, image }: PageHeroProps) {
   return (
     <section
-      className={`relative flex items-end pt-32 pb-16 px-4 min-h-[50vh] ${
-        dark ? 'bg-negro' : 'bg-hueso'
-      }`}
+      className={`relative flex items-end pt-32  pb-16 px-4 min-h-[50vh] ${dark ? 'bg-negro' : 'bg-hueso'
+        }`}
       style={image ? { backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
     >
       {image && <div className="absolute inset-0 bg-negro/70" />}

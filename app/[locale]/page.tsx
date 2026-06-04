@@ -51,7 +51,7 @@ export default function HomePage() {
             fill
             priority
             quality={85}
-            className="object-cover object-center"
+            className="object-cover object-[center_20%]"
           />
         )}
 
@@ -67,22 +67,21 @@ export default function HomePage() {
 
         {/* Hero content — anclado abajo para no tapar la cara */}
         <div className="relative w-full text-center px-4 pb-16 sm:pb-20 animate-fade-in">
-          {/* Logo completo en cursiva */}
-          <div className="flex justify-center mb-4">
+          {/* Logo + subtítulo como unidad pegada */}
+          <div className="flex flex-col items-center mb-4">
             <Image
               src="/nacho-rodrguez-nmbre-completo-tipografia-en-cursiva-oficial.webp"
               alt="Nacho Rodriguez"
               width={600}
               height={160}
               priority
-              className="object-contain w-[80vw] sm:w-[420px] md:w-[520px] drop-shadow-2xl"
+              className="object-contain w-[62vw] sm:w-[360px] md:w-[500px] drop-shadow-2xl -mb-3"
               style={{ height: 'auto' }}
             />
+            <p className="font-sans text-[10px] tracking-[0.5em] uppercase text-oro">
+              {t('heroSubtitle')} · {t('heroLocation')}
+            </p>
           </div>
-
-          <p className="font-sans text-[10px] tracking-[0.5em] uppercase text-oro mb-4">
-            {t('heroSubtitle')} · {t('heroLocation')}
-          </p>
           <div className="w-10 h-px bg-oro mx-auto mb-5" />
           <p className="font-display text-lg sm:text-xl text-arena/90 italic mb-8 max-w-lg mx-auto">
             &ldquo;{t('heroTagline')}&rdquo;
