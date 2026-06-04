@@ -1,0 +1,325 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "weddings": "Bodas",
+    "privateEvents": "Eventos Privados",
+    "venues": "Hoteles y Restaurantes",
+    "repertoire": "Repertorio",
+    "videos": "Videos",
+    "about": "Sobre Nacho",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "epk": "EPK",
+    "bookNow": "Reservar"
+  },
+  "home": {
+    "heroTitle": "Nacho Rodríguez",
+    "heroSubtitle": "Músico",
+    "heroTagline": "Música en vivo que cuenta historias",
+    "heroLocation": "Riviera Maya · México",
+    "heroCta": "Reservar tu fecha",
+    "heroCtaSecondary": "Ver repertorio",
+    "statementTitle": "Una voz. Una guitarra. Una experiencia única.",
+    "statementText": "Desde Mendoza hasta la Riviera Maya, llevo más de 10 años creando momentos musicales inolvidables. Rock, blues, jazz, country y mis propias composiciones — en el formato íntimo que merece tu evento.",
+    "formatsTitle": "¿Cómo quieres tu música?",
+    "formatsSoloTitle": "Solista",
+    "formatsSoloDesc": "Voz + guitarra acústica. Perfecto para ceremonias, cócteles y cenas íntimas.",
+    "formatsDuoTitle": "Dúo",
+    "formatsDuoDesc": "Mayor potencia y riqueza sonora. Ideal para recepciones y eventos más grandes.",
+    "servicesTitle": "Para cada momento especial",
+    "services": {
+      "weddings": { "title": "Bodas", "desc": "Desde la ceremonia hasta el último baile. Música que acompaña cada emoción de tu gran día." },
+      "private": { "title": "Eventos Privados", "desc": "Cenas en villas, fiestas privadas y celebraciones exclusivas en la Riviera Maya." },
+      "venues": { "title": "Hoteles y Restaurantes", "desc": "Shows en vivo para hoteles boutique, restaurantes y planners de eventos." }
+    },
+    "reelTitle": "Escúchame en vivo",
+    "reelSubtitle": "Hacé clic en cualquier video para activar el sonido",
+    "testimonialsTitle": "Lo que dicen mis clientes",
+    "testimonials": [
+      {
+        "text": "Nacho hizo nuestra boda perfecta. Su música creó una atmósfera mágica que nuestros invitados siguen recordando.",
+        "author": "María & Tom",
+        "event": "Boda en Tulum, 2023"
+      },
+      {
+        "text": "Increíble talento y profesionalismo. Llegó puntual, adaptó el repertorio en tiempo real y tocó hasta el final. 100% recomendado.",
+        "author": "Carlos Méndez",
+        "event": "Evento corporativo, Playa del Carmen"
+      },
+      {
+        "text": "Our guests couldn't stop talking about the musician. Bilingual, talented, and absolutely perfect for our villa dinner.",
+        "author": "Sarah & James",
+        "event": "Villa privada, Tulum, 2024"
+      }
+    ],
+    "citiesTitle": "Toco en toda la Riviera Maya",
+    "cities": {
+      "playaDelCarmen": "Playa del Carmen",
+      "tulum": "Tulum",
+      "cancun": "Cancún",
+      "puertoMorelos": "Puerto Morelos"
+    },
+    "ctaTitle": "¿Listo para reservar?",
+    "ctaText": "Contáctame hoy y cotiza sin compromiso para tu fecha.",
+    "ctaButton": "Obtener cotización",
+    "ctaWhatsapp": "Escribir por WhatsApp"
+  },
+  "weddings": {
+    "metaTitle": "Músico para Bodas en Riviera Maya | Nacho Rodríguez",
+    "metaDesc": "Música en vivo para bodas en Playa del Carmen, Tulum, Cancún y Puerto Morelos. Bilingüe ES/EN. Solista o dúo. Cotización sin compromiso.",
+    "heroTitle": "Bodas",
+    "heroSubtitle": "Música en vivo que hace memorables tus momentos más importantes",
+    "whyTitle": "¿Por qué elegir música en vivo?",
+    "why": [
+      "La música en vivo crea una atmósfera que ninguna playlist puede replicar",
+      "Flexibilidad total: adapto el repertorio en tiempo real",
+      "Bilingüe ES/EN: me conecto con todos tus invitados",
+      "Experiencia en más de 200 bodas en la Riviera Maya"
+    ],
+    "momentsTitle": "Para cada momento de tu boda",
+    "moments": [
+      { "title": "Ceremonia", "desc": "La entrada de la novia, el intercambio de votos, la salida. Música emocionante para cada instante." },
+      { "title": "Cóctel", "desc": "Ambiente cálido y sofisticado mientras tus invitados se mezclan y brindan." },
+      { "title": "Cena", "desc": "Música suave e íntima que acompaña la velada sin competir con las conversaciones." },
+      { "title": "Recepción", "desc": "Energía y alegría para hacer bailar a todos tus invitados." }
+    ],
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": [
+      { "q": "¿Con cuánta anticipación debo reservar?", "a": "Se recomienda reservar con al menos 3-6 meses de anticipación, especialmente para temporada alta (noviembre-abril)." },
+      { "q": "¿Tocan en exteriores?", "a": "Sí, tengo equipo profesional adaptado para exteriores: playas, jardines, cenotes y villas." },
+      { "q": "¿Puedo pedir canciones específicas?", "a": "Absolutamente. Comparto mi repertorio completo y podemos personalizarlo. Para canciones especiales avísame con anticipación." },
+      { "q": "¿Incluye equipo de sonido?", "a": "Sí, incluye equipo de amplificación profesional adecuado para el tipo de evento." }
+    ],
+    "ctaTitle": "Cotiza tu boda",
+    "ctaText": "Sin compromiso. Te respondo en menos de 24 horas.",
+    "ctaButton": "Solicitar cotización"
+  },
+  "privateEvents": {
+    "metaTitle": "Músico para Eventos Privados en Riviera Maya | Nacho Rodríguez",
+    "metaDesc": "Música en vivo para eventos privados, cenas en villa, fiestas exclusivas en Tulum, Playa del Carmen y Cancún.",
+    "heroTitle": "Eventos Privados",
+    "heroSubtitle": "La música perfecta para tus celebraciones más exclusivas",
+    "types": [
+      { "title": "Cenas en Villa", "desc": "Música íntima para veladas privadas en las mejores villas de la Riviera Maya." },
+      { "title": "Cumpleaños", "desc": "Celebra tu cumpleaños con un show en vivo personalizado." },
+      { "title": "Aniversarios", "desc": "Revive momentos especiales con la música que los acompaña." },
+      { "title": "Despedidas", "desc": "El broche de oro para una despedida de soltero/a inolvidable." },
+      { "title": "Eventos Corporativos", "desc": "Cenas de empresa, lanzamientos y activaciones con música de fondo o show en vivo." },
+      { "title": "A Pedido", "desc": "¿Tenés una idea especial? Hablemos y lo hacemos realidad." }
+    ],
+    "ctaTitle": "¿Qué tenés en mente?",
+    "ctaButton": "Contáctame"
+  },
+  "venues": {
+    "metaTitle": "Música en Vivo para Hoteles y Restaurantes | Riviera Maya | Nacho Rodríguez",
+    "metaDesc": "Shows de música en vivo para hoteles boutique, restaurantes y planners en la Riviera Maya. Profesional, bilingüe, puntual.",
+    "heroTitle": "Hoteles, Restaurantes y Villas",
+    "heroSubtitle": "Eleva la experiencia de tus huéspedes con música en vivo de calidad",
+    "forTitle": "Ideal para",
+    "for": [
+      { "title": "Hoteles Boutique", "desc": "Shows regulares o eventos especiales que diferencian tu propiedad." },
+      { "title": "Restaurantes", "desc": "Ambiente musical en vivo que incrementa el ticket promedio y la permanencia." },
+      { "title": "Villas Privadas", "desc": "Servicio premium para huéspedes de alto nivel." },
+      { "title": "Wedding Planners", "desc": "Músico confiable para tus clientes. Trabajo con agenda flexible y presupuestos múltiples." }
+    ],
+    "whyTitle": "Por qué trabajar conmigo",
+    "why": [
+      "Bilingüe español/inglés — conecta con todos tus huéspedes",
+      "Puntual y profesional — no generás dolores de cabeza",
+      "Equipo propio — sin gastos extras de producción",
+      "Repertorio amplio — adaptable a cualquier atmósfera",
+      "Experiencia en más de 50 venues de la Riviera Maya"
+    ],
+    "ctaTitle": "Hablemos de tu espacio",
+    "ctaButton": "Solicitar información"
+  },
+  "repertoire": {
+    "metaTitle": "Repertorio | Nacho Rodríguez Músico",
+    "metaDesc": "Más de 200 canciones de rock, blues, jazz, country, cumbia y temas propios. Bilingüe español/inglés.",
+    "heroTitle": "Repertorio",
+    "heroSubtitle": "Más de 200 canciones en español e inglés",
+    "genres": [
+      {
+        "name": "Rock Clásico",
+        "songs": ["Hotel California (Eagles)", "Wonderwall (Oasis)", "Wish You Were Here (Pink Floyd)", "Black (Pearl Jam)", "More Than Words (Extreme)", "Wild World (Cat Stevens)"]
+      },
+      {
+        "name": "Blues & Soul",
+        "songs": ["Feeling Good", "Summertime", "The Thrill Is Gone", "Ain't No Sunshine", "Stand By Me", "Georgia On My Mind"]
+      },
+      {
+        "name": "Jazz & Bossa Nova",
+        "songs": ["The Girl From Ipanema", "Fly Me To The Moon", "La Vie En Rose", "Garota de Ipanema", "Besame Mucho", "Quizas Quizas"]
+      },
+      {
+        "name": "Pop Internacional",
+        "songs": ["Thinking Out Loud (Ed Sheeran)", "Can't Help Falling In Love (Elvis)", "Make You Feel My Love (Bob Dylan)", "Perfect (Ed Sheeran)", "Shallow (Lady Gaga)", "A Thousand Years"]
+      },
+      {
+        "name": "Español & Latino",
+        "songs": ["Sabor a Mí", "La Flaca (Jarabe de Palo)", "Cómo Te Extraño Mi Amor (Leo Dan)", "Bésame", "Quiero (Chayanne)", "Tú (Alejandro Sanz)"]
+      },
+      {
+        "name": "Temas Propios",
+        "songs": ["Composiciones originales de Nacho Rodríguez", "Disponibles en Spotify y plataformas digitales"]
+      }
+    ],
+    "requestNote": "¿No encontrás tu canción favorita? Contactame con anticipación y la preparo especialmente para tu evento.",
+    "ctaButton": "Solicitar canción especial"
+  },
+  "about": {
+    "metaTitle": "Sobre Nacho Rodríguez | Músico en Riviera Maya",
+    "metaDesc": "Cantautor argentino radicado en la Riviera Maya desde 2014. Rock, blues, jazz y temas propios para bodas y eventos.",
+    "heroTitle": "Sobre Nacho",
+    "storyTitle": "De Mendoza al Caribe",
+    "story": [
+      "Nací en Mendoza, Argentina, rodeado de montañas y vino, y con la guitarra como compañera desde los 12 años.",
+      "En 2014 tomé la decisión de cruzar el continente hasta la Riviera Maya — y no me arrepentí. Esta región me adoptó y yo la adopté a ella.",
+      "Hoy, después de más de 10 años tocando en bodas, hoteles boutique, villas privadas y eventos exclusivos, puedo decir que encontré mi lugar en el mundo: frente a un micrófono, frente a la gente, en el Caribe mexicano.",
+      "Mi música mezcla lo que soy: el rock y el folclore de Argentina, el blues que aprendí escuchando vinilos viejos, el jazz que me enseñó a improvisar, y la influencia tropical de México que se fue colando en mis composiciones."
+    ],
+    "statsTitle": "En números",
+    "stats": [
+      { "value": "10+", "label": "Años en la Riviera Maya" },
+      { "value": "200+", "label": "Bodas y eventos" },
+      { "value": "50+", "label": "Venues en toda la región" },
+      { "value": "200+", "label": "Canciones en repertorio" }
+    ],
+    "musicTitle": "Mi música",
+    "musicText": "Además de tocar en eventos, compongo y grabo mis propias canciones. Podés encontrarlas en Spotify y todas las plataformas de streaming.",
+    "ctaTitle": "¿Charlamos?",
+    "ctaButton": "Contactar"
+  },
+  "contact": {
+    "metaTitle": "Contacto y Cotización | Nacho Rodríguez Músico",
+    "metaDesc": "Cotizá música en vivo para tu boda o evento en la Riviera Maya. Respuesta en menos de 24 horas.",
+    "heroTitle": "Hablemos",
+    "heroSubtitle": "Contame de tu evento y te mando una cotización sin compromiso",
+    "formName": "Nombre",
+    "formEmail": "Email",
+    "formPhone": "Teléfono / WhatsApp",
+    "formEventType": "Tipo de evento",
+    "formEventTypes": ["Boda", "Evento privado", "Hotel / Restaurante", "Villa privada", "Otro"],
+    "formCity": "Ciudad / Venue",
+    "formDate": "Fecha del evento",
+    "formFormat": "Formato",
+    "formFormats": ["Solista (45 min)", "Solista (90 min)", "Dúo (45 min)", "Dúo (90 min)", "No lo decidí aún"],
+    "formMessage": "Cuéntame más sobre tu evento",
+    "formSubmit": "Enviar cotización",
+    "formSending": "Enviando...",
+    "formSuccess": "¡Gracias! Te respondo en menos de 24 horas.",
+    "formError": "Ocurrió un error. Por favor intentá por WhatsApp.",
+    "whatsappText": "¡Hola Nacho! Me interesa cotizar música en vivo para mi evento.",
+    "whatsappButton": "Escribir por WhatsApp",
+    "calculatorTitle": "Cotizador de Precios",
+    "calculatorSubtitle": "Estimá el costo de tu evento",
+    "calcCity": "Ciudad",
+    "calcFormat": "Formato",
+    "calcDuration": "Duración",
+    "calcCities": {
+      "playaDelCarmen": "Playa del Carmen",
+      "tulum": "Tulum",
+      "cancun": "Cancún",
+      "puertoMorelos": "Puerto Morelos"
+    },
+    "calcFormats": { "solo": "Solista", "duo": "Dúo" },
+    "calcDurations": { "45": "45 minutos", "90": "90 minutos" },
+    "calcResult": "Precio estimado",
+    "calcNote": "Precio referencial. El precio final puede variar según distancia, equipo adicional y disponibilidad. Contactame para confirmar."
+  },
+  "liveMusic": {
+    "cities": {
+      "playa-del-carmen": {
+        "name": "Playa del Carmen",
+        "metaTitle": "Músico en Vivo Playa del Carmen | Nacho Rodríguez",
+        "metaDesc": "Música en vivo para bodas y eventos en Playa del Carmen. Solista o dúo, bilingüe ES/EN.",
+        "heroTitle": "Música en Vivo en Playa del Carmen",
+        "desc": "Playa del Carmen es el corazón cosmopolita de la Riviera Maya. Sus playas, la 5ta Avenida y los hoteles boutique del centro son el escenario perfecto para música en vivo de calidad.",
+        "venues": ["Hotel Xcaret México", "Rosewood Mayakoba", "Banyan Tree Mayakoba", "Quinta Avenida", "Coco Bongo Playa"],
+        "slug": "playa-del-carmen"
+      },
+      "tulum": {
+        "name": "Tulum",
+        "metaTitle": "Músico en Vivo Tulum | Nacho Rodríguez",
+        "metaDesc": "Música en vivo para bodas y eventos en Tulum. Ceremonia en cenote, villa o playa. Bilingüe.",
+        "heroTitle": "Música en Vivo en Tulum",
+        "desc": "Tulum: bohemio, espiritual y espectacular. Las villas de la zona hotelera, los cenotes sagrados y las playas paradisíacas merecen la música perfecta.",
+        "venues": ["Azulik Resort", "Habitas Tulum", "Papaya Playa Project", "Cenote Dos Ojos", "Villas privadas Zona Hotelera"],
+        "slug": "tulum"
+      },
+      "cancun": {
+        "name": "Cancún",
+        "metaTitle": "Músico en Vivo Cancún | Nacho Rodríguez",
+        "metaDesc": "Música en vivo para bodas y eventos en Cancún. Hard Rock, Hyatt, Secrets y más. Bilingüe ES/EN.",
+        "heroTitle": "Música en Vivo en Cancún",
+        "desc": "Cancún concentra los hoteles all-inclusive más grandes del Caribe y una activa escena de bodas de destino. Toco en toda la zona hotelera.",
+        "venues": ["Hard Rock Hotel", "Hyatt Ziva Cancún", "Secrets The Vine", "Moon Palace", "Dreams Cancún"],
+        "slug": "cancun"
+      },
+      "puerto-morelos": {
+        "name": "Puerto Morelos",
+        "metaTitle": "Músico en Vivo Puerto Morelos | Nacho Rodríguez",
+        "metaDesc": "Música en vivo para bodas íntimas y eventos en Puerto Morelos. El pueblo más tranquilo y auténtico de la Riviera Maya.",
+        "heroTitle": "Música en Vivo en Puerto Morelos",
+        "desc": "Puerto Morelos es el secreto mejor guardado de la Riviera Maya. Un pueblo de pescadores convertido en destino boutique, perfecto para bodas íntimas y eventos exclusivos.",
+        "venues": ["Now Jade Riviera Cancún", "Zoëtry Paraiso de la Bonita", "Villas privadas", "La Marina"],
+        "slug": "puerto-morelos"
+      }
+    }
+  },
+  "epk": {
+    "metaTitle": "EPK — Electronic Press Kit | Nacho Rodríguez",
+    "metaDesc": "Descargá el dossier completo de Nacho Rodríguez: bio, fotos de prensa, repertorio y tarifas.",
+    "heroTitle": "Electronic Press Kit",
+    "heroSubtitle": "Todo lo que necesitás para contratar a Nacho",
+    "downloadButton": "Descargar EPK (PDF)",
+    "sections": [
+      { "title": "Biografía", "desc": "Historia completa del artista, desde Mendoza hasta la Riviera Maya." },
+      { "title": "Fotos de Prensa", "desc": "Imágenes de alta resolución para publicaciones y material promocional." },
+      { "title": "Repertorio", "desc": "Lista completa de más de 200 canciones en español e inglés." },
+      { "title": "Tarifas", "desc": "Tabla de precios por ciudad, formato y duración." }
+    ]
+  },
+  "blog": {
+    "metaTitle": "Blog | Nacho Rodríguez Músico",
+    "metaDesc": "Consejos para tu boda, guías de venues en Tulum y Playa del Carmen, y stories del camino musical de Nacho.",
+    "heroTitle": "Blog",
+    "heroSubtitle": "Música, bodas, y la vida en la Riviera Maya",
+    "readMore": "Leer más",
+    "categories": ["El Cantautor", "Lifestyle Musical", "Raíces", "Guías y Consejos"],
+    "posts": [
+      {
+        "slug": "mejor-musica-para-boda-en-playa",
+        "title": "Las mejores canciones para una boda en la playa",
+        "excerpt": "Una guía completa para elegir la banda sonora perfecta para tu ceremonia frente al mar Caribe.",
+        "category": "Guías y Consejos",
+        "date": "2024-03-15"
+      },
+      {
+        "slug": "cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen",
+        "title": "¿Cuánto cuesta música en vivo para una boda en Playa del Carmen?",
+        "excerpt": "Desglose completo de precios, formatos y todo lo que necesitás saber antes de contratar música para tu boda.",
+        "category": "Guías y Consejos",
+        "date": "2024-02-20"
+      },
+      {
+        "slug": "de-mendoza-a-tulum",
+        "title": "De Mendoza a Tulum: la historia detrás de la música",
+        "excerpt": "Cómo un guitarrista argentino terminó tocando en las bodas más exclusivas del Caribe mexicano.",
+        "category": "Raíces",
+        "date": "2024-01-10"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Música en vivo que cuenta historias",
+    "location": "Riviera Maya, México",
+    "services": "Servicios",
+    "quickLinks": "Links rápidos",
+    "followMe": "Seguime",
+    "rights": "Todos los derechos reservados",
+    "developedBy": "Desarrollado por",
+    "developer": "Ezequiel Orazi",
+    "developerUrl": "https://ezequiel-orazi.online"
+  }
+}

@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-oro: #B59A5D;
+  --color-oro-dark: #8C763F;
+  --color-negro: #1A1A1A;
+  --color-hueso: #F4F1EA;
+  --color-arena: #DFD6BC;
+  --color-terracota: #c0392b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-negro);
+  color: var(--color-hueso);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cinematic scroll sections */
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Gold line accent */
+.gold-line::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-oro);
+  margin-bottom: 1.5rem;
+}
+
+.gold-line-center::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-oro);
+  margin: 0 auto 1.5rem;
+}
+
+/* Video overlay */
+.video-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0.3) 0%,
+    rgba(26, 26, 26, 0.7) 100%
+  );
+}
+
+/* Fade-in on scroll (IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1A1A1A; }
+::-webkit-scrollbar-thumb { background: #B59A5D; border-radius: 2px; }
+
+/* Selection color */
+::selection { background: rgba(181, 154, 93, 0.3); color: #F4F1EA; }
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-oro);
+  outline-offset: 3px;
+}
+
+/* Button gold */
+.btn-gold {
+  @apply inline-flex items-center gap-2 px-6 py-3 bg-oro text-negro font-sans font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-oro-dark hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply inline-flex items-center gap-2 px-6 py-3 border border-oro text-oro font-sans font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-oro hover:text-negro;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
