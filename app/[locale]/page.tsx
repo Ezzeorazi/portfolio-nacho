@@ -24,7 +24,7 @@ export async function generateMetadata({
   }
 }
 
-export default async function HomePage() {
+export default function HomePage() {
   const t = useTranslations('home')
   const locale = useLocale()
   const heroBgExists = existsSync(join(process.cwd(), 'public', 'hero-bg.webp'))
