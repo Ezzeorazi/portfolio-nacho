@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import '@/app/globals.css'
@@ -21,6 +22,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.SITE_URL || 'https://nachorodriguezmusic.com'),
   title: {
     default: 'Nacho Rodriguez | Músico en Vivo — Riviera Maya',
     template: '%s | Nacho Rodriguez Músico',
@@ -45,12 +47,6 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
-  alternates: {
-    languages: {
-      es: '/es',
-      en: '/en',
-    },
-  },
 }
 
 export function generateStaticParams() {
@@ -77,6 +73,7 @@ export default async function LocaleLayout({
           <Footer />
         </NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="G-50BJRHQ23R" />
     </html>
   )
 }
