@@ -9,7 +9,7 @@
     "about": "Sobre Nacho",
     "blog": "Blog",
     "contact": "Contacto",
-    "epk": "EPK",
+    "epk": "Prensa",
     "bookNow": "Reservar"
   },
   "home": {
@@ -53,6 +53,7 @@
       }
     ],
     "citiesTitle": "Toco en toda la Riviera Maya",
+    "citiesSubtitle": "Con base en la Riviera Maya y disponible para viajar a eventos en todo México.",
     "cities": {
       "playaDelCarmen": "Playa del Carmen",
       "tulum": "Tulum",
@@ -176,6 +177,7 @@
       "Nací en Mendoza, Argentina, rodeado de montañas y vino, y con la guitarra como compañera desde los 12 años.",
       "En 2014 tomé la decisión de cruzar el continente hasta la Riviera Maya — y no me arrepentí. Esta región me adoptó y yo la adopté a ella.",
       "Hoy, después de más de 10 años tocando en bodas, hoteles boutique, villas privadas y eventos exclusivos, puedo decir que encontré mi lugar en el mundo: frente a un micrófono, frente a la gente, en el Caribe mexicano.",
+      "La Riviera Maya es mi casa, pero viajo a donde me necesiten: estoy disponible para bodas y eventos en todo México.",
       "Mi música mezcla lo que soy: el rock y el folclore de Argentina, el blues que aprendí escuchando vinilos viejos, el jazz que me enseñó a improvisar, y la influencia tropical de México que se fue colando en mis composiciones."
     ],
     "statsTitle": "En números",

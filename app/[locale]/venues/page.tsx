@@ -4,11 +4,12 @@ import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'venues' })
-  return { title: t('metaTitle'), description: t('metaDesc') }
+  return { title: t('metaTitle'), description: t('metaDesc'), alternates: altsFor(locale, '/hoteles-restaurantes', '/venues') }
 }
 
 export default function VenuesPage() {

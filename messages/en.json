@@ -9,7 +9,7 @@
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
-    "epk": "EPK",
+    "epk": "Press",
     "bookNow": "Book Now"
   },
   "home": {
@@ -53,6 +53,7 @@
       }
     ],
     "citiesTitle": "I play throughout the Riviera Maya",
+    "citiesSubtitle": "Based in the Riviera Maya and available to travel for events anywhere in Mexico.",
     "cities": {
       "playaDelCarmen": "Playa del Carmen",
       "tulum": "Tulum",
@@ -176,6 +177,7 @@
       "I was born in Mendoza, Argentina, surrounded by mountains and wine, with the guitar as my companion since I was 12 years old.",
       "In 2014 I made the decision to cross the continent to the Riviera Maya — and I have never regretted it. This region adopted me and I adopted it.",
       "Today, after more than 10 years playing at weddings, boutique hotels, private villas, and exclusive events, I can say I found my place in the world: in front of a microphone, in front of people, in the Mexican Caribbean.",
+      "The Riviera Maya is my home, but I travel wherever I'm needed: I'm available for weddings and events anywhere in Mexico.",
       "My music mixes who I am: the rock and folk from Argentina, the blues I learned listening to old vinyls, the jazz that taught me to improvise, and the tropical influence of Mexico that slowly found its way into my compositions."
     ],
     "statsTitle": "By the numbers",

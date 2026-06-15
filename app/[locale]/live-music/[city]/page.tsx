@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import { altsFor } from '@/i18n/seo'
 
 const VALID_CITIES = ['playa-del-carmen', 'tulum', 'cancun', 'puerto-morelos']
 
@@ -26,6 +27,7 @@ export async function generateMetadata({
   return {
     title: cityData.metaTitle,
     description: cityData.metaDesc,
+    alternates: altsFor(locale, `/musica-en-vivo/${city}`, `/live-music/${city}`),
   }
 }
 

@@ -9,7 +9,7 @@ export const routing = defineRouting({
     '/private-events': { es: '/eventos-privados', en: '/private-events' },
     '/venues': { es: '/hoteles-restaurantes', en: '/venues' },
     '/live-music/[city]': {
-      es: '/musica-en-vivo/[ciudad]',
+      es: '/musica-en-vivo/[city]',
       en: '/live-music/[city]',
     },
     '/repertoire': { es: '/repertorio', en: '/repertoire' },

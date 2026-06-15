@@ -4,6 +4,17 @@ import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import { altsFor } from '@/i18n/seo'
+
+// Pares de slug ES ↔ EN (cada post es traducción del otro), para hreflang.
+const SLUG_PAIRS: Record<string, string> = {
+  'mejor-musica-para-boda-en-playa': 'best-songs-beach-wedding-ceremony',
+  'cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen': 'how-much-does-live-music-cost-wedding-mexico',
+  'de-mendoza-a-tulum': 'from-mendoza-to-tulum',
+  'best-songs-beach-wedding-ceremony': 'mejor-musica-para-boda-en-playa',
+  'how-much-does-live-music-cost-wedding-mexico': 'cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen',
+  'from-mendoza-to-tulum': 'de-mendoza-a-tulum',
+}
 
 const BLOG_POSTS: Record<string, Record<string, { title: string; excerpt: string; content: string; category: string; date: string }>> = {
   es: {
@@ -190,7 +201,14 @@ export async function generateMetadata({
   const { locale, slug } = await params
   const post = BLOG_POSTS[locale]?.[slug]
   if (!post) return {}
-  return { title: post.title, description: post.excerpt }
+  const pair = SLUG_PAIRS[slug] ?? slug
+  const esSlug = locale === 'es' ? slug : pair
+  const enSlug = locale === 'en' ? slug : pair
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: altsFor(locale, `/blog/${esSlug}`, `/blog/${enSlug}`),
+  }
 }
 
 export default function BlogPostPage({

@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({
   params,
@@ -15,9 +16,7 @@ export async function generateMetadata({
   return {
     title: t('metaTitle'),
     description: t('metaDesc'),
-    alternates: {
-      languages: { es: '/es/bodas', en: '/en/weddings' },
-    },
+    alternates: altsFor(locale, '/bodas', '/weddings'),
   }
 }
 

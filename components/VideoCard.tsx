@@ -1,8 +1,12 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import Image from 'next/image'
 
 interface VideoCardProps {
+  /** ID de YouTube (ej: 'uJeqJAVMHrA'). Tiene prioridad sobre src. */
+  youtubeId?: string
+  /** URL de archivo de video (mp4, etc.) si no se usa YouTube. */
   src?: string
   poster?: string
   title: string
@@ -10,11 +14,57 @@ interface VideoCardProps {
   className?: string
 }
 
-export default function VideoCard({ src, poster, title, subtitle, className = '' }: VideoCardProps) {
+export default function VideoCard({ youtubeId, src, poster, title, subtitle, className = '' }: VideoCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [muted, setMuted] = useState(true)
   const [playing, setPlaying] = useState(false)
 
+  // ─── Modo YouTube: miniatura hasta que se hace click, después iframe ───
+  if (youtubeId) {
+    const thumb = poster || `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`
+    return (
+      <div className={`relative group overflow-hidden bg-negro aspect-video ${className}`}>
+        {playing ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1`}
+            title={title}
+            allow="accelerated-machine-learning; autoplay; encrypted-media; picture-in-picture; web-share"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          />
+        ) : (
+          <button
+            type="button"
+            onClick={() => setPlaying(true)}
+            aria-label={title}
+            className="absolute inset-0 w-full h-full cursor-pointer"
+          >
+            <Image
+              src={thumb}
+              alt={title}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-negro/40 group-hover:bg-negro/20 transition-all duration-300" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-full border-2 border-oro/80 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:border-oro">
+                <svg className="w-6 h-6 text-oro translate-x-0.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-negro/90 to-transparent text-left">
+              <p className="font-display text-hueso text-sm leading-tight">{title}</p>
+              {subtitle && <p className="font-sans text-arena/70 text-xs mt-0.5">{subtitle}</p>}
+            </div>
+          </button>
+        )}
+      </div>
+    )
+  }
+
+  // ─── Modo archivo de video (o placeholder si no hay src) ───
   const handleClick = () => {
     const v = videoRef.current
     if (!v) return
@@ -44,7 +94,7 @@ export default function VideoCard({ src, poster, title, subtitle, className = ''
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       ) : (
-        /* Placeholder when no video provided yet */
+        /* Placeholder cuando todavía no hay video */
         <div className="w-full h-full bg-gradient-to-br from-negro via-negro/80 to-oro/10 flex items-center justify-center">
           {poster ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -86,15 +136,6 @@ export default function VideoCard({ src, poster, title, subtitle, className = ''
           <p className="font-sans text-arena/70 text-xs mt-0.5">{subtitle}</p>
         )}
       </div>
-
-      {/* Muted hint */}
-      {!playing && (
-        <div className="absolute top-3 right-3">
-          <span className="font-sans text-[10px] tracking-widest uppercase text-oro bg-negro/60 px-2 py-1">
-            {muted ? 'Click to play' : ''}
-          </span>
-        </div>
-      )}
     </div>
   )
 }

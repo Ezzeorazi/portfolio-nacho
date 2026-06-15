@@ -5,11 +5,12 @@ import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import ContactForm from '@/components/ContactForm'
 import PriceCalculator from '@/components/PriceCalculator'
+import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'contact' })
-  return { title: t('metaTitle'), description: t('metaDesc') }
+  return { title: t('metaTitle'), description: t('metaDesc'), alternates: altsFor(locale, '/contacto', '/contact') }
 }
 
 export default function ContactPage() {

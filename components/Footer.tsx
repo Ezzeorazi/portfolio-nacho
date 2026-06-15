@@ -75,6 +75,14 @@ export default function Footer() {
                 Instagram
               </a>
               <a
+                href="https://www.youtube.com/@NachoRodriguezmusic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-xs tracking-widest uppercase text-arena/60 hover:text-oro transition-colors"
+              >
+                YouTube
+              </a>
+              <a
                 href={`https://wa.me/525534010899`}
                 target="_blank"
                 rel="noopener noreferrer"
