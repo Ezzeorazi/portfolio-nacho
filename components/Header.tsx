@@ -32,8 +32,8 @@ export default function Header() {
     { href: `/${locale}/private-events`, label: t('privateEvents') },
     { href: `/${locale}/venues`, label: t('venues') },
     { href: `/${locale}/videos`, label: t('videos') },
+    { href: `/${locale}/epk`, label: t('epk') },
     { href: `/${locale}/about`, label: t('about') },
-    { href: `/${locale}/blog`, label: t('blog') },
   ]
 
   return (
