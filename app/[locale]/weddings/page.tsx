@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -97,16 +96,6 @@ export default function WeddingsPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-negro py-20 px-4 text-center">
-        <RevealOnScroll>
-          <div className="w-12 h-px bg-oro mx-auto mb-6" />
-          <h2 className="font-display text-3xl sm:text-4xl text-hueso mb-4">{t('ctaTitle')}</h2>
-          <p className="font-sans text-arena/70 mb-8">{t('ctaText')}</p>
-          <Link href={`/${locale}/contact`} className="btn-gold">{t('ctaButton')}</Link>
-        </RevealOnScroll>
       </section>
 
       {/* JSON-LD */}

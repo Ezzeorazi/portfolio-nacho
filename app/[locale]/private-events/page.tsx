@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -14,7 +13,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function PrivateEventsPage() {
   const t = useTranslations('privateEvents')
-  const locale = useLocale()
   const types = t.raw('types') as Array<{ title: string; desc: string }>
 
   const icons = ['◆', '◎', '♡', '✦', '♪', '★']
@@ -38,25 +36,6 @@ export default function PrivateEventsPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-hueso py-20 px-4 text-center">
-        <RevealOnScroll>
-          <div className="w-12 h-px bg-oro mx-auto mb-6" />
-          <h2 className="font-display text-3xl text-negro mb-8">{t('ctaTitle')}</h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/${locale}/contact`} className="btn-gold">{t('ctaButton')}</Link>
-            <a
-              href="https://wa.me/525534010899"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-outline !border-negro !text-negro hover:!bg-negro hover:!text-oro"
-            >
-              WhatsApp
-            </a>
-          </div>
-        </RevealOnScroll>
       </section>
     </>
   )

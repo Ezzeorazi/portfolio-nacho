@@ -100,26 +100,6 @@ export default function CityPage({
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-negro py-20 px-4 text-center">
-        <RevealOnScroll>
-          <div className="w-12 h-px bg-oro mx-auto mb-6" />
-          <h2 className="font-display text-3xl text-hueso mb-4">
-            {locale === 'es'
-              ? `¿Tenés un evento en ${cityData.name}?`
-              : `Have an event in ${cityData.name}?`}
-          </h2>
-          <p className="font-sans text-arena/70 mb-8">
-            {locale === 'es'
-              ? 'Cotizá sin compromiso.'
-              : 'Get a no-obligation quote.'}
-          </p>
-          <Link href={`/${locale}/contact`} className="btn-gold">
-            {locale === 'es' ? 'Obtener cotización' : 'Get a quote'}
-          </Link>
-        </RevealOnScroll>
-      </section>
-
       {/* JSON-LD */}
       <script
         type="application/ld+json"

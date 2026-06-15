@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -14,7 +13,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function VenuesPage() {
   const t = useTranslations('venues')
-  const locale = useLocale()
   const forItems = t.raw('for') as Array<{ title: string; desc: string }>
   const why = t.raw('why') as string[]
 
@@ -67,15 +65,6 @@ export default function VenuesPage() {
             ))}
           </ul>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-negro py-20 px-4 text-center">
-        <RevealOnScroll>
-          <div className="w-12 h-px bg-oro mx-auto mb-6" />
-          <h2 className="font-display text-3xl text-hueso mb-8">{t('ctaTitle')}</h2>
-          <Link href={`/${locale}/contact`} className="btn-gold">{t('ctaButton')}</Link>
-        </RevealOnScroll>
       </section>
     </>
   )
