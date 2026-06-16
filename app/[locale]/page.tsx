@@ -66,6 +66,12 @@ export default function HomePage() {
 
         {/* Hero content — anclado abajo para no tapar la cara */}
         <div className="relative w-full text-center px-4 pb-16 sm:pb-20 animate-fade-in">
+          {/* H1 semántico (oculto visualmente; el logo en cursiva es el título visual) */}
+          <h1 className="sr-only">
+            {locale === 'es'
+              ? 'Nacho Rodriguez — Músico en vivo para bodas y eventos en la Riviera Maya y todo México'
+              : 'Nacho Rodriguez — Live musician for weddings and events in the Riviera Maya and across Mexico'}
+          </h1>
           {/* Logo + subtítulo como unidad pegada */}
           <div className="flex flex-col items-center mb-4">
             <Image
