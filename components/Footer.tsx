@@ -31,6 +31,38 @@ export default function Footer() {
     { href: `/${locale}/contact`, label: nav('contact') },
   ]
 
+  const socials = [
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/nachorodriguez.music',
+      icon: (
+        <svg viewBox="0 0 24 24" className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <rect x="2" y="2" width="20" height="20" rx="5.5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none" />
+        </svg>
+      ),
+    },
+    {
+      label: 'YouTube',
+      href: 'https://www.youtube.com/@NachoRodriguezmusic',
+      icon: (
+        <svg viewBox="0 0 24 24" className="w-[20px] h-[20px]" fill="currentColor">
+          <path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.2 5 12 5 12 5s-7.2 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.8 19 12 19 12 19s7.2 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" />
+        </svg>
+      ),
+    },
+    {
+      label: 'WhatsApp',
+      href: 'https://wa.me/525534010899',
+      icon: (
+        <svg viewBox="0 0 24 24" className="w-[18px] h-[18px]" fill="currentColor">
+          <path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15l-1.1 4 4.1-1.1A10 10 0 1 0 12 2z" />
+        </svg>
+      ),
+    },
+  ]
+
   return (
     <footer className="bg-negro border-t border-arena/10">
       {/* Top CTA banner — oculto en la página de Contacto */}
@@ -61,7 +93,7 @@ export default function Footer() {
 
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href={`/${locale}`}>
@@ -73,71 +105,63 @@ export default function Footer() {
             <p className="font-sans text-sm text-arena/80 italic mb-4">{t('tagline')}</p>
             <p className="font-sans text-xs text-arena/60">{t('location')}</p>
 
-            {/* Social */}
-            <div className="flex gap-4 mt-6">
-              <a
-                href="https://www.instagram.com/nachorodriguez.music"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-xs tracking-widest uppercase text-arena/60 hover:text-oro transition-colors"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://www.youtube.com/@NachoRodriguezmusic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-xs tracking-widest uppercase text-arena/60 hover:text-oro transition-colors"
-              >
-                YouTube
-              </a>
-              <a
-                href={`https://wa.me/525534010899`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-xs tracking-widest uppercase text-arena/60 hover:text-oro transition-colors"
-              >
-                WhatsApp
-              </a>
+            {/* Social — íconos */}
+            <div className="flex gap-3 mt-6">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  title={s.label}
+                  className="w-10 h-10 flex items-center justify-center rounded-full border border-arena/20 text-arena/70 hover:text-oro hover:border-oro transition-colors"
+                >
+                  {s.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-oro mb-4">
-              {t('services')}
-            </p>
-            <ul className="space-y-2">
-              {services.map((s) => (
-                <li key={s.href}>
-                  <Link
-                    href={s.href}
-                    className="font-sans text-xs text-arena/70 hover:text-oro transition-colors"
-                  >
-                    {s.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Servicios + Links: 2 columnas en mobile, fluyen al grid en desktop */}
+          <div className="grid grid-cols-2 gap-6 border-t border-arena/10 pt-8 md:border-t-0 md:pt-0 md:contents">
+            {/* Services */}
+            <div>
+              <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-oro mb-4">
+                {t('services')}
+              </p>
+              <ul className="space-y-2.5">
+                {services.map((s) => (
+                  <li key={s.href}>
+                    <Link
+                      href={s.href}
+                      className="font-sans text-xs text-arena/70 hover:text-oro transition-colors"
+                    >
+                      {s.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Links */}
-          <div>
-            <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-oro mb-4">
-              {t('quickLinks')}
-            </p>
-            <ul className="space-y-2">
-              {links.map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="font-sans text-xs text-arena/70 hover:text-oro transition-colors"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Links */}
+            <div>
+              <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-oro mb-4">
+                {t('quickLinks')}
+              </p>
+              <ul className="space-y-2.5">
+                {links.map((l) => (
+                  <li key={l.href}>
+                    <Link
+                      href={l.href}
+                      className="font-sans text-xs text-arena/70 hover:text-oro transition-colors"
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
