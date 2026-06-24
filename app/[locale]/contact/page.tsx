@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import ContactForm from '@/components/ContactForm'
 import { altsFor } from '@/i18n/seo'
@@ -18,10 +17,9 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero title={t('heroTitle')} subtitle={t('heroSubtitle')} />
-
-      <section className="bg-negro py-16 px-4">
+      <section className="bg-negro pt-32 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
+          <h1 className="sr-only">{t('heroTitle')}</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Form */}
             <RevealOnScroll>
@@ -75,7 +73,7 @@ export default function ContactPage() {
                     <span className="text-oro">◈</span> @nachorodriguez.music
                   </a>
                   <p className="flex items-center gap-3 font-sans text-sm text-arena/70">
-                    <span className="text-oro">◎</span> Riviera Maya, México
+                    <span className="text-oro">◎</span> México · Estados Unidos
                   </p>
                 </div>
               </div>

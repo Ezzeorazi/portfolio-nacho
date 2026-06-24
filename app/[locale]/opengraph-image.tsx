@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'Nacho Rodriguez — Músico en Vivo · Riviera Maya'
+export const alt = 'Nacho Rodriguez — Música en vivo para bodas y eventos'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -42,7 +42,7 @@ export default function OGImage() {
         {/* Content */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
           <p style={{ color: '#B59A5D', fontSize: '14px', letterSpacing: '0.4em', textTransform: 'uppercase', fontFamily: 'serif', margin: 0 }}>
-            RIVIERA MAYA · MÉXICO
+            BODAS & EVENTOS · MÉXICO & USA
           </p>
           <div style={{ width: '60px', height: '1px', background: '#B59A5D' }} />
           <h1 style={{ color: '#F4F1EA', fontSize: '72px', fontFamily: 'serif', margin: 0, textAlign: 'center', lineHeight: 1 }}>

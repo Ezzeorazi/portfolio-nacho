@@ -15,18 +15,20 @@
   },
   "home": {
     "heroTitle": "Nacho Rodriguez",
-    "heroSubtitle": "Musician",
-    "heroTagline": "Live music for unforgettable moments in the Riviera Maya",
-    "heroLocation": "Riviera Maya · Mexico",
+    "heroSubtitle": "Live Music · Weddings & Events",
+    "heroTagline": "Live music that tells stories",
+    "heroLocation": "Mexico & United States",
     "heroCta": "Book your date",
     "heroCtaSecondary": "View repertoire",
-    "statementTitle": "One voice. One guitar. An unforgettable experience.",
-    "statementText": "From Mendoza to the Riviera Maya, I have been creating unforgettable musical moments for over 10 years. Rock, blues, jazz, country and my own compositions — in the intimate format your event deserves.",
+    "statementTitle": "Over 10 years making every event memorable.",
+    "statementText": "From Mendoza to the finest stages in Mexico, I've spent over 10 years creating musical experiences for weddings and events. Rock, blues, jazz, country and original compositions, with the versatility and professional level your event deserves.",
     "formatsTitle": "How do you want your music?",
     "formatsSoloTitle": "Solo",
-    "formatsSoloDesc": "Voice + acoustic guitar. Perfect for ceremonies, cocktail hours, and intimate dinners.",
+    "formatsSoloDesc": "Voice and guitar. Versatile and elegant for ceremonies, cocktail hours, and dinners.",
     "formatsDuoTitle": "Duo",
-    "formatsDuoDesc": "Greater power and sonic richness. Ideal for receptions and larger events.",
+    "formatsDuoDesc": "More power and sonic richness. Ideal for receptions and larger-scale events.",
+    "formatsBandaTitle": "Band",
+    "formatsBandaDesc": "A full lineup for larger-scale productions. More musicians, more energy — perfect for receptions and parties that call for it.",
     "servicesTitle": "For every special moment",
     "services": {
       "weddings": {
@@ -35,7 +37,7 @@
       },
       "private": {
         "title": "Private Events",
-        "desc": "Villa dinners, private parties, and exclusive celebrations in the Riviera Maya."
+        "desc": "Villa dinners, private parties, and exclusive celebrations."
       },
       "venues": {
         "title": "Hotels & Restaurants",
@@ -46,8 +48,8 @@
     "reelSubtitle": "Click on any video to turn on the sound",
     "testimonialsTitle": "What my clients say",
     "testimonials": [],
-    "citiesTitle": "I play throughout the Riviera Maya",
-    "citiesSubtitle": "Based in the Riviera Maya and available to travel for events anywhere in Mexico.",
+    "citiesTitle": "Where I play",
+    "citiesSubtitle": "Based in the Riviera Maya and available for events across Mexico and the United States.",
     "cities": {
       "playaDelCarmen": "Playa del Carmen",
       "tulum": "Tulum",
@@ -60,7 +62,7 @@
     "ctaWhatsapp": "Message on WhatsApp"
   },
   "weddings": {
-    "metaTitle": "Wedding Musician Riviera Maya | Nacho Rodriguez",
+    "metaTitle": "Wedding Musician in Mexico & USA | Nacho Rodriguez",
     "metaDesc": "Live music for weddings in Playa del Carmen, Tulum, Cancun and Puerto Morelos. Bilingual ES/EN. Solo or duo. Free quote.",
     "heroTitle": "Weddings",
     "heroSubtitle": "Live music that makes your most important moments unforgettable",
@@ -114,7 +116,7 @@
     "ctaButton": "Request a quote"
   },
   "privateEvents": {
-    "metaTitle": "Musician for Private Events in Riviera Maya | Nacho Rodriguez",
+    "metaTitle": "Musician for Private Events | Nacho Rodriguez",
     "metaDesc": "Live music for private events, villa dinners, exclusive parties in Tulum, Playa del Carmen and Cancun.",
     "heroTitle": "Private Events",
     "heroSubtitle": "The perfect music for your most exclusive celebrations",
@@ -148,7 +150,7 @@
     "ctaButton": "Contact me"
   },
   "venues": {
-    "metaTitle": "Live Music for Hotels and Restaurants | Riviera Maya | Nacho Rodriguez",
+    "metaTitle": "Live Music for Hotels & Restaurants | Nacho Rodriguez",
     "metaDesc": "Live music shows for boutique hotels, restaurants and planners in the Riviera Maya. Professional, bilingual, punctual.",
     "heroTitle": "Hotels, Restaurants & Villas",
     "heroSubtitle": "Elevate your guests' experience with quality live music",
@@ -255,7 +257,7 @@
     "ctaButton": "Request a special song"
   },
   "about": {
-    "metaTitle": "About Nacho Rodriguez | Musician in Riviera Maya",
+    "metaTitle": "About Nacho Rodriguez | Musician for Weddings & Events",
     "metaDesc": "Argentine singer-songwriter based in the Riviera Maya since 2014. Rock, blues, jazz and original songs for weddings and events.",
     "heroTitle": "About Nacho",
     "storyTitle": "From Mendoza to the Caribbean",
@@ -471,7 +473,7 @@
   },
   "footer": {
     "tagline": "Live music that tells stories",
-    "location": "Riviera Maya, Mexico",
+    "location": "Mexico · United States",
     "services": "Services",
     "quickLinks": "Quick links",
     "followMe": "Follow me",

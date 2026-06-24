@@ -1,11 +1,18 @@
+'use client'
+
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
   const t = useTranslations('footer')
   const nav = useTranslations('nav')
   const locale = useLocale()
+  const pathname = usePathname()
   const year = new Date().getFullYear()
+
+  // La barra de CTA no se muestra en Contacto (el usuario ya está ahí)
+  const isContact = pathname?.includes('/contact')
 
   const services = [
     { href: `/${locale}/weddings`, label: nav('weddings') },
@@ -26,29 +33,31 @@ export default function Footer() {
 
   return (
     <footer className="bg-negro border-t border-arena/10">
-      {/* Top CTA banner */}
-      <div className="bg-oro/10 border-b border-oro/20 py-8 px-4 text-center">
-        <p className="font-display text-2xl text-oro mb-3">
-          {locale === 'es' ? '¿Listo para reservar tu fecha?' : 'Ready to book your date?'}
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <Link href={`/${locale}/contact`} className="btn-gold">
-            {locale === 'es' ? 'Solicitar cotización' : 'Get a quote'}
-          </Link>
-          <a
-            href={`https://wa.me/525534010899?text=${encodeURIComponent(
-              locale === 'es'
-                ? '¡Hola Nacho! Me interesa cotizar música en vivo para mi evento.'
-                : 'Hi Nacho! I am interested in getting a quote for live music at my event.'
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-outline"
-          >
-            WhatsApp
-          </a>
+      {/* Top CTA banner — oculto en la página de Contacto */}
+      {!isContact && (
+        <div className="bg-oro/10 border-b border-oro/20 py-8 px-4 text-center">
+          <p className="font-display text-2xl text-oro mb-3">
+            {locale === 'es' ? '¿Listo para reservar tu fecha?' : 'Ready to book your date?'}
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Link href={`/${locale}/contact`} className="btn-gold">
+              {locale === 'es' ? 'Solicitar cotización' : 'Get a quote'}
+            </Link>
+            <a
+              href={`https://wa.me/525534010899?text=${encodeURIComponent(
+                locale === 'es'
+                  ? '¡Hola Nacho! Me interesa cotizar música en vivo para mi evento.'
+                  : 'Hi Nacho! I am interested in getting a quote for live music at my event.'
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline"
+            >
+              WhatsApp
+            </a>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
@@ -58,7 +67,7 @@ export default function Footer() {
             <Link href={`/${locale}`}>
               <p className="font-display text-2xl text-oro mb-1">Nacho Rodriguez</p>
               <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-arena mb-4">
-                {locale === 'es' ? 'Músico · Riviera Maya' : 'Musician · Riviera Maya'}
+                {locale === 'es' ? 'Músico · Música en vivo' : 'Musician · Live Music'}
               </p>
             </Link>
             <p className="font-sans text-sm text-arena/80 italic mb-4">{t('tagline')}</p>

@@ -15,11 +15,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   return {
-    title: 'Nacho Rodriguez | Músico en Vivo — Riviera Maya',
+    title: 'Nacho Rodriguez | Música en Vivo para Bodas y Eventos',
     description:
       locale === 'es'
-        ? 'Músico en vivo para bodas y eventos en la Riviera Maya y todo México. Cantautor bilingüe ES/EN — Playa del Carmen, Tulum, Cancún. Disponible para viajar.'
-        : 'Live musician for weddings and events in the Riviera Maya and across Mexico. Bilingual singer-songwriter ES/EN — Playa del Carmen, Tulum, Cancún. Available to travel.',
+        ? 'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista o dúo. Disponible para viajar.'
+        : 'Professional live music for weddings and private events across Mexico and the United States. 10+ years of experience, versatile repertoire, solo or duo format. Available to travel.',
     alternates: altsFor(locale, '', ''),
   }
 }
@@ -65,7 +65,7 @@ export default function HomePage() {
           heroPosterExists && (
             <Image
               src="/hero-poster.webp"
-              alt="Nacho Rodriguez — músico en vivo Riviera Maya"
+              alt="Nacho Rodriguez — Música en vivo para bodas y eventos"
               fill
               priority
               quality={85}
@@ -89,8 +89,8 @@ export default function HomePage() {
           {/* H1 semántico (oculto visualmente; el logo en cursiva es el título visual) */}
           <h1 className="sr-only">
             {locale === 'es'
-              ? 'Nacho Rodriguez — Músico en vivo para bodas y eventos en la Riviera Maya y todo México'
-              : 'Nacho Rodriguez — Live musician for weddings and events in the Riviera Maya and across Mexico'}
+              ? 'Nacho Rodriguez — Música en vivo profesional para bodas y eventos'
+              : 'Nacho Rodriguez — Professional live music for weddings and events'}
           </h1>
           {/* Logo + subtítulo como unidad pegada */}
           <div className="flex flex-col items-center mb-4">
@@ -170,7 +170,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════
-          3. FORMATS — Solista / Dúo
+          3. FORMATS — Solista / Dúo / Banda
          ═══════════════════════════════════════ */}
       <section className="bg-negro py-24 px-4">
         <div className="max-w-7xl mx-auto">
@@ -179,33 +179,29 @@ export default function HomePage() {
               {t('formatsTitle')}
             </p>
           </RevealOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px mt-12 border border-oro/10">
-            {/* Solista */}
-            <RevealOnScroll className="bg-negro p-10 md:p-14 border-b md:border-b-0 border-r-0 md:border-r border-oro/10">
-              <div className="w-10 h-px bg-oro mb-6" />
-              <h3 className="font-display text-4xl text-hueso mb-4">{t('formatsSoloTitle')}</h3>
-              <p className="font-sans text-arena/70 leading-relaxed">{t('formatsSoloDesc')}</p>
-              <Link
-                href={`/${locale}/contact`}
-                className="inline-flex items-center gap-2 mt-8 font-sans text-xs tracking-widest uppercase text-oro hover:gap-4 transition-all"
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px mt-12 border border-oro/10">
+            {[
+              { title: t('formatsSoloTitle'), desc: t('formatsSoloDesc'), accent: 'bg-oro' },
+              { title: t('formatsDuoTitle'), desc: t('formatsDuoDesc'), accent: 'bg-terracota' },
+              { title: t('formatsBandaTitle'), desc: t('formatsBandaDesc'), accent: 'bg-oro' },
+            ].map((f, i) => (
+              <RevealOnScroll
+                key={f.title}
+                delay={i * 150}
+                className="bg-negro p-10 md:p-14 border-t md:border-t-0 md:border-l first:border-t-0 md:first:border-l-0 border-oro/10"
               >
-                {locale === 'es' ? 'Consultar precio' : 'Check price'}
-                <span>→</span>
-              </Link>
-            </RevealOnScroll>
-            {/* Dúo */}
-            <RevealOnScroll delay={150} className="bg-negro/80 p-10 md:p-14">
-              <div className="w-10 h-px bg-terracota mb-6" />
-              <h3 className="font-display text-4xl text-hueso mb-4">{t('formatsDuoTitle')}</h3>
-              <p className="font-sans text-arena/70 leading-relaxed">{t('formatsDuoDesc')}</p>
-              <Link
-                href={`/${locale}/contact`}
-                className="inline-flex items-center gap-2 mt-8 font-sans text-xs tracking-widest uppercase text-oro hover:gap-4 transition-all"
-              >
-                {locale === 'es' ? 'Consultar precio' : 'Check price'}
-                <span>→</span>
-              </Link>
-            </RevealOnScroll>
+                <div className={`w-10 h-px ${f.accent} mb-6`} />
+                <h3 className="font-display text-4xl text-hueso mb-4">{f.title}</h3>
+                <p className="font-sans text-arena/70 leading-relaxed">{f.desc}</p>
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center gap-2 mt-8 font-sans text-xs tracking-widest uppercase text-oro hover:gap-4 transition-all"
+                >
+                  {locale === 'es' ? 'Consultar precio' : 'Check price'}
+                  <span>→</span>
+                </Link>
+              </RevealOnScroll>
+            ))}
           </div>
         </div>
       </section>
@@ -340,16 +336,17 @@ export default function HomePage() {
                 name: 'Nacho Rodriguez',
                 genre: ['Rock', 'Blues', 'Jazz', 'Country', 'Latin'],
                 url: 'https://nachorodriguezmusic.com',
+                areaServed: ['México', 'Estados Unidos'],
               },
               {
                 '@type': 'LocalBusiness',
-                name: 'Nacho Rodriguez — Músico en Vivo',
+                name: 'Nacho Rodriguez — Música en Vivo',
                 description: locale === 'es'
-                  ? 'Músico en vivo para bodas y eventos en la Riviera Maya'
-                  : 'Live musician for weddings and events in the Riviera Maya',
+                  ? 'Música en vivo profesional para bodas y eventos en México y Estados Unidos'
+                  : 'Professional live music for weddings and events in Mexico and the United States',
                 url: 'https://nachorodriguezmusic.com',
                 telephone: '+525534010899',
-                areaServed: ['Playa del Carmen', 'Tulum', 'Cancún', 'Puerto Morelos', 'Riviera Maya', 'México'],
+                areaServed: ['México', 'Estados Unidos'],
               },
             ],
           }),

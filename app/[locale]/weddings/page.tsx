@@ -107,7 +107,7 @@ export default function WeddingsPage() {
             '@type': 'Service',
             name: locale === 'es' ? 'Música en Vivo para Bodas' : 'Live Music for Weddings',
             provider: { '@type': 'Person', name: 'Nacho Rodriguez' },
-            areaServed: 'Riviera Maya, Mexico',
+            areaServed: ['Mexico', 'United States'],
             description: t('metaDesc'),
             '@id': `https://nachorodriguezmusic.com/${locale}/weddings`,
           }),

@@ -24,19 +24,19 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || 'https://nachorodriguezmusic.com'),
   title: {
-    default: 'Nacho Rodriguez | Músico en Vivo — Riviera Maya',
+    default: 'Nacho Rodriguez | Música en Vivo para Bodas y Eventos',
     template: '%s | Nacho Rodriguez Músico',
   },
   description:
-    'Músico en vivo para bodas y eventos en la Riviera Maya. Cantautor bilingüe ES/EN — Playa del Carmen, Tulum, Cancún. Solista o dúo.',
+    'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista o dúo. Disponible para viajar.',
   keywords: [
-    'wedding musician Riviera Maya',
-    'live music wedding Tulum',
-    'acoustic guitarist wedding Riviera Maya',
-    'músico para bodas Playa del Carmen',
-    'música en vivo Tulum',
-    'cantante para bodas Riviera Maya',
-    'bilingual wedding singer Mexico',
+    'música en vivo para bodas',
+    'músico para eventos',
+    'live wedding music Mexico',
+    'destination wedding musician',
+    'música en vivo eventos privados',
+    'músico profesional bodas',
+    'bilingual wedding singer',
   ],
   authors: [{ name: 'Nacho Rodriguez' }],
   openGraph: {
