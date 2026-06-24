@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-negro/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        scrolled || open ? 'bg-negro/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
@@ -141,8 +141,8 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 right-0 bg-negro/98 backdrop-blur-sm transition-all duration-300 overflow-hidden ${
-          open ? 'max-h-screen py-6' : 'max-h-0'
+        className={`lg:hidden absolute top-full left-0 right-0 bg-negro border-t border-arena/10 shadow-2xl transition-all duration-300 overflow-hidden ${
+          open ? 'max-h-screen py-8' : 'max-h-0'
         }`}
       >
         <nav className="flex flex-col items-center gap-5 px-4">
