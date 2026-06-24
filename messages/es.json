@@ -4,6 +4,7 @@
     "weddings": "Bodas",
     "privateEvents": "Eventos Privados",
     "venues": "Hoteles y Restaurantes",
+    "liveMusic": "Música para tu evento",
     "repertoire": "Repertorio",
     "videos": "Videos",
     "about": "Sobre Nacho",
@@ -28,30 +29,23 @@
     "formatsDuoDesc": "Mayor potencia y riqueza sonora. Ideal para recepciones y eventos más grandes.",
     "servicesTitle": "Para cada momento especial",
     "services": {
-      "weddings": { "title": "Bodas", "desc": "Desde la ceremonia hasta el último baile. Música que acompaña cada emoción de tu gran día." },
-      "private": { "title": "Eventos Privados", "desc": "Cenas en villas, fiestas privadas y celebraciones exclusivas en la Riviera Maya." },
-      "venues": { "title": "Hoteles y Restaurantes", "desc": "Shows en vivo para hoteles boutique, restaurantes y planners de eventos." }
+      "weddings": {
+        "title": "Bodas",
+        "desc": "Desde la ceremonia hasta el último baile. Música que acompaña cada emoción de tu gran día."
+      },
+      "private": {
+        "title": "Eventos Privados",
+        "desc": "Cenas en villas, fiestas privadas y celebraciones exclusivas en la Riviera Maya."
+      },
+      "venues": {
+        "title": "Hoteles y Restaurantes",
+        "desc": "Shows en vivo para hoteles boutique, restaurantes y planners de eventos."
+      }
     },
     "reelTitle": "Escúchame en vivo",
     "reelSubtitle": "Hacé clic en cualquier video para activar el sonido",
     "testimonialsTitle": "Lo que dicen mis clientes",
-    "testimonials": [
-      {
-        "text": "Nacho hizo nuestra boda perfecta. Su música creó una atmósfera mágica que nuestros invitados siguen recordando.",
-        "author": "María & Tom",
-        "event": "Boda en Tulum, 2023"
-      },
-      {
-        "text": "Increíble talento y profesionalismo. Llegó puntual, adaptó el repertorio en tiempo real y tocó hasta el final. 100% recomendado.",
-        "author": "Carlos Méndez",
-        "event": "Evento corporativo, Playa del Carmen"
-      },
-      {
-        "text": "Our guests couldn't stop talking about the musician. Bilingual, talented, and absolutely perfect for our villa dinner.",
-        "author": "Sarah & James",
-        "event": "Villa privada, Tulum, 2024"
-      }
-    ],
+    "testimonials": [],
     "citiesTitle": "Toco en toda la Riviera Maya",
     "citiesSubtitle": "Con base en la Riviera Maya y disponible para viajar a eventos en todo México.",
     "cities": {
@@ -79,17 +73,41 @@
     ],
     "momentsTitle": "Para cada momento de tu boda",
     "moments": [
-      { "title": "Ceremonia", "desc": "La entrada de la novia, el intercambio de votos, la salida. Música emocionante para cada instante." },
-      { "title": "Cóctel", "desc": "Ambiente cálido y sofisticado mientras tus invitados se mezclan y brindan." },
-      { "title": "Cena", "desc": "Música suave e íntima que acompaña la velada sin competir con las conversaciones." },
-      { "title": "Recepción", "desc": "Energía y alegría para hacer bailar a todos tus invitados." }
+      {
+        "title": "Ceremonia",
+        "desc": "La entrada de la novia, el intercambio de votos, la salida. Música emocionante para cada instante."
+      },
+      {
+        "title": "Cóctel",
+        "desc": "Ambiente cálido y sofisticado mientras tus invitados se mezclan y brindan."
+      },
+      {
+        "title": "Cena",
+        "desc": "Música suave e íntima que acompaña la velada sin competir con las conversaciones."
+      },
+      {
+        "title": "Recepción",
+        "desc": "Energía y alegría para hacer bailar a todos tus invitados."
+      }
     ],
     "faqTitle": "Preguntas frecuentes",
     "faqs": [
-      { "q": "¿Con cuánta anticipación debo reservar?", "a": "Se recomienda reservar con al menos 3-6 meses de anticipación, especialmente para temporada alta (noviembre-abril)." },
-      { "q": "¿Tocan en exteriores?", "a": "Sí, tengo equipo profesional adaptado para exteriores: playas, jardines, cenotes y villas." },
-      { "q": "¿Puedo pedir canciones específicas?", "a": "Absolutamente. Comparto mi repertorio completo y podemos personalizarlo. Para canciones especiales avísame con anticipación." },
-      { "q": "¿Incluye equipo de sonido?", "a": "Sí, incluye equipo de amplificación profesional adecuado para el tipo de evento." }
+      {
+        "q": "¿Con cuánta anticipación debo reservar?",
+        "a": "Se recomienda reservar con al menos 3-6 meses de anticipación, especialmente para temporada alta (noviembre-abril)."
+      },
+      {
+        "q": "¿Tocan en exteriores?",
+        "a": "Sí, tengo equipo profesional adaptado para exteriores: playas, jardines, cenotes y villas."
+      },
+      {
+        "q": "¿Puedo pedir canciones específicas?",
+        "a": "Absolutamente. Comparto mi repertorio completo y podemos personalizarlo. Para canciones especiales avísame con anticipación."
+      },
+      {
+        "q": "¿Incluye equipo de sonido?",
+        "a": "Sí, incluye equipo de amplificación profesional adecuado para el tipo de evento."
+      }
     ],
     "ctaTitle": "Cotiza tu boda",
     "ctaText": "Sin compromiso. Te respondo en menos de 24 horas.",
@@ -101,12 +119,30 @@
     "heroTitle": "Eventos Privados",
     "heroSubtitle": "La música perfecta para tus celebraciones más exclusivas",
     "types": [
-      { "title": "Cenas en Villa", "desc": "Música íntima para veladas privadas en las mejores villas de la Riviera Maya." },
-      { "title": "Cumpleaños", "desc": "Celebra tu cumpleaños con un show en vivo personalizado." },
-      { "title": "Aniversarios", "desc": "Revive momentos especiales con la música que los acompaña." },
-      { "title": "Despedidas", "desc": "El broche de oro para una despedida de soltero/a inolvidable." },
-      { "title": "Eventos Corporativos", "desc": "Cenas de empresa, lanzamientos y activaciones con música de fondo o show en vivo." },
-      { "title": "A Pedido", "desc": "¿Tenés una idea especial? Hablemos y lo hacemos realidad." }
+      {
+        "title": "Cenas en Villa",
+        "desc": "Música íntima para veladas privadas en las mejores villas de la Riviera Maya."
+      },
+      {
+        "title": "Cumpleaños",
+        "desc": "Celebra tu cumpleaños con un show en vivo personalizado."
+      },
+      {
+        "title": "Aniversarios",
+        "desc": "Revive momentos especiales con la música que los acompaña."
+      },
+      {
+        "title": "Despedidas",
+        "desc": "El broche de oro para una despedida de soltero/a inolvidable."
+      },
+      {
+        "title": "Eventos Corporativos",
+        "desc": "Cenas de empresa, lanzamientos y activaciones con música de fondo o show en vivo."
+      },
+      {
+        "title": "A Pedido",
+        "desc": "¿Tenés una idea especial? Hablemos y lo hacemos realidad."
+      }
     ],
     "ctaTitle": "¿Qué tenés en mente?",
     "ctaButton": "Contáctame"
@@ -118,10 +154,22 @@
     "heroSubtitle": "Eleva la experiencia de tus huéspedes con música en vivo de calidad",
     "forTitle": "Ideal para",
     "for": [
-      { "title": "Hoteles Boutique", "desc": "Shows regulares o eventos especiales que diferencian tu propiedad." },
-      { "title": "Restaurantes", "desc": "Ambiente musical en vivo que incrementa el ticket promedio y la permanencia." },
-      { "title": "Villas Privadas", "desc": "Servicio premium para huéspedes de alto nivel." },
-      { "title": "Wedding Planners", "desc": "Músico confiable para tus clientes. Trabajo con agenda flexible y presupuestos múltiples." }
+      {
+        "title": "Hoteles Boutique",
+        "desc": "Shows regulares o eventos especiales que diferencian tu propiedad."
+      },
+      {
+        "title": "Restaurantes",
+        "desc": "Ambiente musical en vivo que incrementa el ticket promedio y la permanencia."
+      },
+      {
+        "title": "Villas Privadas",
+        "desc": "Servicio premium para huéspedes de alto nivel."
+      },
+      {
+        "title": "Wedding Planners",
+        "desc": "Músico confiable para tus clientes. Trabajo con agenda flexible y presupuestos múltiples."
+      }
     ],
     "whyTitle": "Por qué trabajar conmigo",
     "why": [
@@ -142,27 +190,65 @@
     "genres": [
       {
         "name": "Rock Clásico",
-        "songs": ["Hotel California (Eagles)", "Wonderwall (Oasis)", "Wish You Were Here (Pink Floyd)", "Black (Pearl Jam)", "More Than Words (Extreme)", "Wild World (Cat Stevens)"]
+        "songs": [
+          "Hotel California (Eagles)",
+          "Wonderwall (Oasis)",
+          "Wish You Were Here (Pink Floyd)",
+          "Black (Pearl Jam)",
+          "More Than Words (Extreme)",
+          "Wild World (Cat Stevens)"
+        ]
       },
       {
         "name": "Blues & Soul",
-        "songs": ["Feeling Good", "Summertime", "The Thrill Is Gone", "Ain't No Sunshine", "Stand By Me", "Georgia On My Mind"]
+        "songs": [
+          "Feeling Good",
+          "Summertime",
+          "The Thrill Is Gone",
+          "Ain't No Sunshine",
+          "Stand By Me",
+          "Georgia On My Mind"
+        ]
       },
       {
         "name": "Jazz & Bossa Nova",
-        "songs": ["The Girl From Ipanema", "Fly Me To The Moon", "La Vie En Rose", "Garota de Ipanema", "Besame Mucho", "Quizas Quizas"]
+        "songs": [
+          "The Girl From Ipanema",
+          "Fly Me To The Moon",
+          "La Vie En Rose",
+          "Garota de Ipanema",
+          "Besame Mucho",
+          "Quizas Quizas"
+        ]
       },
       {
         "name": "Pop Internacional",
-        "songs": ["Thinking Out Loud (Ed Sheeran)", "Can't Help Falling In Love (Elvis)", "Make You Feel My Love (Bob Dylan)", "Perfect (Ed Sheeran)", "Shallow (Lady Gaga)", "A Thousand Years"]
+        "songs": [
+          "Thinking Out Loud (Ed Sheeran)",
+          "Can't Help Falling In Love (Elvis)",
+          "Make You Feel My Love (Bob Dylan)",
+          "Perfect (Ed Sheeran)",
+          "Shallow (Lady Gaga)",
+          "A Thousand Years"
+        ]
       },
       {
         "name": "Español & Latino",
-        "songs": ["Sabor a Mí", "La Flaca (Jarabe de Palo)", "Cómo Te Extraño Mi Amor (Leo Dan)", "Bésame", "Quiero (Chayanne)", "Tú (Alejandro Sanz)"]
+        "songs": [
+          "Sabor a Mí",
+          "La Flaca (Jarabe de Palo)",
+          "Cómo Te Extraño Mi Amor (Leo Dan)",
+          "Bésame",
+          "Quiero (Chayanne)",
+          "Tú (Alejandro Sanz)"
+        ]
       },
       {
         "name": "Temas Propios",
-        "songs": ["Composiciones originales de Nacho Rodriguez", "Disponibles en Spotify y plataformas digitales"]
+        "songs": [
+          "Composiciones originales de Nacho Rodriguez",
+          "Disponibles en Spotify y plataformas digitales"
+        ]
       }
     ],
     "requestNote": "¿No encontrás tu canción favorita? Contactame con anticipación y la preparo especialmente para tu evento.",
@@ -182,10 +268,22 @@
     ],
     "statsTitle": "En números",
     "stats": [
-      { "value": "10+", "label": "Años en la Riviera Maya" },
-      { "value": "200+", "label": "Bodas y eventos" },
-      { "value": "50+", "label": "Venues en toda la región" },
-      { "value": "200+", "label": "Canciones en repertorio" }
+      {
+        "value": "10+",
+        "label": "Años en la Riviera Maya"
+      },
+      {
+        "value": "200+",
+        "label": "Bodas y eventos"
+      },
+      {
+        "value": "50+",
+        "label": "Venues en toda la región"
+      },
+      {
+        "value": "200+",
+        "label": "Canciones en repertorio"
+      }
     ],
     "musicTitle": "Mi música",
     "musicText": "Además de tocar en eventos, compongo y grabo mis propias canciones. Podés encontrarlas en Spotify y todas las plataformas de streaming.",
@@ -201,11 +299,23 @@
     "formEmail": "Email",
     "formPhone": "Teléfono / WhatsApp",
     "formEventType": "Tipo de evento",
-    "formEventTypes": ["Boda", "Evento privado", "Hotel / Restaurante", "Villa privada", "Otro"],
+    "formEventTypes": [
+      "Boda",
+      "Evento privado",
+      "Hotel / Restaurante",
+      "Villa privada",
+      "Otro"
+    ],
     "formCity": "Ciudad / Venue",
     "formDate": "Fecha del evento",
     "formFormat": "Formato",
-    "formFormats": ["Solista (45 min)", "Solista (90 min)", "Dúo (45 min)", "Dúo (90 min)", "No lo decidí aún"],
+    "formFormats": [
+      "Solista (45 min)",
+      "Solista (90 min)",
+      "Dúo (45 min)",
+      "Dúo (90 min)",
+      "No lo decidí aún"
+    ],
     "formMessage": "Cuéntame más sobre tu evento",
     "formSubmit": "Enviar cotización",
     "formSending": "Enviando...",
@@ -224,8 +334,14 @@
       "cancun": "Cancún",
       "puertoMorelos": "Puerto Morelos"
     },
-    "calcFormats": { "solo": "Solista", "duo": "Dúo" },
-    "calcDurations": { "45": "45 minutos", "90": "90 minutos" },
+    "calcFormats": {
+      "solo": "Solista",
+      "duo": "Dúo"
+    },
+    "calcDurations": {
+      "45": "45 minutos",
+      "90": "90 minutos"
+    },
     "calcResult": "Precio estimado",
     "calcNote": "Precio referencial. El precio final puede variar según distancia, equipo adicional y disponibilidad. Contactame para confirmar."
   },
@@ -237,7 +353,13 @@
         "metaDesc": "Música en vivo para bodas y eventos en Playa del Carmen. Solista o dúo, bilingüe ES/EN.",
         "heroTitle": "Música en Vivo en Playa del Carmen",
         "desc": "Playa del Carmen es el corazón cosmopolita de la Riviera Maya. Sus playas, la 5ta Avenida y los hoteles boutique del centro son el escenario perfecto para música en vivo de calidad.",
-        "venues": ["Hotel Xcaret México", "Rosewood Mayakoba", "Banyan Tree Mayakoba", "Quinta Avenida", "Coco Bongo Playa"],
+        "venues": [
+          "Hotel Xcaret México",
+          "Rosewood Mayakoba",
+          "Banyan Tree Mayakoba",
+          "Quinta Avenida",
+          "Coco Bongo Playa"
+        ],
         "slug": "playa-del-carmen"
       },
       "tulum": {
@@ -246,7 +368,13 @@
         "metaDesc": "Música en vivo para bodas y eventos en Tulum. Ceremonia en cenote, villa o playa. Bilingüe.",
         "heroTitle": "Música en Vivo en Tulum",
         "desc": "Tulum: bohemio, espiritual y espectacular. Las villas de la zona hotelera, los cenotes sagrados y las playas paradisíacas merecen la música perfecta.",
-        "venues": ["Azulik Resort", "Habitas Tulum", "Papaya Playa Project", "Cenote Dos Ojos", "Villas privadas Zona Hotelera"],
+        "venues": [
+          "Azulik Resort",
+          "Habitas Tulum",
+          "Papaya Playa Project",
+          "Cenote Dos Ojos",
+          "Villas privadas Zona Hotelera"
+        ],
         "slug": "tulum"
       },
       "cancun": {
@@ -255,7 +383,13 @@
         "metaDesc": "Música en vivo para bodas y eventos en Cancún. Hard Rock, Hyatt, Secrets y más. Bilingüe ES/EN.",
         "heroTitle": "Música en Vivo en Cancún",
         "desc": "Cancún concentra los hoteles all-inclusive más grandes del Caribe y una activa escena de bodas de destino. Toco en toda la zona hotelera.",
-        "venues": ["Hard Rock Hotel", "Hyatt Ziva Cancún", "Secrets The Vine", "Moon Palace", "Dreams Cancún"],
+        "venues": [
+          "Hard Rock Hotel",
+          "Hyatt Ziva Cancún",
+          "Secrets The Vine",
+          "Moon Palace",
+          "Dreams Cancún"
+        ],
         "slug": "cancun"
       },
       "puerto-morelos": {
@@ -264,7 +398,12 @@
         "metaDesc": "Música en vivo para bodas íntimas y eventos en Puerto Morelos. El pueblo más tranquilo y auténtico de la Riviera Maya.",
         "heroTitle": "Música en Vivo en Puerto Morelos",
         "desc": "Puerto Morelos es el secreto mejor guardado de la Riviera Maya. Un pueblo de pescadores convertido en destino boutique, perfecto para bodas íntimas y eventos exclusivos.",
-        "venues": ["Now Jade Riviera Cancún", "Zoëtry Paraiso de la Bonita", "Villas privadas", "La Marina"],
+        "venues": [
+          "Now Jade Riviera Cancún",
+          "Zoëtry Paraiso de la Bonita",
+          "Villas privadas",
+          "La Marina"
+        ],
         "slug": "puerto-morelos"
       }
     }
@@ -276,10 +415,22 @@
     "heroSubtitle": "Todo lo que necesitás para contratar a Nacho",
     "downloadButton": "Descargar EPK (PDF)",
     "sections": [
-      { "title": "Biografía", "desc": "Historia completa del artista, desde Mendoza hasta la Riviera Maya." },
-      { "title": "Fotos de Prensa", "desc": "Imágenes de alta resolución para publicaciones y material promocional." },
-      { "title": "Repertorio", "desc": "Lista completa de más de 200 canciones en español e inglés." },
-      { "title": "Tarifas", "desc": "Tabla de precios por ciudad, formato y duración." }
+      {
+        "title": "Biografía",
+        "desc": "Historia completa del artista, desde Mendoza hasta la Riviera Maya."
+      },
+      {
+        "title": "Fotos de Prensa",
+        "desc": "Imágenes de alta resolución para publicaciones y material promocional."
+      },
+      {
+        "title": "Repertorio",
+        "desc": "Lista completa de más de 200 canciones en español e inglés."
+      },
+      {
+        "title": "Tarifas",
+        "desc": "Tabla de precios por ciudad, formato y duración."
+      }
     ]
   },
   "blog": {
@@ -288,7 +439,12 @@
     "heroTitle": "Blog",
     "heroSubtitle": "Música, bodas, y la vida en la Riviera Maya",
     "readMore": "Leer más",
-    "categories": ["El Cantautor", "Lifestyle Musical", "Raíces", "Guías y Consejos"],
+    "categories": [
+      "El Cantautor",
+      "Lifestyle Musical",
+      "Raíces",
+      "Guías y Consejos"
+    ],
     "posts": [
       {
         "slug": "mejor-musica-para-boda-en-playa",

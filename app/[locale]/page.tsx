@@ -27,7 +27,8 @@ export async function generateMetadata({
 export default function HomePage() {
   const t = useTranslations('home')
   const locale = useLocale()
-  const heroBgExists = existsSync(join(process.cwd(), 'public', 'hero-bg.webp'))
+  const heroPosterExists = existsSync(join(process.cwd(), 'public', 'hero-poster.webp'))
+  const heroVideoExists = existsSync(join(process.cwd(), 'public', 'hero-video.mp4'))
 
   const testimonials = t.raw('testimonials') as Array<{ text: string; author: string; event: string }>
   const videos = [
@@ -42,16 +43,35 @@ export default function HomePage() {
           1. HERO — Full-bleed con foto de fondo
          ═══════════════════════════════════════ */}
       <section className="relative h-screen flex items-end justify-center overflow-hidden">
-        {/* Foto de fondo — subir como /public/hero-bg.webp (1920×1080 mínimo) */}
-        {heroBgExists && (
-          <Image
-            src="/hero-bg.webp"
-            alt="Nacho Rodriguez — músico en vivo Riviera Maya"
-            fill
-            priority
-            quality={85}
-            className="object-cover object-[center_20%]"
-          />
+        {/* Video de fondo — /public/hero-video.{webm,mp4} (optimizado, sin audio).
+            Usa hero-poster.webp (frame del propio video) como poster: pinta al
+            instante (LCP rápido) mientras carga el video. Si no hay video, cae a
+            la imagen fija. */}
+        {heroVideoExists ? (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/hero-poster.webp"
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover object-[center_20%]"
+          >
+            <source src="/hero-video.webm" type="video/webm" />
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          heroPosterExists && (
+            <Image
+              src="/hero-poster.webp"
+              alt="Nacho Rodriguez — músico en vivo Riviera Maya"
+              fill
+              priority
+              quality={85}
+              className="object-cover object-[center_20%]"
+            />
+          )
         )}
 
         {/* Overlay oscuro sobre la foto */}
@@ -105,6 +125,30 @@ export default function HomePage() {
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-pulse-slow opacity-60">
           <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-arena/50">scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-oro/50 to-transparent" />
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════
+          4. VIDEO REEL
+         ═══════════════════════════════════════ */}
+      <section className="bg-negro py-24 px-4">
+        <div className="max-w-7xl mx-auto">
+          <RevealOnScroll className="text-center mb-12">
+            <div className="w-12 h-px bg-oro mx-auto mb-6" />
+            <p className="font-sans text-sm text-arena/60 tracking-wide">{t('reelSubtitle')}</p>
+          </RevealOnScroll>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {videos.map((v, i) => (
+              <RevealOnScroll key={v.id} delay={i * 100}>
+                <VideoCard youtubeId={v.id} title={v.title} subtitle={v.subtitle} />
+              </RevealOnScroll>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href={`/${locale}/videos`} className="btn-outline">
+              {locale === 'es' ? 'Ver todos los videos' : 'See all videos'}
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -167,31 +211,6 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════
-          4. VIDEO REEL
-         ═══════════════════════════════════════ */}
-      <section className="bg-negro py-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="text-center mb-12">
-            <div className="w-12 h-px bg-oro mx-auto mb-6" />
-            <h2 className="font-display text-4xl sm:text-5xl text-hueso mb-3">{t('reelTitle')}</h2>
-            <p className="font-sans text-sm text-arena/60 tracking-wide">{t('reelSubtitle')}</p>
-          </RevealOnScroll>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {videos.map((v, i) => (
-              <RevealOnScroll key={v.id} delay={i * 100}>
-                <VideoCard youtubeId={v.id} title={v.title} subtitle={v.subtitle} />
-              </RevealOnScroll>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link href={`/${locale}/videos`} className="btn-outline">
-              {locale === 'es' ? 'Ver todos los videos' : 'See all videos'}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════
           5. SERVICES
          ═══════════════════════════════════════ */}
       <section className="bg-hueso py-24 px-4">
@@ -230,30 +249,35 @@ export default function HomePage() {
 
       {/* ═══════════════════════════════════════
           6. TESTIMONIALS
+          Preparado para testimonios reales: la sección solo aparece cuando
+          se cargan en messages/{es,en}.json → home.testimonials (array con
+          { text, author, event }). Mientras el array esté vacío, no se muestra.
          ═══════════════════════════════════════ */}
-      <section className="bg-negro py-24 px-4">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="text-center mb-16">
-            <div className="w-12 h-px bg-oro mx-auto mb-6" />
-            <h2 className="font-display text-4xl sm:text-5xl text-hueso">{t('testimonialsTitle')}</h2>
-          </RevealOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, i) => (
-              <RevealOnScroll key={i} delay={i * 100}>
-                <div className="border border-oro/15 p-8 relative">
-                  <p className="font-display text-5xl text-oro/20 absolute -top-2 left-6">&ldquo;</p>
-                  <p className="font-display text-base text-arena leading-relaxed italic mb-6 pt-4">
-                    {testimonial.text}
-                  </p>
-                  <div className="w-6 h-px bg-oro mb-3" />
-                  <p className="font-sans text-xs text-hueso font-semibold">{testimonial.author}</p>
-                  <p className="font-sans text-xs text-arena/50 mt-0.5">{testimonial.event}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
+      {testimonials.length > 0 && (
+        <section className="bg-negro py-24 px-4">
+          <div className="max-w-7xl mx-auto">
+            <RevealOnScroll className="text-center mb-16">
+              <div className="w-12 h-px bg-oro mx-auto mb-6" />
+              <h2 className="font-display text-4xl sm:text-5xl text-hueso">{t('testimonialsTitle')}</h2>
+            </RevealOnScroll>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {testimonials.map((testimonial, i) => (
+                <RevealOnScroll key={i} delay={i * 100}>
+                  <div className="border border-oro/15 p-8 relative">
+                    <p className="font-display text-5xl text-oro/20 absolute -top-2 left-6">&ldquo;</p>
+                    <p className="font-display text-base text-arena leading-relaxed italic mb-6 pt-4">
+                      {testimonial.text}
+                    </p>
+                    <div className="w-6 h-px bg-oro mb-3" />
+                    <p className="font-sans text-xs text-hueso font-semibold">{testimonial.author}</p>
+                    <p className="font-sans text-xs text-arena/50 mt-0.5">{testimonial.event}</p>
+                  </div>
+                </RevealOnScroll>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* ═══════════════════════════════════════
           7. CITIES

@@ -27,12 +27,16 @@ export default function Header() {
     router.push(segments.join('/'))
   }
 
-  const navItems = [
+  // Servicios agrupados en el dropdown "Música en vivo"
+  const serviceItems = [
     { href: `/${locale}/weddings`, label: t('weddings') },
     { href: `/${locale}/private-events`, label: t('privateEvents') },
     { href: `/${locale}/venues`, label: t('venues') },
+  ]
+
+  // Ítems sueltos del navbar (Prensa queda solo en el footer)
+  const navItems = [
     { href: `/${locale}/videos`, label: t('videos') },
-    { href: `/${locale}/epk`, label: t('epk') },
     { href: `/${locale}/about`, label: t('about') },
   ]
 
@@ -58,6 +62,38 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6">
+          {/* Dropdown: Música en vivo (agrupa los servicios) */}
+          <div className="relative group">
+            <button
+              className="font-sans text-xs tracking-widest uppercase text-arena hover:text-oro transition-colors duration-200 flex items-center gap-1"
+              aria-haspopup="true"
+            >
+              {t('liveMusic')}
+              <svg
+                className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180"
+                viewBox="0 0 12 12"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            {/* pt-3 actúa de puente para no perder el hover al bajar al panel */}
+            <div className="absolute left-0 top-full pt-3 invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition-all duration-200">
+              <div className="bg-negro/95 backdrop-blur-sm border border-arena/10 shadow-xl rounded-sm py-2 min-w-[230px]">
+                {serviceItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block px-5 py-2.5 font-sans text-xs tracking-widest uppercase text-arena hover:text-oro hover:bg-arena/5 transition-colors whitespace-nowrap"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -109,7 +145,24 @@ export default function Header() {
           open ? 'max-h-screen py-6' : 'max-h-0'
         }`}
       >
-        <nav className="flex flex-col items-center gap-6 px-4">
+        <nav className="flex flex-col items-center gap-5 px-4">
+          {/* Grupo Música en vivo */}
+          <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-oro/70">
+            {t('liveMusic')}
+          </span>
+          {serviceItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="font-sans text-sm tracking-widest uppercase text-arena hover:text-oro transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+
+          <div className="w-8 h-px bg-arena/15 my-1" />
+
           {navItems.map((item) => (
             <Link
               key={item.href}

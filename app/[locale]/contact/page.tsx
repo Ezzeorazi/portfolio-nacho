@@ -4,7 +4,6 @@ import { getTranslations } from 'next-intl/server'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import ContactForm from '@/components/ContactForm'
-import PriceCalculator from '@/components/PriceCalculator'
 import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -82,15 +81,6 @@ export default function ContactPage() {
               </div>
             </RevealOnScroll>
           </div>
-        </div>
-      </section>
-
-      {/* Price Calculator */}
-      <section className="bg-hueso/5 py-16 px-4 border-t border-oro/10">
-        <div className="max-w-4xl mx-auto">
-          <RevealOnScroll>
-            <PriceCalculator />
-          </RevealOnScroll>
         </div>
       </section>
 
