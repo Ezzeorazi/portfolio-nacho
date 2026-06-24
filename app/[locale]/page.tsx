@@ -334,7 +334,7 @@ export default function HomePage() {
               {
                 '@type': 'MusicGroup',
                 name: 'Nacho Rodriguez',
-                genre: ['Rock', 'Blues', 'Jazz', 'Country', 'Latin'],
+                genre: ['Rock', 'Blues', 'Jazz', 'Latin', 'Cumbia', 'Electronic'],
                 url: 'https://nachorodriguezmusic.com',
                 areaServed: ['México', 'Estados Unidos'],
               },

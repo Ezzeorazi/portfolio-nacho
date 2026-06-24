@@ -21,7 +21,7 @@
     "heroCta": "Reservar tu fecha",
     "heroCtaSecondary": "Ver repertorio",
     "statementTitle": "Más de 10 años haciendo de cada evento algo memorable.",
-    "statementText": "Desde Mendoza hasta los mejores escenarios de México, llevo más de 10 años creando experiencias musicales para bodas y eventos. Rock, blues, jazz, country y composiciones propias, con la versatilidad y el nivel profesional que tu evento merece.",
+    "statementText": "Desde Mendoza hasta los mejores escenarios de México, llevo más de 10 años creando experiencias musicales para bodas y eventos. Rock, blues, jazz, cumbia y sets híbridos que combinan DJ con acordeón y guitarra en vivo —además de composiciones propias—, con la versatilidad y el nivel profesional que tu evento merece.",
     "formatsTitle": "¿Cómo quieres tu música?",
     "formatsSoloTitle": "Solista",
     "formatsSoloDesc": "Voz y guitarra. Versátil y elegante para ceremonias, cócteles y cenas.",
@@ -186,7 +186,7 @@
   },
   "repertoire": {
     "metaTitle": "Repertorio | Nacho Rodriguez Músico",
-    "metaDesc": "Más de 200 canciones de rock, blues, jazz, country, cumbia y temas propios. Bilingüe español/inglés.",
+    "metaDesc": "Más de 200 canciones de rock, blues, jazz y cumbia, sets híbridos de DJ con acordeón y guitarra en vivo, y temas propios. Bilingüe español/inglés.",
     "heroTitle": "Repertorio",
     "heroSubtitle": "Más de 200 canciones en español e inglés",
     "genres": [

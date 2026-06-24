@@ -48,16 +48,15 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo / Brand */}
-        <Link href={`/${locale}`} className="flex items-center gap-3 mt-5 group">
+        <Link href={`/${locale}`} className="flex items-center gap-3 group">
           <Image
             src="/Logo-nachoRodriguez-blancoHueso.webp"
             alt="Nacho Rodriguez"
             width={100}
             height={100}
-            className="object-contain transition-opacity group-hover:opacity-80"
+            className="object-contain h-14 md:h-16 w-auto transition-opacity group-hover:opacity-80"
             priority
           />
-          
         </Link>
 
         {/* Desktop nav */}
@@ -117,14 +116,6 @@ export default function Header() {
             <span className="text-arena/40">|</span>
             <span className={locale === 'en' ? 'text-oro' : 'text-arena'}>EN</span>
           </button>
-
-          {/* Book CTA */}
-          <Link
-            href={`/${locale}/contact`}
-            className="btn-gold text-xs px-4 py-2"
-          >
-            {t('bookNow')}
-          </Link>
 
           {/* Hamburger */}
           <button
