@@ -26,6 +26,7 @@ const BLOG: Array<[string, string]> = [
   ['mejor-musica-para-boda-en-playa', 'best-songs-beach-wedding-ceremony'],
   ['cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen', 'how-much-does-live-music-cost-wedding-mexico'],
   ['de-mendoza-a-tulum', 'from-mendoza-to-tulum'],
+  ['musica-en-vivo-vs-dj-boda', 'live-music-vs-dj-wedding'],
 ]
 
 function entry(self: string, es: string, en: string, priority: number): string {
