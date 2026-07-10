@@ -1,8 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
+import { Link } from '@/i18n/navigation'
 
 export default function Footer() {
   const t = useTranslations('footer')
@@ -15,21 +15,21 @@ export default function Footer() {
   const isContact = pathname?.includes('/contact')
 
   const services = [
-    { href: `/${locale}/weddings`, label: nav('weddings') },
-    { href: `/${locale}/private-events`, label: nav('privateEvents') },
-    { href: `/${locale}/venues`, label: nav('venues') },
-    { href: `/${locale}/live-music/tulum`, label: 'Live Music Tulum' },
-    { href: `/${locale}/live-music/playa-del-carmen`, label: 'Live Music Playa del Carmen' },
-  ]
+    { href: '/weddings', label: nav('weddings') },
+    { href: '/private-events', label: nav('privateEvents') },
+    { href: '/venues', label: nav('venues') },
+    { href: { pathname: '/live-music/[city]', params: { city: 'tulum' } }, label: 'Live Music Tulum' },
+    { href: { pathname: '/live-music/[city]', params: { city: 'playa-del-carmen' } }, label: 'Live Music Playa del Carmen' },
+  ] as const
 
   const links = [
-    { href: `/${locale}/repertoire`, label: nav('repertoire') },
-    { href: `/${locale}/videos`, label: nav('videos') },
-    { href: `/${locale}/about`, label: nav('about') },
-    { href: `/${locale}/epk`, label: nav('epk') },
-    { href: `/${locale}/blog`, label: nav('blog') },
-    { href: `/${locale}/contact`, label: nav('contact') },
-  ]
+    { href: '/repertoire', label: nav('repertoire') },
+    { href: '/videos', label: nav('videos') },
+    { href: '/about', label: nav('about') },
+    { href: '/epk', label: nav('epk') },
+    { href: '/blog', label: nav('blog') },
+    { href: '/contact', label: nav('contact') },
+  ] as const
 
   const socials = [
     {
@@ -70,7 +70,7 @@ export default function Footer() {
             {locale === 'es' ? '¿Listo para reservar tu fecha?' : 'Ready to book your date?'}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link href={`/${locale}/contact`} className="btn-gold">
+            <Link href="/contact" className="btn-gold">
               {locale === 'es' ? 'Solicitar cotización' : 'Get a quote'}
             </Link>
             <a
@@ -94,7 +94,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href={`/${locale}`}>
+            <Link href="/">
               <p className="font-display text-2xl text-oro mb-1">Nacho Rodriguez</p>
               <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-arena mb-4">
                 {locale === 'es' ? 'Músico · Música en vivo' : 'Musician · Live Music'}
@@ -130,7 +130,7 @@ export default function Footer() {
               </p>
               <ul className="space-y-2.5">
                 {services.map((s) => (
-                  <li key={s.href}>
+                  <li key={s.label}>
                     <Link
                       href={s.href}
                       className="font-sans text-xs text-arena/70 hover:text-oro transition-colors"

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
-import Link from 'next/link'
 import Image from 'next/image'
+import { Link } from '@/i18n/navigation'
 import { existsSync } from 'fs'
 import { join } from 'path'
 import VideoCard from '@/components/VideoCard'
@@ -112,10 +112,10 @@ export default function HomePage() {
             &ldquo;{t('heroTagline')}&rdquo;
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link href={`/${locale}/contact`} className="btn-gold">
+            <Link href="/contact" className="btn-gold">
               {t('heroCta')}
             </Link>
-            <Link href={`/${locale}/repertoire`} className="btn-outline">
+            <Link href="/repertoire" className="btn-outline">
               {t('heroCtaSecondary')}
             </Link>
           </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href={`/${locale}/videos`} className="btn-outline">
+            <Link href="/videos" className="btn-outline">
               {locale === 'es' ? 'Ver todos los videos' : 'See all videos'}
             </Link>
           </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <h3 className="font-display text-4xl text-hueso mb-4">{f.title}</h3>
                 <p className="font-sans text-arena/70 leading-relaxed">{f.desc}</p>
                 <Link
-                  href={`/${locale}/contact`}
+                  href="/contact"
                   className="inline-flex items-center gap-2 mt-8 font-sans text-xs tracking-widest uppercase text-oro hover:gap-4 transition-all"
                 >
                   {locale === 'es' ? 'Consultar precio' : 'Check price'}
@@ -216,11 +216,11 @@ export default function HomePage() {
             <h2 className="font-display text-4xl sm:text-5xl text-negro">{t('servicesTitle')}</h2>
           </RevealOnScroll>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { key: 'weddings', href: `/${locale}/weddings`, icon: '♡' },
-              { key: 'private', href: `/${locale}/private-events`, icon: '◆' },
-              { key: 'venues', href: `/${locale}/venues`, icon: '♪' },
-            ].map(({ key, href, icon }, i) => {
+            {([
+              { key: 'weddings', href: '/weddings', icon: '♡' },
+              { key: 'private', href: '/private-events', icon: '◆' },
+              { key: 'venues', href: '/venues', icon: '♪' },
+            ] as const).map(({ key, href, icon }, i) => {
               const service = t.raw(`services.${key}`) as { title: string; desc: string }
               return (
                 <RevealOnScroll key={key} delay={i * 120} className="h-full">
@@ -294,7 +294,7 @@ export default function HomePage() {
             ].map(({ slug, label }, i) => (
               <RevealOnScroll key={slug} delay={i * 80}>
                 <Link
-                  href={`/${locale}/live-music/${slug}`}
+                  href={{ pathname: '/live-music/[city]', params: { city: slug } }}
                   className="group block relative overflow-hidden aspect-square bg-gradient-to-br from-negro/80 to-negro border border-oro/10 hover:border-oro/40 transition-colors"
                 >
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">

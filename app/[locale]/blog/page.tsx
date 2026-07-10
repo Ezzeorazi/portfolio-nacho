@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -33,7 +33,7 @@ export default function BlogPage() {
             {posts.map((post, i) => (
               <RevealOnScroll key={post.slug} delay={i * 80}>
                 <Link
-                  href={`/${locale}/blog/${post.slug}`}
+                  href={{ pathname: '/blog/[slug]', params: { slug: post.slug } }}
                   className="group block border border-oro/15 p-8 hover:border-oro/40 transition-colors"
                 >
                   <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-oro mb-4">

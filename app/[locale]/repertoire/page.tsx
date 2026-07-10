@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -46,7 +46,7 @@ export default function RepertoirePage() {
 
           <RevealOnScroll className="mt-16 p-8 border border-oro/20 text-center">
             <p className="font-display text-xl text-hueso mb-6">{t('requestNote')}</p>
-            <Link href={`/${locale}/contact`} className="btn-gold">{t('ctaButton')}</Link>
+            <Link href="/contact" className="btn-gold">{t('ctaButton')}</Link>
           </RevealOnScroll>
         </div>
       </section>

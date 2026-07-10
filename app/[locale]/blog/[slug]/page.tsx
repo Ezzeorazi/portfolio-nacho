@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import type { ReactElement } from 'react'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
+import { getPathname } from '@/i18n/navigation'
 
 // Pares de slug ES ↔ EN (cada post es traducción del otro), para hreflang.
 const SLUG_PAIRS: Record<string, string> = {
@@ -509,7 +510,7 @@ export default function BlogPostPage({
       <section className="bg-negro py-16 px-4">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <Link
-            href={`/${locale}/blog`}
+            href={getPathname({ locale, href: '/blog' })}
             className="font-sans text-xs tracking-widest uppercase text-oro hover:text-oro-dark flex items-center gap-2"
           >
             ← {locale === 'es' ? 'Volver al blog' : 'Back to blog'}
@@ -519,7 +520,7 @@ export default function BlogPostPage({
               {post.ctaLabel}
             </a>
           ) : (
-            <Link href={`/${locale}/contact`} className="btn-gold">
+            <Link href={getPathname({ locale, href: '/contact' })} className="btn-gold">
               {locale === 'es' ? 'Cotizar mi evento' : 'Get a quote'}
             </Link>
           )}

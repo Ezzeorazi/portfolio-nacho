@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
 import { altsFor } from '@/i18n/seo'
@@ -88,7 +88,7 @@ export default function CityPage({
                 return (
                   <Link
                     key={c}
-                    href={`/${locale}/live-music/${c}`}
+                    href={{ pathname: '/live-music/[city]', params: { city: c } }}
                     className="font-sans text-xs tracking-widest uppercase border border-negro/20 text-negro px-4 py-2 hover:border-oro hover:text-oro transition-colors"
                   >
                     {other.name}

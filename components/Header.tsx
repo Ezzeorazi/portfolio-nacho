@@ -1,16 +1,17 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
-import { usePathname, useRouter } from 'next/navigation'
+import { useParams } from 'next/navigation'
+import { Link, usePathname, useRouter } from '@/i18n/navigation'
 
 export default function Header() {
   const t = useTranslations('nav')
   const locale = useLocale()
   const pathname = usePathname()
   const router = useRouter()
+  const params = useParams()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -22,23 +23,22 @@ export default function Header() {
 
   const switchLocale = () => {
     const next = locale === 'es' ? 'en' : 'es'
-    const segments = pathname.split('/')
-    segments[1] = next
-    router.push(segments.join('/'))
+    // @ts-expect-error -- pathname/params quedan tipados por next-intl para la ruta actual
+    router.replace({ pathname, params }, { locale: next })
   }
 
   // Servicios agrupados en el dropdown "Música en vivo"
   const serviceItems = [
-    { href: `/${locale}/weddings`, label: t('weddings') },
-    { href: `/${locale}/private-events`, label: t('privateEvents') },
-    { href: `/${locale}/venues`, label: t('venues') },
-  ]
+    { href: '/weddings', label: t('weddings') },
+    { href: '/private-events', label: t('privateEvents') },
+    { href: '/venues', label: t('venues') },
+  ] as const
 
   // Ítems sueltos del navbar (Prensa queda solo en el footer)
   const navItems = [
-    { href: `/${locale}/videos`, label: t('videos') },
-    { href: `/${locale}/about`, label: t('about') },
-  ]
+    { href: '/videos', label: t('videos') },
+    { href: '/about', label: t('about') },
+  ] as const
 
   return (
     <header
@@ -48,7 +48,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo / Brand */}
-        <Link href={`/${locale}`} className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <Image
             src="/Logo-nachoRodriguez-blancoHueso.webp"
             alt="Nacho Rodriguez"
