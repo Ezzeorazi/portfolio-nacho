@@ -325,7 +325,7 @@ export default function HomePage() {
                 url: 'https://nachorodriguezmusic.com',
                 image: `https://nachorodriguezmusic.com/${locale}/opengraph-image`,
                 sameAs: [
-                  'https://www.instagram.com/nachorodriguez.music',
+                  'https://www.instagram.com/nachorodriguezlive',
                   'https://www.youtube.com/@NachoRodriguezmusic',
                 ],
                 knowsLanguage: ['es', 'en'],

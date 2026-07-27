@@ -104,7 +104,7 @@ export default function AboutPage() {
             knowsLanguage: ['es', 'en'],
             url: 'https://nachorodriguezmusic.com',
             sameAs: [
-              'https://www.instagram.com/nachorodriguez.music',
+              'https://www.instagram.com/nachorodriguezlive',
               'https://www.youtube.com/@NachoRodriguezmusic',
             ],
           }),

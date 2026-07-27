@@ -92,8 +92,8 @@ export default function EPKPage() {
               <a href="https://wa.me/525534010899" className="block font-sans text-hueso hover:text-oro transition-colors">
                 WhatsApp: +52 55 3401 0899
               </a>
-              <a href="https://www.instagram.com/nachorodriguez.music" className="block font-sans text-hueso hover:text-oro transition-colors">
-                @nachorodriguez.music
+              <a href="https://www.instagram.com/nachorodriguezlive" className="block font-sans text-hueso hover:text-oro transition-colors">
+                @nachorodriguezlive
               </a>
             </div>
           </RevealOnScroll>

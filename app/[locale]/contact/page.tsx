@@ -69,8 +69,8 @@ export default function ContactPage() {
                   <a href="mailto:nachorodriguez.fora@gmail.com" className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors">
                     <span className="text-oro">✉</span> nachorodriguez.fora@gmail.com
                   </a>
-                  <a href="https://www.instagram.com/nachorodriguez.music" className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors">
-                    <span className="text-oro">◈</span> @nachorodriguez.music
+                  <a href="https://www.instagram.com/nachorodriguezlive" className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors">
+                    <span className="text-oro">◈</span> @nachorodriguezlive
                   </a>
                   <p className="flex items-center gap-3 font-sans text-sm text-arena/70">
                     <span className="text-oro">◎</span> México · Estados Unidos

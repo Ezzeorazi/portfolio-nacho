@@ -72,12 +72,12 @@ export default function VideosPage() {
                 YouTube — @NachoRodriguezmusic
               </a>
               <a
-                href="https://www.instagram.com/nachorodriguez.music"
+                href="https://www.instagram.com/nachorodriguezlive"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
               >
-                @nachorodriguez.music
+                @nachorodriguezlive
               </a>
             </div>
           </RevealOnScroll>
