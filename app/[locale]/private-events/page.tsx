@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import ServiceCTA from '@/components/ServiceCTA'
 import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -13,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function PrivateEventsPage() {
   const t = useTranslations('privateEvents')
+  const tc = useTranslations('contact')
   const types = t.raw('types') as Array<{ title: string; desc: string }>
 
   const icons = ['◆', '◎', '♡', '✦', '♪', '★']
@@ -37,6 +39,14 @@ export default function PrivateEventsPage() {
           </div>
         </div>
       </section>
+
+      <ServiceCTA
+        title={t('ctaTitle')}
+        button={t('ctaButton')}
+        whatsappLabel={tc('whatsappButton')}
+        whatsappText={tc('whatsappText')}
+        location="private_events_cta"
+      />
     </>
   )
 }

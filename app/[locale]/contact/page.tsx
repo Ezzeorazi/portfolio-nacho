@@ -45,6 +45,7 @@ export default function ContactPage() {
                     href={`https://wa.me/525534010899?text=${encodeURIComponent(t('whatsappText'))}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-loc="contact_sidebar"
                     className="btn-gold w-full justify-center"
                   >
                     {t('whatsappButton')}
@@ -65,11 +66,16 @@ export default function ContactPage() {
                 </div>
 
                 {/* Contact details */}
-                <div className="space-y-3">
+                <div data-loc="contact_sidebar" className="space-y-3">
                   <a href="mailto:nachorodriguez.fora@gmail.com" className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors">
                     <span className="text-oro">✉</span> nachorodriguez.fora@gmail.com
                   </a>
-                  <a href="https://www.instagram.com/nachorodriguezlive" className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors">
+                  <a
+                    href="https://www.instagram.com/nachorodriguezlive"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 font-sans text-sm text-arena/70 hover:text-oro transition-colors"
+                  >
                     <span className="text-oro">◈</span> @nachorodriguezlive
                   </a>
                   <p className="flex items-center gap-3 font-sans text-sm text-arena/70">

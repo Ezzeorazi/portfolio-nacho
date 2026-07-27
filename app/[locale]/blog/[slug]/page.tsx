@@ -506,9 +506,34 @@ export default function BlogPostPage({
         </div>
       </section>
 
+      {/* Guía — el que llega por el blog casi nunca viene a contratar todavía,
+          así que le ofrecemos el paso intermedio antes del CTA de cotizar. */}
+      <section data-loc="blog_guide" className="bg-negro pt-16 px-4">
+        <div className="max-w-3xl mx-auto border border-oro/20 p-8 text-center">
+          <div className="w-10 h-px bg-oro mx-auto mb-5" />
+          <h2 className="font-display text-2xl text-hueso mb-3">
+            {locale === 'es'
+              ? 'La guía completa para la música de tu boda'
+              : 'The complete guide to your wedding music'}
+          </h2>
+          <p className="font-sans text-sm text-arena/70 leading-relaxed mb-6">
+            {locale === 'es'
+              ? 'Cuándo contratar, qué formato va en cada momento, qué debería incluir el presupuesto y las 12 preguntas que le tenés que hacer a tu músico.'
+              : 'When to book, which format fits each moment, what the quote should include, and the 12 questions to ask your musician.'}
+          </p>
+          <Link
+            href={getPathname({ locale, href: '/guide' })}
+            data-cta="guide"
+            className="btn-outline"
+          >
+            {locale === 'es' ? 'Leer la guía' : 'Read the guide'}
+          </Link>
+        </div>
+      </section>
+
       {/* Back + CTA */}
       <section className="bg-negro py-16 px-4">
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div data-loc="blog_post" className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <Link
             href={getPathname({ locale, href: '/blog' })}
             className="font-sans text-xs tracking-widest uppercase text-oro hover:text-oro-dark flex items-center gap-2"
@@ -516,11 +541,11 @@ export default function BlogPostPage({
             ← {locale === 'es' ? 'Volver al blog' : 'Back to blog'}
           </Link>
           {post.ctaHref ? (
-            <a href={post.ctaHref} target="_blank" rel="noopener noreferrer" className="btn-gold">
+            <a href={post.ctaHref} target="_blank" rel="noopener noreferrer" data-cta="quote" className="btn-gold">
               {post.ctaLabel}
             </a>
           ) : (
-            <Link href={getPathname({ locale, href: '/contact' })} className="btn-gold">
+            <Link href={getPathname({ locale, href: '/contact' })} data-cta="quote" className="btn-gold">
               {locale === 'es' ? 'Cotizar mi evento' : 'Get a quote'}
             </Link>
           )}

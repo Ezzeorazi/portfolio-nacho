@@ -7,6 +7,8 @@ import { routing } from '@/i18n/routing'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import AnalyticsListener from '@/components/AnalyticsListener'
+import FloatingWhatsApp from '@/components/FloatingWhatsApp'
 import '@/app/globals.css'
 
 const playfair = Playfair_Display({
@@ -71,6 +73,8 @@ export default async function LocaleLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <FloatingWhatsApp />
+          <AnalyticsListener />
         </NextIntlClientProvider>
       </body>
       <GoogleAnalytics gaId="G-50BJRHQ23R" />

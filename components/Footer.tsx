@@ -23,6 +23,7 @@ export default function Footer() {
   ] as const
 
   const links = [
+    { href: '/guide', label: locale === 'es' ? 'Guía para bodas' : 'Wedding guide' },
     { href: '/repertoire', label: nav('repertoire') },
     { href: '/videos', label: nav('videos') },
     { href: '/about', label: nav('about') },
@@ -65,12 +66,12 @@ export default function Footer() {
     <footer className="bg-negro border-t border-arena/10">
       {/* Top CTA banner — oculto en la página de Contacto */}
       {!isContact && (
-        <div className="bg-oro/10 border-b border-oro/20 py-8 px-4 text-center">
+        <div data-loc="footer_banner" className="bg-oro/10 border-b border-oro/20 py-8 px-4 text-center">
           <p className="font-display text-2xl text-oro mb-3">
             {locale === 'es' ? '¿Listo para reservar tu fecha?' : 'Ready to book your date?'}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Link href="/contact" className="btn-gold">
+            <Link href="/contact" data-cta="quote" className="btn-gold">
               {locale === 'es' ? 'Solicitar cotización' : 'Get a quote'}
             </Link>
             <a
@@ -104,7 +105,7 @@ export default function Footer() {
             <p className="font-sans text-xs text-arena/60">{t('location')}</p>
 
             {/* Social — íconos */}
-            <div className="flex gap-3 mt-6">
+            <div data-loc="footer_social" className="flex gap-3 mt-6">
               {socials.map((s) => (
                 <a
                   key={s.label}

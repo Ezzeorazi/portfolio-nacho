@@ -18,6 +18,7 @@ const PAGES: Array<[string, string, number]> = [
   ['/epk', '/epk', 0.8],
   ['/blog', '/blog', 0.8],
   ['/contacto', '/contact', 0.8],
+  ['/guia-musica-boda', '/wedding-music-guide', 0.9],
 ]
 
 const CITIES = ['playa-del-carmen', 'tulum', 'cancun', 'puerto-morelos']

@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { useTranslations, useLocale } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
 import PageHero from '@/components/PageHero'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import ServiceCTA from '@/components/ServiceCTA'
 import { altsFor } from '@/i18n/seo'
 
 export async function generateMetadata({
@@ -21,6 +23,7 @@ export async function generateMetadata({
 
 export default function WeddingsPage() {
   const t = useTranslations('weddings')
+  const tc = useTranslations('contact')
   const locale = useLocale()
 
   const moments = t.raw('moments') as Array<{ title: string; desc: string }>
@@ -73,6 +76,26 @@ export default function WeddingsPage() {
         </div>
       </section>
 
+      {/* Guía — captura a quien todavía está averiguando, no contratando */}
+      <section data-loc="weddings_guide" className="bg-negro py-16 px-4 border-t border-oro/10">
+        <RevealOnScroll className="max-w-2xl mx-auto text-center">
+          <div className="w-10 h-px bg-oro mx-auto mb-5" />
+          <h2 className="font-display text-2xl sm:text-3xl text-hueso mb-4">
+            {locale === 'es'
+              ? '¿Todavía estás averiguando?'
+              : 'Still figuring things out?'}
+          </h2>
+          <p className="font-sans text-sm text-arena/70 leading-relaxed mb-7">
+            {locale === 'es'
+              ? 'Escribí una guía con todo lo que conviene saber antes de contratar música para una boda: cuándo buscar, qué formato va en cada momento y qué debería incluir el presupuesto.'
+              : 'I wrote a guide with everything worth knowing before booking wedding music: when to look, which format fits each moment, and what the quote should include.'}
+          </p>
+          <Link href="/guide" data-cta="guide" className="btn-outline">
+            {locale === 'es' ? 'Leer la guía' : 'Read the guide'}
+          </Link>
+        </RevealOnScroll>
+      </section>
+
       {/* FAQ */}
       <section className="bg-hueso py-20 px-4">
         <div className="max-w-3xl mx-auto">
@@ -97,6 +120,15 @@ export default function WeddingsPage() {
           </div>
         </div>
       </section>
+
+      <ServiceCTA
+        title={t('ctaTitle')}
+        text={t('ctaText')}
+        button={t('ctaButton')}
+        whatsappLabel={tc('whatsappButton')}
+        whatsappText={tc('whatsappText')}
+        location="weddings_cta"
+      />
 
       {/* JSON-LD */}
       <script

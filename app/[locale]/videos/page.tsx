@@ -67,7 +67,7 @@ export default function VideosPage() {
             <p className="font-sans text-sm text-arena/60 mb-4">
               {locale === 'es' ? 'Mirá más en mi canal de YouTube' : 'Watch more on my YouTube channel'}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <div data-loc="videos_channel" className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a href={YOUTUBE_CHANNEL} target="_blank" rel="noopener noreferrer" className="btn-gold">
                 YouTube — @NachoRodriguezmusic
               </a>

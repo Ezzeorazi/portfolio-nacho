@@ -46,7 +46,9 @@ export default function RepertoirePage() {
 
           <RevealOnScroll className="mt-16 p-8 border border-oro/20 text-center">
             <p className="font-display text-xl text-hueso mb-6">{t('requestNote')}</p>
-            <Link href="/contact" className="btn-gold">{t('ctaButton')}</Link>
+            <span data-loc="repertoire">
+              <Link href="/contact" data-cta="quote" className="btn-gold">{t('ctaButton')}</Link>
+            </span>
           </RevealOnScroll>
         </div>
       </section>

@@ -19,6 +19,10 @@ export const routing = defineRouting({
     '/blog': '/blog',
     '/blog/[slug]': '/blog/[slug]',
     '/contact': { es: '/contacto', en: '/contact' },
+    '/guide': { es: '/guia-musica-boda', en: '/wedding-music-guide' },
+    // Link-in-bio: destino del QR del tacho, los llaveros y la bio de Instagram.
+    // Mismo path en ambos idiomas para que el link impreso nunca cambie.
+    '/links': '/links',
   },
 })
 

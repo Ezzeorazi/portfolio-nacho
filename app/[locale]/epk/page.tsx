@@ -85,14 +85,24 @@ export default function EPKPage() {
             <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-oro mb-4">
               {locale === 'es' ? 'Contacto para prensa y reservas' : 'Press & booking contact'}
             </p>
-            <div className="space-y-2">
+            <div data-loc="epk" className="space-y-2">
               <a href="mailto:nachorodriguez.fora@gmail.com" className="block font-sans text-hueso hover:text-oro transition-colors">
                 nachorodriguez.fora@gmail.com
               </a>
-              <a href="https://wa.me/525534010899" className="block font-sans text-hueso hover:text-oro transition-colors">
+              <a
+                href="https://wa.me/525534010899"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-sans text-hueso hover:text-oro transition-colors"
+              >
                 WhatsApp: +52 55 3401 0899
               </a>
-              <a href="https://www.instagram.com/nachorodriguezlive" className="block font-sans text-hueso hover:text-oro transition-colors">
+              <a
+                href="https://www.instagram.com/nachorodriguezlive"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-sans text-hueso hover:text-oro transition-colors"
+              >
                 @nachorodriguezlive
               </a>
             </div>

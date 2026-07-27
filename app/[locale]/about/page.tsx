@@ -12,6 +12,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t('metaTitle'), description: t('metaDesc'), alternates: altsFor(locale, '/sobre-nacho', '/about') }
 }
 
+// Pegar acá la URL del perfil de artista (https://open.spotify.com/artist/...)
+// y el botón de Spotify aparece solo.
+const SPOTIFY_ARTIST_URL = ''
+
 export default function AboutPage() {
   const t = useTranslations('about')
   const locale = useLocale()
@@ -79,14 +83,29 @@ export default function AboutPage() {
             <div className="w-12 h-px bg-oro mb-6" />
             <h2 className="font-display text-3xl text-negro mb-4">{t('musicTitle')}</h2>
             <p className="font-sans text-negro/75 leading-relaxed mb-8">{t('musicText')}</p>
-            <a
-              href="https://open.spotify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold"
-            >
-              {locale === 'es' ? 'Escuchar en Spotify' : 'Listen on Spotify'}
-            </a>
+            {/* El botón apuntaba a open.spotify.com a secas, que lleva a la home
+                de Spotify y no a Nacho. Hasta tener la URL del perfil de artista
+                mandamos al canal de YouTube, que sí existe y tiene el material. */}
+            <div data-loc="about_music" className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://www.youtube.com/@NachoRodriguezmusic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold"
+              >
+                {locale === 'es' ? 'Escuchar en YouTube' : 'Listen on YouTube'}
+              </a>
+              {SPOTIFY_ARTIST_URL && (
+                <a
+                  href={SPOTIFY_ARTIST_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                >
+                  {locale === 'es' ? 'Escuchar en Spotify' : 'Listen on Spotify'}
+                </a>
+              )}
+            </div>
           </RevealOnScroll>
         </div>
       </section>

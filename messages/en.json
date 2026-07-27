@@ -50,6 +50,9 @@
     "testimonials": [],
     "citiesTitle": "Where I play",
     "citiesSubtitle": "Based in the Riviera Maya and available for events across Mexico and the United States.",
+    "instagramTitle": "Follow the day to day",
+    "instagramText": "Videos from the shows, new songs and the dates I'm playing. It all goes to Instagram first.",
+    "instagramCta": "Follow @nachorodriguezlive",
     "cities": {
       "playaDelCarmen": "Playa del Carmen",
       "tulum": "Tulum",
@@ -322,6 +325,9 @@
     "formSubmit": "Send quote request",
     "formSending": "Sending...",
     "formSuccess": "Thank you! I'll get back to you within 24 hours.",
+    "formSuccessInstagram": "In the meantime, follow me on Instagram — that's where I post shows and the dates I'm playing.",
+    "formSuccessInstagramCta": "Follow @nachorodriguezlive",
+    "formDetailsToggle": "Add event details (optional)",
     "formError": "Something went wrong. Please try WhatsApp instead.",
     "whatsappText": "Hi Nacho! I'm interested in getting a quote for live music at my event.",
     "whatsappButton": "Message on WhatsApp",
@@ -477,6 +483,40 @@
         "date": "2026-07-09"
       }
     ]
+  },
+  "guide": {
+    "metaTitle": "How to Choose the Music for Your Wedding | Complete Guide",
+    "metaDesc": "A practical guide to choosing your wedding music: when to book, which format fits each moment, how much to budget, and the 12 questions to ask your musician.",
+    "heroTitle": "How to choose the music for your wedding",
+    "heroSubtitle": "Everything I've learned playing weddings for over a decade, organized so you can decide without going in circles.",
+    "formTitle": "Get the checklist",
+    "formText": "I'll email you the 12 questions worth asking any musician before booking a date. They're useful even if you don't hire me.",
+    "formName": "Name",
+    "formNamePlaceholder": "Your name",
+    "formEmail": "Email",
+    "formSubmit": "Send me the checklist",
+    "formSending": "Sending...",
+    "formSuccess": "Done! Check your inbox.",
+    "formSuccessNote": "If it doesn't arrive in a few minutes, check spam or promotions.",
+    "formError": "Couldn't send it. Try again or message me on WhatsApp.",
+    "formPrivacy": "I only email you about this and occasional news. Unsubscribe whenever you want.",
+    "ctaTitle": "Want to talk about your wedding?",
+    "ctaText": "Tell me the date and venue and I'll let you know if I'm available — no commitment."
+  },
+  "links": {
+    "metaTitle": "Links | Nacho Rodriguez",
+    "metaDesc": "All my links in one place: Instagram, WhatsApp, videos and a quote for your event.",
+    "tagline": "Musician · Live Music",
+    "intro": "Did we meet at a show? Here's everything.",
+    "instagram": "Follow me on Instagram",
+    "instagramNote": "Shows, new songs and where I'm playing",
+    "whatsapp": "Message me on WhatsApp",
+    "whatsappNote": "I reply every day",
+    "quote": "Get a quote for my event",
+    "quoteNote": "Weddings, private events, hotels and bars",
+    "videos": "Watch live videos",
+    "repertoire": "See repertoire",
+    "youtube": "YouTube channel"
   },
   "footer": {
     "tagline": "Live music that tells stories",

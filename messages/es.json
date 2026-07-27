@@ -50,6 +50,9 @@
     "testimonials": [],
     "citiesTitle": "Dónde toco",
     "citiesSubtitle": "Con base en la Riviera Maya y disponible para eventos en todo México y Estados Unidos.",
+    "instagramTitle": "Seguime el día a día",
+    "instagramText": "Videos de los shows, canciones nuevas y las fechas donde estoy tocando. Todo sale primero por Instagram.",
+    "instagramCta": "Seguir @nachorodriguezlive",
     "cities": {
       "playaDelCarmen": "Playa del Carmen",
       "tulum": "Tulum",
@@ -322,6 +325,9 @@
     "formSubmit": "Enviar cotización",
     "formSending": "Enviando...",
     "formSuccess": "¡Gracias! Te respondo en menos de 24 horas.",
+    "formSuccessInstagram": "Mientras tanto, seguime en Instagram: ahí subo los shows y las fechas donde estoy tocando.",
+    "formSuccessInstagramCta": "Seguir @nachorodriguezlive",
+    "formDetailsToggle": "Agregar detalles del evento (opcional)",
     "formError": "Ocurrió un error. Por favor intentá por WhatsApp.",
     "whatsappText": "¡Hola Nacho! Me interesa cotizar música en vivo para mi evento.",
     "whatsappButton": "Escribir por WhatsApp",
@@ -477,6 +483,40 @@
         "date": "2026-07-09"
       }
     ]
+  },
+  "guide": {
+    "metaTitle": "Cómo elegir la música de tu boda | Guía completa",
+    "metaDesc": "Guía práctica para elegir la música de tu boda: cuándo contratar, qué formato conviene en cada momento, cuánto presupuestar y las 12 preguntas que le tenés que hacer a tu músico.",
+    "heroTitle": "Cómo elegir la música de tu boda",
+    "heroSubtitle": "Todo lo que aprendí tocando en más de una década de bodas, ordenado para que puedas decidir sin dar vueltas.",
+    "formTitle": "Llevate la checklist",
+    "formText": "Te mando por mail las 12 preguntas que conviene hacerle a cualquier músico antes de reservar una fecha. Sirven aunque no me contrates a mí.",
+    "formName": "Nombre",
+    "formNamePlaceholder": "Tu nombre",
+    "formEmail": "Email",
+    "formSubmit": "Enviarme la checklist",
+    "formSending": "Enviando...",
+    "formSuccess": "¡Listo! Revisá tu correo.",
+    "formSuccessNote": "Si no llega en unos minutos, mirá en spam o promociones.",
+    "formError": "No se pudo enviar. Probá de nuevo o escribime por WhatsApp.",
+    "formPrivacy": "Solo te escribo por esto y por novedades ocasionales. Podés darte de baja cuando quieras.",
+    "ctaTitle": "¿Querés que hablemos de tu boda?",
+    "ctaText": "Contame la fecha y el lugar y te digo si tengo disponibilidad, sin compromiso."
+  },
+  "links": {
+    "metaTitle": "Links | Nacho Rodriguez",
+    "metaDesc": "Todos mis links en un solo lugar: Instagram, WhatsApp, videos y cotización para tu evento.",
+    "tagline": "Músico · Música en vivo",
+    "intro": "¿Nos vimos en un show? Acá está todo.",
+    "instagram": "Seguime en Instagram",
+    "instagramNote": "Shows, canciones nuevas y dónde toco",
+    "whatsapp": "Escribime por WhatsApp",
+    "whatsappNote": "Respondo todos los días",
+    "quote": "Cotizar música para mi evento",
+    "quoteNote": "Bodas, eventos privados, hoteles y bares",
+    "videos": "Ver videos en vivo",
+    "repertoire": "Ver repertorio",
+    "youtube": "Canal de YouTube"
   },
   "footer": {
     "tagline": "Música en vivo que cuenta historias",
