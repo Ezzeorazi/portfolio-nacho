@@ -18,8 +18,8 @@ export async function generateMetadata({
     title: 'Nacho Rodriguez | Música en Vivo para Bodas y Eventos',
     description:
       locale === 'es'
-        ? 'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista o dúo. Disponible para viajar.'
-        : 'Professional live music for weddings and private events across Mexico and the United States. 10+ years of experience, versatile repertoire, solo or duo format. Available to travel.',
+        ? 'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista, dúo de guitarras o banda. Disponible para viajar.'
+        : 'Professional live music for weddings and private events across Mexico and the United States. 10+ years of experience, versatile repertoire, solo, guitar duo or band. Available to travel.',
     alternates: altsFor(locale, '', ''),
   }
 }
@@ -33,7 +33,7 @@ export default function HomePage() {
   const testimonials = t.raw('testimonials') as Array<{ text: string; author: string; event: string }>
   const videos = [
     { id: 'uJeqJAVMHrA', title: locale === 'es' ? 'Bella Ciao — Cover acústico' : 'Bella Ciao — Acoustic cover', subtitle: 'Live session' },
-    { id: '7Xdbo4JA-hI', title: 'Dos Gardenias — Cover', subtitle: '2023' },
+    { id: '7Xdbo4JA-hI', title: 'Dos Gardenias — Cover', subtitle: 'Cover' },
     { id: 'aLEIAHYI4fM', title: locale === 'es' ? 'Tuyo — versión Nacho Rodríguez' : 'Tuyo — Nacho Rodríguez version', subtitle: 'Cover' },
   ]
 
@@ -361,7 +361,7 @@ export default function HomePage() {
               {
                 '@type': 'MusicGroup',
                 name: 'Nacho Rodriguez',
-                genre: ['Rock', 'Blues', 'Jazz', 'Latin', 'Cumbia', 'Electronic'],
+                genre: ['Rock', 'Blues', 'Pop', 'Latin', 'Cumbia', 'Electronic'],
                 url: 'https://nachorodriguezmusic.com',
                 areaServed: ['México', 'Estados Unidos'],
               },

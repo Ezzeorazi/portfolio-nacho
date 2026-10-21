@@ -21,12 +21,12 @@
     "heroCta": "Book your date",
     "heroCtaSecondary": "View repertoire",
     "statementTitle": "Over 10 years making every event memorable.",
-    "statementText": "From Mendoza to the finest stages in Mexico, I've spent over 10 years creating musical experiences for weddings and events. Rock, blues, jazz, cumbia and hybrid sets that blend DJ with live accordion and guitar —plus original compositions—, with the versatility and professional level your event deserves.",
+    "statementText": "From Mendoza to the finest stages in Mexico, I've spent over 10 years creating musical experiences for weddings and events. Rock, blues, cumbia, pop, Latin classics and hybrid sets that blend DJ with live accordion and guitar —plus original compositions—, with the versatility and professional level your event deserves.",
     "formatsTitle": "How do you want your music?",
     "formatsSoloTitle": "Solo",
     "formatsSoloDesc": "Voice and guitar. Versatile and elegant for ceremonies, cocktail hours, and dinners.",
-    "formatsDuoTitle": "Duo",
-    "formatsDuoDesc": "More power and sonic richness. Ideal for receptions and larger-scale events.",
+    "formatsDuoTitle": "Guitar Duo",
+    "formatsDuoDesc": "Two guitars and vocals with my brother, Leandro Rodriguez: the format we play the most. Family chemistry, a fuller sound and two-guitar arrangements. Ideal for cocktail hour, dinner and receptions.",
     "formatsBandaTitle": "Band",
     "formatsBandaDesc": "A full lineup for larger-scale productions. More musicians, more energy — perfect for receptions and parties that call for it.",
     "servicesTitle": "For every special moment",
@@ -66,7 +66,7 @@
   },
   "weddings": {
     "metaTitle": "Wedding Musician in Mexico & USA | Nacho Rodriguez",
-    "metaDesc": "Live music for weddings in Playa del Carmen, Tulum, Cancun and Puerto Morelos. Bilingual ES/EN. Solo or duo. Free quote.",
+    "metaDesc": "Live music for weddings in Playa del Carmen, Tulum, Cancun and Puerto Morelos. Bilingual ES/EN. Solo, guitar duo or band. Free quote.",
     "heroTitle": "Weddings",
     "heroSubtitle": "Live music that makes your most important moments unforgettable",
     "whyTitle": "Why choose live music?",
@@ -189,7 +189,7 @@
   },
   "repertoire": {
     "metaTitle": "Repertoire | Nacho Rodriguez Musician",
-    "metaDesc": "Over 200 songs in rock, blues, jazz and cumbia, hybrid DJ sets with live accordion and guitar, and original compositions. Bilingual Spanish/English.",
+    "metaDesc": "Over 200 songs in rock, blues, pop, cumbia and Latin classics, hybrid DJ sets with live accordion and guitar, and original compositions. Bilingual Spanish/English.",
     "heroTitle": "Repertoire",
     "heroSubtitle": "Over 200 songs in Spanish and English",
     "genres": [
@@ -213,17 +213,6 @@
           "Ain't No Sunshine",
           "Stand By Me",
           "Georgia On My Mind"
-        ]
-      },
-      {
-        "name": "Jazz & Bossa Nova",
-        "songs": [
-          "The Girl From Ipanema",
-          "Fly Me To The Moon",
-          "La Vie En Rose",
-          "Garota de Ipanema",
-          "Besame Mucho",
-          "Quizas Quizas"
         ]
       },
       {
@@ -261,7 +250,7 @@
   },
   "about": {
     "metaTitle": "About Nacho Rodriguez | Musician for Weddings & Events",
-    "metaDesc": "Argentine singer-songwriter based in the Riviera Maya since 2014. Rock, blues, jazz and original songs for weddings and events.",
+    "metaDesc": "Argentine singer-songwriter based in the Riviera Maya since 2014. Rock, blues, Latin music and original songs for weddings and events.",
     "heroTitle": "About Nacho",
     "storyTitle": "From Mendoza to the Caribbean",
     "story": [
@@ -269,7 +258,8 @@
       "In 2014 I made the decision to cross the continent to the Riviera Maya — and I have never regretted it. This region adopted me and I adopted it.",
       "Today, after more than 10 years playing at weddings, boutique hotels, private villas, and exclusive events, I can say I found my place in the world: in front of a microphone, in front of people, in the Mexican Caribbean.",
       "The Riviera Maya is my home, but I travel wherever I'm needed: I'm available for weddings and events anywhere in Mexico.",
-      "My music mixes who I am: the rock and folk from Argentina, the blues I learned listening to old vinyls, the jazz that taught me to improvise, and the tropical influence of Mexico that slowly found its way into my compositions."
+      "These days I also play a lot as a guitar duo with my brother, Leandro Rodriguez: two guitars that know each other by heart, and the kind of chemistry on stage that only family gives you.",
+      "My music mixes who I am: the rock and folk from Argentina, the blues I learned listening to old vinyls, and the tropical influence of Mexico that slowly found its way into my compositions."
     ],
     "statsTitle": "By the numbers",
     "stats": [
@@ -317,8 +307,9 @@
     "formFormats": [
       "Solo (45 min)",
       "Solo (90 min)",
-      "Duo (45 min)",
-      "Duo (90 min)",
+      "Guitar duo (45 min)",
+      "Guitar duo (90 min)",
+      "Band",
       "Not decided yet"
     ],
     "formMessage": "Tell me more about your event",
@@ -455,25 +446,32 @@
     ],
     "posts": [
       {
-        "slug": "best-songs-beach-wedding-ceremony",
-        "title": "Best songs for a beach wedding ceremony",
-        "excerpt": "A complete guide to choosing the perfect soundtrack for your ceremony in front of the Caribbean Sea.",
+        "slug": "live-music-holiday-parties-new-years-eve-riviera-maya",
+        "title": "Live music for holiday parties and New Year's Eve in the Riviera Maya",
+        "excerpt": "Company holiday parties, Christmas dinners at a villa and New Year's Eve: how to choose the format, what repertoire works and how far ahead to book in peak season.",
         "category": "Guides & Tips",
-        "date": "2024-03-15"
+        "date": "2026-10-21"
+      },
+      {
+        "slug": "marriage-proposal-live-music-tulum-playa-del-carmen",
+        "title": "How to plan a marriage proposal with live music in Tulum or Playa del Carmen",
+        "excerpt": "Location, timing, the song and the exact moment the music comes in: everything to coordinate so your proposal goes perfectly.",
+        "category": "Guides & Tips",
+        "date": "2026-10-21"
+      },
+      {
+        "slug": "guitar-duo-for-wedding",
+        "title": "A guitar duo for your wedding: why it works (and why I play with my brother)",
+        "excerpt": "More body than a soloist, more intimacy than a band: when a guitar duo is the right call for your wedding or event, and how it sounds at each moment.",
+        "category": "The Singer-Songwriter",
+        "date": "2026-10-21"
       },
       {
         "slug": "how-much-does-live-music-cost-wedding-mexico",
-        "title": "How much does live music cost for a wedding in Mexico?",
-        "excerpt": "Complete breakdown of prices, formats and everything you need to know before hiring music for your wedding.",
+        "title": "How much does live music cost for a wedding in Mexico? (2026-2027 prices)",
+        "excerpt": "2026-2027 price ranges for a soloist, guitar duo and band in the Riviera Maya, what the quote should include and how to save without losing quality.",
         "category": "Guides & Tips",
-        "date": "2024-02-20"
-      },
-      {
-        "slug": "from-mendoza-to-tulum",
-        "title": "From Mendoza to Tulum: the story behind the music",
-        "excerpt": "How an Argentine guitarist ended up playing at the most exclusive weddings in the Mexican Caribbean.",
-        "category": "Roots",
-        "date": "2024-01-10"
+        "date": "2026-10-21"
       },
       {
         "slug": "live-music-vs-dj-wedding",
@@ -481,6 +479,20 @@
         "excerpt": "The false dilemma almost nobody solves well: it is not about choosing between DJ or band, but knowing how to combine them for each moment of your party.",
         "category": "Guides & Tips",
         "date": "2026-07-09"
+      },
+      {
+        "slug": "best-songs-beach-wedding-ceremony",
+        "title": "Best songs for a beach wedding ceremony",
+        "excerpt": "A complete guide to choosing the perfect soundtrack for your ceremony in front of the Caribbean Sea.",
+        "category": "Guides & Tips",
+        "date": "2024-03-15"
+      },
+      {
+        "slug": "from-mendoza-to-tulum",
+        "title": "From Mendoza to Tulum: the story behind the music",
+        "excerpt": "How an Argentine guitarist ended up playing at the most exclusive weddings in the Mexican Caribbean.",
+        "category": "Roots",
+        "date": "2024-01-10"
       }
     ]
   },

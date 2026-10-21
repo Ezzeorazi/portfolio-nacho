@@ -22,7 +22,7 @@ const YOUTUBE_CHANNEL = 'https://www.youtube.com/@NachoRodriguezmusic'
 // "youtu.be/" o "watch?v=") y un título/subtítulo en cada idioma.
 const VIDEOS: Array<{ id: string; es: string; en: string; sub: string }> = [
   { id: 'uJeqJAVMHrA', es: 'Bella Ciao — Cover acústico', en: 'Bella Ciao — Acoustic cover', sub: 'Live session' },
-  { id: '7Xdbo4JA-hI', es: 'Dos Gardenias — Cover', en: 'Dos Gardenias — Cover', sub: '2023' },
+  { id: '7Xdbo4JA-hI', es: 'Dos Gardenias — Cover', en: 'Dos Gardenias — Cover', sub: 'Cover' },
   { id: 'aLEIAHYI4fM', es: 'Tuyo — versión Nacho Rodríguez', en: 'Tuyo — Nacho Rodríguez version', sub: 'Cover' },
 ]
 
