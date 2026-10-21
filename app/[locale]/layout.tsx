@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: '%s | Nacho Rodriguez Músico',
   },
   description:
-    'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista o dúo. Disponible para viajar.',
+    'Música en vivo profesional para bodas y eventos privados en México y Estados Unidos. +10 años de experiencia, repertorio versátil, formato solista, dúo de guitarras o banda. Disponible para viajar.',
   keywords: [
     'música en vivo para bodas',
     'músico para eventos',

@@ -42,7 +42,7 @@ const GUIDE: Record<string, { sections: Section[]; faqs: Array<{ q: string; a: s
         ],
         list: [
           'Ceremonia: es el momento más emotivo y el que menos volumen necesita. Guitarra y voz, o dúo con violín o cajón, alcanza y sobra. Acá importa la letra y que se escuche cada palabra.',
-          'Cóctel: la música acompaña, no protagoniza. La gente se saluda, toma algo y recorre el lugar. Repertorio suave, bossa, standards, versiones acústicas.',
+          'Cóctel: la música acompaña, no protagoniza. La gente se saluda, toma algo y recorre el lugar. Repertorio suave: baladas, clásicos latinos y versiones acústicas.',
           'Cena: parecido al cóctel pero un poco más presente. Es buen momento para las canciones que significan algo para ustedes.',
           'Fiesta: acá cambia todo. Se necesita energía, volumen y, casi siempre, la combinación de banda o dúo con DJ para que la música no pare nunca.',
         ],
@@ -124,7 +124,7 @@ const GUIDE: Record<string, { sections: Section[]; faqs: Array<{ q: string; a: s
         ],
         list: [
           'Ceremony: the most emotional moment and the one that needs the least volume. Guitar and voice, or a duo with violin or cajón, is more than enough. What matters here is the lyrics and that every word is heard.',
-          'Cocktail hour: the music accompanies, it doesn’t lead. People are greeting each other, having a drink, exploring the venue. Soft repertoire, bossa, standards, acoustic versions.',
+          'Cocktail hour: the music accompanies, it doesn’t lead. People are greeting each other, having a drink, exploring the venue. Soft repertoire: ballads, Latin classics and acoustic versions.',
           'Dinner: similar to the cocktail hour but slightly more present. A good moment for the songs that mean something to you both.',
           'Party: everything changes here. You need energy, volume and, almost always, a band or duo combined with a DJ so the music never stops.',
         ],

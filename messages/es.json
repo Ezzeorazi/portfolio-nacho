@@ -21,12 +21,12 @@
     "heroCta": "Reservar tu fecha",
     "heroCtaSecondary": "Ver repertorio",
     "statementTitle": "Más de 10 años haciendo de cada evento algo memorable.",
-    "statementText": "Desde Mendoza hasta los mejores escenarios de México, llevo más de 10 años creando experiencias musicales para bodas y eventos. Rock, blues, jazz, cumbia y sets híbridos que combinan DJ con acordeón y guitarra en vivo —además de composiciones propias—, con la versatilidad y el nivel profesional que tu evento merece.",
+    "statementText": "Desde Mendoza hasta los mejores escenarios de México, llevo más de 10 años creando experiencias musicales para bodas y eventos. Rock, blues, cumbia, pop, clásicos latinos y sets híbridos que combinan DJ con acordeón y guitarra en vivo —además de composiciones propias—, con la versatilidad y el nivel profesional que tu evento merece.",
     "formatsTitle": "¿Cómo quieres tu música?",
     "formatsSoloTitle": "Solista",
     "formatsSoloDesc": "Voz y guitarra. Versátil y elegante para ceremonias, cócteles y cenas.",
-    "formatsDuoTitle": "Dúo",
-    "formatsDuoDesc": "Más potencia y riqueza sonora. Ideal para recepciones y eventos de mayor escala.",
+    "formatsDuoTitle": "Dúo de guitarras",
+    "formatsDuoDesc": "Dos guitarras y voz junto a mi hermano: el formato que más estamos tocando. Química de familia, más cuerpo y arreglos a dos guitarras. Ideal para cóctel, cena y recepción.",
     "formatsBandaTitle": "Banda",
     "formatsBandaDesc": "Formación completa para producciones de mayor escala. Más músicos, más energía: ideal para recepciones y fiestas que piden todo.",
     "servicesTitle": "Para cada momento especial",
@@ -66,7 +66,7 @@
   },
   "weddings": {
     "metaTitle": "Músico para Bodas en México y USA | Nacho Rodriguez",
-    "metaDesc": "Música en vivo para bodas en Playa del Carmen, Tulum, Cancún y Puerto Morelos. Bilingüe ES/EN. Solista o dúo. Cotización sin compromiso.",
+    "metaDesc": "Música en vivo para bodas en Playa del Carmen, Tulum, Cancún y Puerto Morelos. Bilingüe ES/EN. Solista, dúo de guitarras o banda. Cotización sin compromiso.",
     "heroTitle": "Bodas",
     "heroSubtitle": "Música en vivo que hace memorables tus momentos más importantes",
     "whyTitle": "¿Por qué elegir música en vivo?",
@@ -189,7 +189,7 @@
   },
   "repertoire": {
     "metaTitle": "Repertorio | Nacho Rodriguez Músico",
-    "metaDesc": "Más de 200 canciones de rock, blues, jazz y cumbia, sets híbridos de DJ con acordeón y guitarra en vivo, y temas propios. Bilingüe español/inglés.",
+    "metaDesc": "Más de 200 canciones de rock, blues, pop, cumbia y clásicos latinos, sets híbridos de DJ con acordeón y guitarra en vivo, y temas propios. Bilingüe español/inglés.",
     "heroTitle": "Repertorio",
     "heroSubtitle": "Más de 200 canciones en español e inglés",
     "genres": [
@@ -213,17 +213,6 @@
           "Ain't No Sunshine",
           "Stand By Me",
           "Georgia On My Mind"
-        ]
-      },
-      {
-        "name": "Jazz & Bossa Nova",
-        "songs": [
-          "The Girl From Ipanema",
-          "Fly Me To The Moon",
-          "La Vie En Rose",
-          "Garota de Ipanema",
-          "Besame Mucho",
-          "Quizas Quizas"
         ]
       },
       {
@@ -261,7 +250,7 @@
   },
   "about": {
     "metaTitle": "Sobre Nacho Rodriguez | Músico para Bodas y Eventos",
-    "metaDesc": "Cantautor argentino radicado en la Riviera Maya desde 2014. Rock, blues, jazz y temas propios para bodas y eventos.",
+    "metaDesc": "Cantautor argentino radicado en la Riviera Maya desde 2014. Rock, blues, música latina y temas propios para bodas y eventos.",
     "heroTitle": "Sobre Nacho",
     "storyTitle": "De Mendoza al Caribe",
     "story": [
@@ -269,7 +258,8 @@
       "En 2014 tomé la decisión de cruzar el continente hasta la Riviera Maya — y no me arrepentí. Esta región me adoptó y yo la adopté a ella.",
       "Hoy, después de más de 10 años tocando en bodas, hoteles boutique, villas privadas y eventos exclusivos, puedo decir que encontré mi lugar en el mundo: frente a un micrófono, frente a la gente, en el Caribe mexicano.",
       "La Riviera Maya es mi casa, pero viajo a donde me necesiten: estoy disponible para bodas y eventos en todo México.",
-      "Mi música mezcla lo que soy: el rock y el folclore de Argentina, el blues que aprendí escuchando vinilos viejos, el jazz que me enseñó a improvisar, y la influencia tropical de México que se fue colando en mis composiciones."
+      "Además, hoy toco mucho en dúo de guitarras con mi hermano: dos guitarras que se conocen de memoria y una química en vivo que solo da la familia.",
+      "Mi música mezcla lo que soy: el rock y el folclore de Argentina, el blues que aprendí escuchando vinilos viejos y la influencia tropical de México que se fue colando en mis composiciones."
     ],
     "statsTitle": "En números",
     "stats": [
@@ -317,8 +307,9 @@
     "formFormats": [
       "Solista (45 min)",
       "Solista (90 min)",
-      "Dúo (45 min)",
-      "Dúo (90 min)",
+      "Dúo de guitarras (45 min)",
+      "Dúo de guitarras (90 min)",
+      "Banda",
       "No lo decidí aún"
     ],
     "formMessage": "Cuéntame más sobre tu evento",
@@ -455,25 +446,32 @@
     ],
     "posts": [
       {
-        "slug": "mejor-musica-para-boda-en-playa",
-        "title": "Las mejores canciones para una boda en la playa",
-        "excerpt": "Una guía completa para elegir la banda sonora perfecta para tu ceremonia frente al mar Caribe.",
+        "slug": "musica-en-vivo-posadas-fin-de-ano-riviera-maya",
+        "title": "Música en vivo para posadas y cenas de fin de año en la Riviera Maya",
+        "excerpt": "Posadas de empresa, cenas navideñas en villa y Año Nuevo: cómo elegir el formato, qué repertorio funciona y con cuánta anticipación reservar en plena temporada alta.",
         "category": "Guías y Consejos",
-        "date": "2024-03-15"
+        "date": "2026-10-21"
+      },
+      {
+        "slug": "pedida-de-mano-con-musica-en-vivo-tulum-playa-del-carmen",
+        "title": "Cómo organizar una pedida de mano con música en vivo en Tulum o Playa del Carmen",
+        "excerpt": "Lugar, horario, la canción y el momento exacto en que entra la música: todo lo que hay que coordinar para que la propuesta salga perfecta.",
+        "category": "Guías y Consejos",
+        "date": "2026-10-21"
+      },
+      {
+        "slug": "duo-de-guitarras-para-boda",
+        "title": "Dúo de guitarras para tu boda: por qué funciona (y por qué toco con mi hermano)",
+        "excerpt": "Más cuerpo que un solista, más cercanía que una banda: cuándo conviene un dúo de guitarras en tu boda o evento y cómo suena en cada momento.",
+        "category": "El Cantautor",
+        "date": "2026-10-21"
       },
       {
         "slug": "cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen",
-        "title": "¿Cuánto cuesta música en vivo para una boda en Playa del Carmen?",
-        "excerpt": "Desglose completo de precios, formatos y todo lo que necesitás saber antes de contratar música para tu boda.",
+        "title": "¿Cuánto cuesta música en vivo para una boda en Playa del Carmen? (precios 2026-2027)",
+        "excerpt": "Rangos de precio 2026-2027 para solista, dúo de guitarras y banda en la Riviera Maya, qué debe incluir la cotización y cómo ahorrar sin perder calidad.",
         "category": "Guías y Consejos",
-        "date": "2024-02-20"
-      },
-      {
-        "slug": "de-mendoza-a-tulum",
-        "title": "De Mendoza a Tulum: la historia detrás de la música",
-        "excerpt": "Cómo un guitarrista argentino terminó tocando en las bodas más exclusivas del Caribe mexicano.",
-        "category": "Raíces",
-        "date": "2024-01-10"
+        "date": "2026-10-21"
       },
       {
         "slug": "musica-en-vivo-vs-dj-boda",
@@ -481,6 +479,20 @@
         "excerpt": "El falso dilema que casi nadie resuelve bien: no se trata de elegir entre DJ o banda, sino de saber combinarlos según cada momento de tu fiesta.",
         "category": "Guías y Consejos",
         "date": "2026-07-09"
+      },
+      {
+        "slug": "mejor-musica-para-boda-en-playa",
+        "title": "Las mejores canciones para una boda en la playa",
+        "excerpt": "Una guía completa para elegir la banda sonora perfecta para tu ceremonia frente al mar Caribe.",
+        "category": "Guías y Consejos",
+        "date": "2024-03-15"
+      },
+      {
+        "slug": "de-mendoza-a-tulum",
+        "title": "De Mendoza a Tulum: la historia detrás de la música",
+        "excerpt": "Cómo un guitarrista argentino terminó tocando en las bodas más exclusivas del Caribe mexicano.",
+        "category": "Raíces",
+        "date": "2024-01-10"
       }
     ]
   },

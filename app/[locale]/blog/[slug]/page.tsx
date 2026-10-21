@@ -18,6 +18,12 @@ const SLUG_PAIRS: Record<string, string> = {
   'how-much-does-live-music-cost-wedding-mexico': 'cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen',
   'from-mendoza-to-tulum': 'de-mendoza-a-tulum',
   'live-music-vs-dj-wedding': 'musica-en-vivo-vs-dj-boda',
+  'musica-en-vivo-posadas-fin-de-ano-riviera-maya': 'live-music-holiday-parties-new-years-eve-riviera-maya',
+  'pedida-de-mano-con-musica-en-vivo-tulum-playa-del-carmen': 'marriage-proposal-live-music-tulum-playa-del-carmen',
+  'duo-de-guitarras-para-boda': 'guitar-duo-for-wedding',
+  'live-music-holiday-parties-new-years-eve-riviera-maya': 'musica-en-vivo-posadas-fin-de-ano-riviera-maya',
+  'marriage-proposal-live-music-tulum-playa-del-carmen': 'pedida-de-mano-con-musica-en-vivo-tulum-playa-del-carmen',
+  'guitar-duo-for-wedding': 'duo-de-guitarras-para-boda',
 }
 
 const WHATSAPP_NUMBER = '525534010899'
@@ -31,6 +37,7 @@ type BlogPost = {
   content: string
   category: string
   date: string
+  updated?: string
   faq?: Array<{ q: string; a: string }>
   ctaLabel?: string
   ctaHref?: string
@@ -64,35 +71,51 @@ Siempre coordiná con tu músico con anticipación. Un buen intérprete puede ad
       `,
     },
     'cuanto-cuesta-musica-en-vivo-boda-playa-del-carmen': {
-      title: '¿Cuánto cuesta música en vivo para una boda en Playa del Carmen?',
-      excerpt: 'Desglose completo de precios, formatos y todo lo que necesitás saber antes de contratar música para tu boda.',
+      title: '¿Cuánto cuesta música en vivo para una boda en Playa del Carmen? (precios 2026-2027)',
+      excerpt: 'Rangos de precio 2026-2027 para solista, dúo de guitarras y banda en la Riviera Maya, qué debe incluir la cotización y cómo ahorrar sin perder calidad.',
       category: 'Guías y Consejos',
       date: '2024-02-20',
+      updated: '2026-10-21',
       content: `
-Contratar música en vivo para tu boda en Playa del Carmen es una de las mejores inversiones que podés hacer. Pero ¿cuánto cuesta exactamente?
+Contratar música en vivo para tu boda en Playa del Carmen es una de las mejores inversiones que podés hacer. Pero ¿cuánto cuesta exactamente? Actualicé esta guía para la temporada 2026-2027 con rangos de mercado reales de la Riviera Maya.
 
 ## Factores que determinan el precio
 
-**Formato:** Un solista (voz + guitarra) es más accesible que un dúo o banda. La diferencia puede ser de un 30-50% más.
+**Formato:** Un solista (voz + guitarra) es más accesible que un dúo de guitarras o una banda. Un dúo suele costar entre un 30% y un 50% más que un solista.
 
-**Duración:** Los sets más comunes son de 45 o 90 minutos. Algunos músicos ofrecen paquetes para varios momentos del día (ceremonia + cóctel + cena).
+**Duración:** Los sets más comunes son de 45 o 90 minutos. Muchas parejas arman paquetes para varios momentos del día (ceremonia + cóctel + cena), que salen mejor que contratar cada momento por separado.
 
-**Ubicación:** El costo de desplazamiento varía según la distancia. Playa del Carmen suele ser la más económica de la Riviera Maya.
+**Ubicación:** El traslado varía según la distancia. Playa del Carmen suele ser la más económica de la Riviera Maya; Tulum y la zona hotelera de Cancún suman traslado.
 
-**Temporada:** Alta temporada (noviembre-abril) suele tener precios mayores por la demanda.
+**Temporada:** Alta temporada (noviembre-abril) tiene más demanda, y las fechas de fin de semana se reservan con meses de anticipación.
 
-## Rangos de precio en 2024
+## Rangos de precio 2026-2027 en la Riviera Maya
 
-Para Playa del Carmen, los precios de un solista de calidad rondan entre $8,000 y $15,000 MXN por set, dependiendo de la duración y experiencia del músico.
+Estos son rangos de referencia del mercado, no una tarifa cerrada. El precio final depende de la fecha, el lugar y la duración.
+
+| Formato | Ceremonia (30-45 min) | Evento completo (2-3 sets) |
+| --- | --- | --- |
+| Solista (voz y guitarra) | $4,000 – $9,000 MXN | $8,000 – $15,000 MXN |
+| Dúo de guitarras | $6,000 – $12,000 MXN | $12,000 – $22,000 MXN |
+| Banda completa | — | Desde $25,000 MXN |
+
+En directorios de bodas vas a ver solistas "desde $2,500 MXN". Ojo: ese suele ser el precio de una hora en interior, sin traslado ni equipo para exteriores. Para una boda en la playa conviene comparar paquetes completos.
 
 ## Lo que debe incluir
 
-- Equipo de sonido profesional
+- Equipo de sonido profesional, apto para exteriores si la boda es en playa o jardín
 - Repertorio amplio (sin costo extra por canciones del repertorio)
+- Coordinación de tiempos con tu wedding planner
 - Puntualidad garantizada
 - Vestuario apropiado para el evento
 
-Contactame para obtener una cotización exacta para tu fecha.
+## Cómo ahorrar sin perder calidad
+
+- **Combiná formatos:** solista en la ceremonia y dúo en el cóctel y la fiesta.
+- **Reservá temprano:** en temporada alta, cuanto antes cerrás, más opciones de fecha y formato tenés.
+- **Un solo proveedor para todo el día:** evitás pagar dos traslados y dos equipos.
+
+Si estás comparando opciones, en la [guía para elegir la música de tu boda](/guia-musica-boda) están las preguntas que conviene hacerle a cualquier músico antes de reservar. Y si ya tenés fecha, escribime y te paso la cotización exacta.
       `,
     },
     'de-mendoza-a-tulum': {
@@ -186,6 +209,181 @@ Cerrar este falso dilema es más simple de lo que parece: no se trata de renunci
       ctaLabel: 'Contame cómo imaginás tu fiesta →',
       ctaHref: waLink('Hola Nacho! Vi tu blog sobre música en vivo vs. DJ y quiero contarte cómo imagino la música de mi boda.'),
     },
+    'musica-en-vivo-posadas-fin-de-ano-riviera-maya': {
+      title: 'Música en vivo para posadas y cenas de fin de año en la Riviera Maya',
+      excerpt: 'Posadas de empresa, cenas navideñas en villa y Año Nuevo: cómo elegir el formato, qué repertorio funciona y con cuánta anticipación reservar en plena temporada alta.',
+      category: 'Guías y Consejos',
+      date: '2026-10-21',
+      content: `
+Diciembre en la Riviera Maya es la época más intensa del año: hoteles llenos, villas reservadas de punta a punta y todas las empresas buscando fecha para su posada. Si estás organizando una celebración de fin de año, la música es lo que más rápido se agota, así que conviene resolverla ahora.
+
+## Tres tipos de evento, tres necesidades distintas
+
+| Evento | Qué pide la música | Formato que mejor funciona |
+| --- | --- | --- |
+| Posada o cena de empresa | Ambiente para conversar al principio, energía para cerrar | Solista o dúo de guitarras, con set bailable al final |
+| Cena navideña en villa | Calidez, cercanía, volumen bajo | Solista acústico o dúo de guitarras |
+| Fiesta de Año Nuevo | Energía toda la noche y un brindis memorable | Dúo, banda o set híbrido con DJ |
+
+## Posadas de empresa: que la música acompañe y después levante
+
+En una posada la gente llega de trabajar, se saluda, come y recién después se suelta. El error más común es arrancar con volumen de fiesta cuando todavía nadie terminó de llegar. Lo que mejor funciona es un primer bloque acústico —clásicos en español e inglés, versiones conocidas por todos— y un cierre con rock, cumbia y pop para que el equipo termine bailando.
+
+Si en la empresa hay personas de distintos países, el repertorio bilingüe hace una diferencia enorme: nadie queda afuera.
+
+## Cenas navideñas en villa: la música como anfitriona
+
+En una cena privada la música no tiene que competir con la mesa. Un solista o un dúo de guitarras arma un ambiente cálido sin invadir, y puede adaptar el repertorio en el momento según cómo vaya la noche: más tranquilo durante la cena, más arriba en la sobremesa.
+
+## Año Nuevo: el brindis también se planea
+
+Para la noche del 31 lo importante es la curva de energía: cena relajada, subida antes de la medianoche y fiesta después del brindis. Conviene acordar con el músico cuál va a ser la canción del brindis y qué pasa en los minutos previos, para que la cuenta regresiva no quede en silencio.
+
+## Con cuánta anticipación reservar
+
+Las fechas de diciembre —sobre todo los viernes y sábados, y el 24 y el 31— se reservan con meses de anticipación. Si tu evento es en diciembre, lo ideal es cerrar la música en octubre o principios de noviembre. Después quedan pocas fechas y menos opciones de formato.
+
+## Qué tener listo para pedir cotización
+
+- Fecha y horario aproximado
+- Lugar (hotel, villa, restaurante) y si es interior o exterior
+- Cantidad de invitados
+- Si querés solo ambiente, solo fiesta, o las dos cosas
+
+Con eso te puedo decir en el día si tengo la fecha libre y qué formato te conviene.
+      `,
+      faq: [
+        {
+          q: '¿Llevan equipo de sonido para una posada en hotel o villa?',
+          a: 'Sí, el equipo de amplificación está incluido y se adapta al tamaño del lugar. Para eventos de más de cien personas conviene confirmar con el venue si ya tienen sonido propio.',
+        },
+        {
+          q: '¿Pueden tocar en una villa en Tulum o Puerto Morelos aunque no sea en Playa del Carmen?',
+          a: 'Sí, toco en toda la Riviera Maya: Playa del Carmen, Tulum, Cancún, Puerto Morelos y alrededores. El traslado se incluye en la cotización.',
+        },
+        {
+          q: '¿Qué formato conviene para un grupo de 30 a 50 personas?',
+          a: 'Para ese tamaño, un solista o un dúo de guitarras es ideal: suficiente presencia para animar, sin necesitar una producción grande.',
+        },
+      ],
+      ctaLabel: 'Consultar fecha de diciembre →',
+      ctaHref: waLink('Hola Nacho! Vi tu post sobre posadas y fin de año y quiero consultar disponibilidad para diciembre.'),
+    },
+    'pedida-de-mano-con-musica-en-vivo-tulum-playa-del-carmen': {
+      title: 'Cómo organizar una pedida de mano con música en vivo en Tulum o Playa del Carmen',
+      excerpt: 'Lugar, horario, la canción y el momento exacto en que entra la música: todo lo que hay que coordinar para que la propuesta salga perfecta.',
+      category: 'Guías y Consejos',
+      date: '2026-10-21',
+      content: `
+Diciembre es la temporada de propuestas de matrimonio por excelencia, y la Riviera Maya es uno de los lugares más elegidos para hacerlas. Una pedida de mano con música en vivo es corta —a veces dura una sola canción— pero tiene que salir perfecta, porque no hay segunda toma.
+
+## Elegí el lugar pensando en la música
+
+La playa al atardecer es la opción clásica, pero tiene dos detalles: el viento y la gente alrededor. Un cenote, la terraza de un restaurante o una villa privada dan más intimidad y mejor sonido. Si elegís playa, buscá un tramo tranquilo y avisá al músico para que lleve el equipo adecuado para exteriores.
+
+## La hora importa más de lo que parece
+
+El atardecer en la Riviera Maya en diciembre es temprano, alrededor de las 17:30. Para tener la mejor luz en las fotos, la propuesta tiene que ocurrir unos 20-30 minutos antes. Todo el plan se arma hacia atrás desde esa hora.
+
+## La canción
+
+Lo ideal es una canción que tenga historia para ustedes dos. Si no hay una obvia, estas funcionan siempre en versión acústica:
+
+- "Perfect" — Ed Sheeran
+- "Can't Help Falling In Love" — Elvis Presley
+- "Thinking Out Loud" — Ed Sheeran
+- "Sabor a Mí"
+- "Tú" — Alejandro Sanz
+
+Si la canción no está en mi repertorio, avisame con anticipación y la preparo especialmente.
+
+## Cómo se coordina el momento exacto
+
+La parte más delicada es la señal. Antes del día acordamos:
+
+- **Dónde espera el músico:** a la vista pero sin llamar la atención, o directamente escondido.
+- **La señal de entrada:** un gesto, un mensaje o una frase.
+- **Qué pasa después del "sí":** una segunda canción para celebrar, o un set corto si hay familia o amigos esperando.
+
+## Solista o dúo de guitarras
+
+Para una sorpresa íntima, un solista es más discreto y fácil de esconder. Si después de la propuesta hay festejo con amigos o una cena, el dúo de guitarras le da más cuerpo a ese momento.
+
+## Con cuánta anticipación reservar
+
+Para diciembre, apenas tengas la fecha. Las propuestas suelen caer en fines de semana y en días especiales como Navidad o Año Nuevo, que son las primeras fechas que se llenan.
+      `,
+      faq: [
+        {
+          q: '¿Cuánto dura una pedida de mano con música en vivo?',
+          a: 'La propuesta en sí son una o dos canciones, pero conviene reservar al menos 30-45 minutos para coordinar, esperar el momento justo y seguir tocando en el festejo.',
+        },
+        {
+          q: '¿Pueden coordinar con el fotógrafo o el restaurante?',
+          a: 'Sí, es lo recomendable. Coordino la señal y los tiempos con el fotógrafo y con el lugar para que todo pase en el momento justo.',
+        },
+        {
+          q: '¿Tocan en playa o cenote?',
+          a: 'Sí, con equipo adaptado para exteriores. Para cenotes conviene confirmar antes las reglas del lugar sobre sonido amplificado.',
+        },
+      ],
+      ctaLabel: 'Planear mi propuesta →',
+      ctaHref: waLink('Hola Nacho! Estoy planeando una pedida de mano y quiero música en vivo. ¿Me ayudás a organizarla?'),
+    },
+    'duo-de-guitarras-para-boda': {
+      title: 'Dúo de guitarras para tu boda: por qué funciona (y por qué toco con mi hermano)',
+      excerpt: 'Más cuerpo que un solista, más cercanía que una banda: cuándo conviene un dúo de guitarras en tu boda o evento y cómo suena en cada momento.',
+      category: 'El Cantautor',
+      date: '2026-10-21',
+      content: `
+En los últimos meses el formato que más estoy tocando es el dúo de guitarras con mi hermano. Y no es casualidad: es el formato que mejor resuelve lo que la mayoría de las bodas y eventos necesitan.
+
+## Qué agrega una segunda guitarra
+
+Con una sola guitarra, el músico tiene que cubrir ritmo y melodía al mismo tiempo. Con dos, una puede sostener la base mientras la otra hace arreglos, punteos y solos. El resultado es un sonido más lleno, con más dinámica, sin perder la calidez de lo acústico.
+
+## Por qué con mi hermano
+
+Tocar con familia tiene algo que no se ensaya: nos conocemos de memoria. Sabemos cuándo el otro va a cambiar de tema, cuándo alargar una canción porque la pista está prendida o cuándo bajar porque empieza un brindis. Esa comunicación sin palabras es lo que hace que un dúo suene a uno solo.
+
+## Cómo suena en cada momento de tu boda
+
+| Momento | Qué hace el dúo |
+| --- | --- |
+| Ceremonia | Arreglos a dos guitarras para la entrada, los votos y la salida |
+| Cóctel | Clásicos en español e inglés, con más presencia que un solista |
+| Cena | Volumen bajo, repertorio tranquilo, sin competir con las mesas |
+| Fiesta | Rock, cumbia y pop con energía para levantar la pista |
+
+## Solista, dúo o banda: cómo decidir
+
+- **Solista:** ideal para ceremonias íntimas, cenas y eventos de hasta unos cien invitados.
+- **Dúo de guitarras:** el punto medio. Más cuerpo y energía, sin necesitar la logística ni el presupuesto de una banda.
+- **Banda:** para fiestas grandes que piden volumen y una formación completa.
+
+Si tenés dudas, una buena opción es combinar: solista en la ceremonia y dúo en el cóctel y la fiesta. En la [guía para elegir la música de tu boda](/guia-musica-boda) explico cómo repartir los formatos por momento.
+
+## Escuchalo antes de decidir
+
+En Instagram subo videos de los shows de cada semana, muchos en dúo. Es la mejor forma de saber cómo suena antes de reservar.
+      `,
+      faq: [
+        {
+          q: '¿El dúo de guitarras canta en español e inglés?',
+          a: 'Sí, el repertorio es bilingüe, ideal para bodas de destino con invitados de distintos países.',
+        },
+        {
+          q: '¿El dúo cuesta el doble que un solista?',
+          a: 'No necesariamente. Suele estar entre un 30% y un 50% por encima del solista, según duración y lugar. Te paso la cotización exacta para tu fecha.',
+        },
+        {
+          q: '¿Puedo pedir canciones especiales para el dúo?',
+          a: 'Sí. Con anticipación preparamos el arreglo a dos guitarras de la canción que quieras.',
+        },
+      ],
+      ctaLabel: 'Consultar el dúo para mi fecha →',
+      ctaHref: waLink('Hola Nacho! Me interesa el dúo de guitarras para mi evento. ¿Tenés disponibilidad?'),
+    },
   },
   en: {
     'best-songs-beach-wedding-ceremony': {
@@ -214,35 +412,51 @@ Always coordinate with your musician in advance. A skilled performer can adapt a
       `,
     },
     'how-much-does-live-music-cost-wedding-mexico': {
-      title: 'How much does live music cost for a wedding in Mexico?',
-      excerpt: 'Complete breakdown of prices, formats and everything you need to know before hiring music for your wedding.',
+      title: 'How much does live music cost for a wedding in Mexico? (2026-2027 prices)',
+      excerpt: '2026-2027 price ranges for a soloist, guitar duo and band in the Riviera Maya, what the quote should include and how to save without losing quality.',
       category: 'Guides & Tips',
       date: '2024-02-20',
+      updated: '2026-10-21',
       content: `
-Hiring live music for your wedding in the Riviera Maya is one of the best investments you can make. But what does it actually cost?
+Hiring live music for your wedding in the Riviera Maya is one of the best investments you can make. But what does it actually cost? I've updated this guide for the 2026-2027 season with real market ranges from the Riviera Maya.
 
 ## Factors that determine the price
 
-**Format:** A solo musician (voice + guitar) is more affordable than a duo or band. The difference can be 30-50% more.
+**Format:** A solo musician (voice + guitar) is more affordable than a guitar duo or a band. A duo usually costs 30% to 50% more than a soloist.
 
-**Duration:** The most common sets are 45 or 90 minutes. Some musicians offer packages for multiple moments of the day (ceremony + cocktail + dinner).
+**Duration:** The most common sets are 45 or 90 minutes. Many couples book packages for several moments of the day (ceremony + cocktail + dinner), which work out better than booking each moment separately.
 
-**Location:** Travel costs vary by distance. Playa del Carmen tends to be the most affordable in the Riviera Maya.
+**Location:** Travel costs vary by distance. Playa del Carmen tends to be the most affordable in the Riviera Maya; Tulum and Cancun's hotel zone add travel.
 
-**Season:** High season (November-April) typically has higher prices due to demand.
+**Season:** High season (November-April) has more demand, and weekend dates get booked months in advance.
 
-## Price ranges in 2024
+## 2026-2027 price ranges in the Riviera Maya
 
-For Playa del Carmen, prices for a quality solo musician range from $8,000 to $15,000 MXN per set, depending on duration and musician experience.
+These are market reference ranges, not a fixed rate. The final price depends on the date, venue and duration.
+
+| Format | Ceremony (30-45 min) | Full event (2-3 sets) |
+| --- | --- | --- |
+| Solo (voice and guitar) | $4,000 – $9,000 MXN | $8,000 – $15,000 MXN |
+| Guitar duo | $6,000 – $12,000 MXN | $12,000 – $22,000 MXN |
+| Full band | — | From $25,000 MXN |
+
+On wedding directories you'll see soloists "from $2,500 MXN". Keep in mind that's usually the price of one indoor hour, without travel or outdoor gear. For a beach wedding, compare full packages.
 
 ## What should be included
 
-- Professional sound equipment
+- Professional sound equipment, outdoor-ready if the wedding is on the beach or in a garden
 - Wide repertoire (no extra charge for repertoire songs)
+- Timeline coordination with your wedding planner
 - Guaranteed punctuality
 - Appropriate attire for the event
 
-Contact me to get an exact quote for your date.
+## How to save without losing quality
+
+- **Mix formats:** solo for the ceremony and duo for cocktail hour and the party.
+- **Book early:** in high season, the sooner you book, the more date and format options you have.
+- **One provider for the whole day:** you avoid paying for two travel fees and two sound systems.
+
+If you're comparing options, the [guide to choosing your wedding music](/wedding-music-guide) has the questions worth asking any musician before booking. And if you already have a date, write to me and I'll send you the exact quote.
       `,
     },
     'from-mendoza-to-tulum': {
@@ -336,6 +550,181 @@ Closing this false dilemma is simpler than it looks: it's not about giving anyth
       ctaLabel: 'Tell me how you picture your party →',
       ctaHref: waLink('Hi Nacho! I saw your blog post about live music vs. DJ and I want to tell you how I imagine the music for my wedding.'),
     },
+    'live-music-holiday-parties-new-years-eve-riviera-maya': {
+      title: 'Live music for holiday parties and New Year\'s Eve in the Riviera Maya',
+      excerpt: 'Company holiday parties, Christmas dinners at a villa and New Year\'s Eve: how to choose the format, what repertoire works and how far ahead to book in peak season.',
+      category: 'Guides & Tips',
+      date: '2026-10-21',
+      content: `
+December in the Riviera Maya is the busiest time of the year: hotels are full, villas are booked back to back and every company is looking for a date for its holiday party. If you're planning a year-end celebration, music is what sells out first, so it pays to sort it out now.
+
+## Three kinds of event, three different needs
+
+| Event | What the music needs to do | Format that works best |
+| --- | --- | --- |
+| Company holiday party | Background for conversation first, energy to close | Solo or guitar duo, with a dance set at the end |
+| Christmas dinner at a villa | Warmth, closeness, low volume | Acoustic solo or guitar duo |
+| New Year's Eve party | Energy all night and a memorable toast | Duo, band or hybrid set with DJ |
+
+## Company parties: accompany first, lift later
+
+At a holiday party people arrive from work, say hello, eat, and only then loosen up. The most common mistake is starting at party volume when half the guests haven't arrived. What works best is an acoustic first block —classics in Spanish and English, songs everybody knows— and a closing set of rock, cumbia and pop so the team ends up dancing.
+
+If your team is international, a bilingual repertoire makes a huge difference: nobody is left out.
+
+## Christmas dinners at a villa: music as the host
+
+At a private dinner the music shouldn't compete with the table. A soloist or a guitar duo creates a warm atmosphere without taking over, and can adapt the repertoire on the fly: calmer during dinner, more upbeat afterwards.
+
+## New Year's Eve: the toast needs a plan too
+
+On the 31st what matters is the energy curve: relaxed dinner, build-up before midnight, party after the toast. Agree with your musician on the toast song and what happens in the minutes before, so the countdown isn't left in silence.
+
+## How far ahead to book
+
+December dates —especially Fridays, Saturdays, the 24th and the 31st— get booked months in advance. If your event is in December, the ideal is to lock in the music in October or early November. After that, few dates and fewer format options remain.
+
+## What to have ready when you ask for a quote
+
+- Date and approximate time
+- Venue (hotel, villa, restaurant) and whether it's indoors or outdoors
+- Number of guests
+- Whether you want background music, a party, or both
+
+With that I can tell you the same day whether I'm available and which format fits best.
+      `,
+      faq: [
+        {
+          q: 'Do you bring sound equipment for a party at a hotel or villa?',
+          a: 'Yes, amplification is included and adapted to the size of the venue. For events of more than a hundred guests, check whether the venue already has its own sound system.',
+        },
+        {
+          q: 'Can you play at a villa in Tulum or Puerto Morelos, not just Playa del Carmen?',
+          a: 'Yes, I play all over the Riviera Maya: Playa del Carmen, Tulum, Cancun, Puerto Morelos and nearby. Travel is included in the quote.',
+        },
+        {
+          q: 'Which format works for a group of 30 to 50 people?',
+          a: 'For that size, a soloist or a guitar duo is ideal: enough presence to lift the room without needing a large production.',
+        },
+      ],
+      ctaLabel: 'Check a December date →',
+      ctaHref: waLink('Hi Nacho! I read your post about holiday parties and New Year\'s Eve and I want to check your availability for December.'),
+    },
+    'marriage-proposal-live-music-tulum-playa-del-carmen': {
+      title: 'How to plan a marriage proposal with live music in Tulum or Playa del Carmen',
+      excerpt: 'Location, timing, the song and the exact moment the music comes in: everything to coordinate so your proposal goes perfectly.',
+      category: 'Guides & Tips',
+      date: '2026-10-21',
+      content: `
+December is proposal season, and the Riviera Maya is one of the most popular places to pop the question. A proposal with live music is short —sometimes a single song— but it has to be perfect, because there's no second take.
+
+## Choose the spot with the music in mind
+
+The beach at sunset is the classic choice, but it comes with two details: wind and people around. A cenote, a restaurant terrace or a private villa give you more privacy and better sound. If you go with the beach, look for a quiet stretch and tell your musician so they bring outdoor-ready gear.
+
+## Timing matters more than you think
+
+Sunset in the Riviera Maya in December is early, around 5:30 pm. For the best light in your photos, the proposal should happen 20-30 minutes before. The whole plan is built backwards from that time.
+
+## The song
+
+Ideally, a song that has a story for the two of you. If there isn't an obvious one, these always work acoustically:
+
+- "Perfect" — Ed Sheeran
+- "Can't Help Falling In Love" — Elvis Presley
+- "Thinking Out Loud" — Ed Sheeran
+- "Sabor a Mí"
+- "Tú" — Alejandro Sanz
+
+If your song isn't in my repertoire, let me know in advance and I'll prepare it especially for you.
+
+## How the exact moment is coordinated
+
+The trickiest part is the cue. Before the day we agree on:
+
+- **Where the musician waits:** in sight but low-key, or fully hidden.
+- **The cue:** a gesture, a text or a phrase.
+- **What happens after the "yes":** a second song to celebrate, or a short set if friends or family are waiting.
+
+## Solo or guitar duo
+
+For an intimate surprise, a soloist is more discreet and easier to hide. If there's a celebration with friends or a dinner afterwards, the guitar duo gives that moment more body.
+
+## How far ahead to book
+
+For December, as soon as you have the date. Proposals usually fall on weekends and special days like Christmas or New Year's Eve, which are the first dates to fill up.
+      `,
+      faq: [
+        {
+          q: 'How long does a proposal with live music take?',
+          a: 'The proposal itself is one or two songs, but it\'s worth booking at least 30-45 minutes to coordinate, wait for the right moment and keep playing for the celebration.',
+        },
+        {
+          q: 'Can you coordinate with the photographer or the restaurant?',
+          a: 'Yes, and it\'s recommended. I coordinate the cue and timing with the photographer and the venue so everything happens at the right moment.',
+        },
+        {
+          q: 'Do you play on the beach or in a cenote?',
+          a: 'Yes, with outdoor-ready equipment. For cenotes, check the venue\'s rules on amplified sound beforehand.',
+        },
+      ],
+      ctaLabel: 'Plan my proposal →',
+      ctaHref: waLink('Hi Nacho! I\'m planning a marriage proposal and I\'d love live music. Can you help me organize it?'),
+    },
+    'guitar-duo-for-wedding': {
+      title: 'A guitar duo for your wedding: why it works (and why I play with my brother)',
+      excerpt: 'More body than a soloist, more intimacy than a band: when a guitar duo is the right call for your wedding or event, and how it sounds at each moment.',
+      category: 'The Singer-Songwriter',
+      date: '2026-10-21',
+      content: `
+Lately the format I play the most is a guitar duo with my brother. That's no accident: it's the format that best solves what most weddings and events need.
+
+## What a second guitar adds
+
+With a single guitar, the musician has to cover rhythm and melody at the same time. With two, one holds the groove while the other plays arrangements, fills and solos. The result is a fuller sound with more dynamics, without losing that acoustic warmth.
+
+## Why with my brother
+
+Playing with family has something you can't rehearse: we know each other by heart. We know when the other one is about to switch songs, when to stretch a tune because the dance floor is on fire, or when to bring it down because a toast is about to start. That wordless communication is what makes a duo sound like one.
+
+## How it sounds at each moment of your wedding
+
+| Moment | What the duo does |
+| --- | --- |
+| Ceremony | Two-guitar arrangements for the processional, vows and recessional |
+| Cocktail hour | Classics in Spanish and English, with more presence than a soloist |
+| Dinner | Low volume, calm repertoire, never competing with the tables |
+| Party | Rock, cumbia and pop with enough energy to fill the floor |
+
+## Solo, duo or band: how to decide
+
+- **Solo:** ideal for intimate ceremonies, dinners and events of up to around a hundred guests.
+- **Guitar duo:** the sweet spot. More body and energy, without the logistics or budget of a band.
+- **Band:** for big parties that call for volume and a full line-up.
+
+If you're unsure, a good option is to combine: solo for the ceremony and duo for cocktail hour and the party. In the [guide to choosing your wedding music](/wedding-music-guide) I explain how to split formats by moment.
+
+## Hear it before you decide
+
+On Instagram I post videos from each week's shows, many of them as a duo. It's the best way to know how it sounds before you book.
+      `,
+      faq: [
+        {
+          q: 'Does the guitar duo sing in Spanish and English?',
+          a: 'Yes, the repertoire is bilingual, ideal for destination weddings with guests from different countries.',
+        },
+        {
+          q: 'Does the duo cost twice as much as a soloist?',
+          a: 'Not necessarily. It\'s usually 30% to 50% above the solo rate, depending on duration and venue. I\'ll send you the exact quote for your date.',
+        },
+        {
+          q: 'Can I request special songs for the duo?',
+          a: 'Yes. With some notice we prepare a two-guitar arrangement of any song you want.',
+        },
+      ],
+      ctaLabel: 'Check the duo for my date →',
+      ctaHref: waLink('Hi Nacho! I\'m interested in the guitar duo for my event. Are you available?'),
+    },
   },
 }
 
@@ -407,7 +796,8 @@ export default function BlogPostPage({
       <section className="relative pt-32 pb-16 px-4 bg-negro">
         <div className="max-w-3xl mx-auto">
           <p className="font-sans text-[10px] tracking-[0.3em] uppercase text-oro mb-6">
-            {post.category} · {new Date(post.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
+            {post.category} · {post.updated && (locale === 'es' ? 'Actualizado ' : 'Updated ')}
+            {new Date(post.updated ?? post.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
           <div className="w-12 h-px bg-oro mb-6" />
           <h1 className="font-display text-4xl sm:text-5xl text-hueso leading-tight">{post.title}</h1>
@@ -562,6 +952,7 @@ export default function BlogPostPage({
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
+            dateModified: post.updated ?? post.date,
             author: { '@type': 'Person', name: 'Nacho Rodriguez' },
             publisher: {
               '@type': 'Organization',
