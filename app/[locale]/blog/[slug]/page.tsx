@@ -336,7 +336,7 @@ Para diciembre, apenas tengas la fecha. Las propuestas suelen caer en fines de s
       category: 'El Cantautor',
       date: '2026-10-21',
       content: `
-En los últimos meses el formato que más estoy tocando es el dúo de guitarras con mi hermano. Y no es casualidad: es el formato que mejor resuelve lo que la mayoría de las bodas y eventos necesitan.
+En los últimos meses el formato que más estoy tocando es el dúo de guitarras con mi hermano, Leandro Rodriguez. Y no es casualidad: es el formato que mejor resuelve lo que la mayoría de las bodas y eventos necesitan.
 
 ## Qué agrega una segunda guitarra
 
@@ -677,7 +677,7 @@ For December, as soon as you have the date. Proposals usually fall on weekends a
       category: 'The Singer-Songwriter',
       date: '2026-10-21',
       content: `
-Lately the format I play the most is a guitar duo with my brother. That's no accident: it's the format that best solves what most weddings and events need.
+Lately the format I play the most is a guitar duo with my brother, Leandro Rodriguez. That's no accident: it's the format that best solves what most weddings and events need.
 
 ## What a second guitar adds
 
